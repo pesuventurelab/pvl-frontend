@@ -1,0 +1,62 @@
+.container {
+  border-top: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 7px 5px 7px;
+  position: sticky;
+  top: -3px;
+  margin-bottom: 13px;
+}
+
+/* LOGO */
+.logo_container {
+  display: flex;
+  flex-direction: row;
+  width: 10vw;
+}
+
+.logo {
+  width: 36px;
+  height: 45px;
+  margin: auto 0px;
+}
+
+.logo_text {
+  font-family: var(--fonts-heading);
+  font-size: 36px;
+  margin: auto 0px;
+  color: var(--primary-dark-green);
+  font-weight: bolder;
+}
+
+/* ELEMENTS */
+.navbar_ele_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto 0px;
+  width: 60vw;
+}
+
+.navbar_ele {
+  color: var(--primary-yellow);
+  font-family: var(--fonts-heading);
+  font-size: 24px;
+  font-weight: 900;
+  border: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar_ele:hover {
+  color: var(--primary-dark-green) !important;
+}
+
+/* ABOUT US */
+.aboutus_container {
+  margin: auto 0px;
+  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

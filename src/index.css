@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+:root {
+
+  /* PRIMARY FONTS */
+  --fonts-montserrat : 'Montserrat', sans-serif;
+
+  /* DERIVED FONTS */
+  --fonts-paragraph : var(--fonts-montserrat);
+  --fonts-heading : var(--fonts-montserrat);
+  --fonts-help-text : var(--fonts-montserrat);
+
+
+  /* PRIMARY COLOR PALLET */
+  --primary-bg : #FFFFFF;
+  --primary-black-one : #455A64;
+  --primary-purple : #543FD3;
+  --primary-yellow: #EFB76C;
+  --primary-dark-green: #41868E;
+  --primary-light-green-one: #C8DEDE;
+  --primary-light-green-two : #A4C8C8;
+  --primary-gray: #A8A8A8;
+  --secondary-bg-one : #FAFAFA;
+  --secondary-bg-two: #E5E5E5;
+  --border_gray: #949494;
+  --hint-or-error-message-color : #595959;
+
+
+  /* INHERITED COLORS */
+
+
+
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +45,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.no-underline {
+  text-decoration: none;
 }
