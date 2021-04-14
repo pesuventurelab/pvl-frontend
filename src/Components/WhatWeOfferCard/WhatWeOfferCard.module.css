@@ -1,0 +1,28 @@
+.container {
+  background-color: var(--secondary-bg-one);
+  box-shadow: 0px 11px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 36px;
+  padding: 20px;
+  width: 70%;
+  margin-bottom: 80px;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+.title {
+  font-family: var(--fonts-heading);
+  color: var(--primary-yellow);
+  text-align: center;
+  font-weight: 900;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.para {
+  font-family: var(--fonts-paragraph);
+  color: var(--primary-gray);
+  text-align: center;
+  font-size: 18px;
+}

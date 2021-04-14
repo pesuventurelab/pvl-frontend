@@ -1,52 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap");
 
 :root {
-
   /* PRIMARY FONTS */
-  --fonts-montserrat : 'Montserrat', sans-serif;
+  --fonts-montserrat: "Montserrat", sans-serif;
 
   /* DERIVED FONTS */
-  --fonts-paragraph : var(--fonts-montserrat);
-  --fonts-heading : var(--fonts-montserrat);
-  --fonts-help-text : var(--fonts-montserrat);
-
+  --fonts-paragraph: var(--fonts-montserrat);
+  --fonts-heading: var(--fonts-montserrat);
+  --fonts-help-text: var(--fonts-montserrat);
 
   /* PRIMARY COLOR PALLET */
-  --primary-bg : #FFFFFF;
-  --primary-black-one : #455A64;
-  --primary-purple : #543FD3;
-  --primary-yellow: #EFB76C;
-  --primary-dark-green: #41868E;
-  --primary-light-green-one: #C8DEDE;
-  --primary-light-green-two : #A4C8C8;
-  --primary-gray: #A8A8A8;
-  --secondary-bg-one : #FAFAFA;
-  --secondary-bg-two: #E5E5E5;
+  --primary-bg: #ffffff;
+  --primary-black-one: #455a64;
+  --primary-purple: #543fd3;
+  --primary-yellow: #efb76c;
+  --primary-dark-green: #41868e;
+  --primary-light-green-one: #c8dede;
+  --primary-light-green-two: #a4c8c8;
+  --primary-gray: #a8a8a8;
+  --secondary-bg-one: #fafafa;
+  --secondary-bg-two: #e5e5e5;
   --border_gray: #949494;
-  --hint-or-error-message-color : #595959;
-
+  --hint-or-error-message-color: #595959;
 
   /* INHERITED COLORS */
-
-
-
 }
-
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+/* GLOBAL CSS */
+.basic-button_one {
+  background-color: var(--primary-yellow);
+  color: var(--primary-bg);
+  font-family: var(--fonts-heading);
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 40px;
+  padding: 10px 26px;
+  border: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.basic-button_one:hover {
+  outline: none;
+  background-color: var(--primary-dark-green);
+}
+
+.basic-button_one:focus {
+  outline: none;
+}
 
 .no-underline {
   text-decoration: none;

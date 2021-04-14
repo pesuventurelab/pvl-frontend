@@ -1,4 +1,47 @@
 .container {
-    font-size: 32px;
-    border-top: 1px solid green;
+  font-size: 32px;
+  border-top: 1px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_heading {
+  color: var(--primary-dark-green);
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 65px;
+  font-weight: 900;
+}
+
+.section {
+  margin: 0px 147px;
+  margin-bottom: 128px;
+}
+
+#section_one {
+}
+
+#upcoming_events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+#what_we_offer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+#who_we_looking_for {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact_us_btn {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 36px;
+  margin-bottom: 42px;
 }
