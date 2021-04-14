@@ -59,6 +59,9 @@ code {
 .basic-button_one:hover {
   outline: none;
   background-color: var(--primary-dark-green);
+
+  text-decoration: none;
+  color: var(--primary-bg);
 }
 
 .basic-button_one:focus {

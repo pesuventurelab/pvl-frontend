@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: var(--primary-dark-green);
+  font-weight: 900;
+  font-size: 72px;
+  text-transform: uppercase;
+  margin: 100px 0px;
+  margin-bottom: 0px;
+}
+
+.heading:after {
+  border-bottom: 5px solid var(--primary-yellow);
+  content: "";
+  display: block;
+  margin-left: 23%;
+  width: 77%;
+  position: relative;
+  top: -13px;
+}
+
+.banner {
+  width: 69%;
+  height: auto;
+  margin: 0px auto;
+}

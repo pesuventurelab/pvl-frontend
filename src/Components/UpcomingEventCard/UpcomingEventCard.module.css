@@ -5,6 +5,8 @@
   padding: 20px;
   width: 90%;
   margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner {
@@ -25,4 +27,9 @@
   color: var(--primary-gray);
   text-align: center;
   font-size: 18px;
+  margin-bottom: 5vh;
+}
+
+.know_more_btn {
+  text-align: center;
 }

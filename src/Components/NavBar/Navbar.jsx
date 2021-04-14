@@ -10,7 +10,6 @@ import { Menu, Dropdown, Button } from "antd";
 /* IMPORT IMAGES HERE */
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
 
-
 const NavbarComponent = () => {
   return (
     <div className={styles.container}>
@@ -20,6 +19,10 @@ const NavbarComponent = () => {
       </div>
 
       <div className={styles.navbar_ele_container}>
+        <Link to="/home" className="no-underline">
+          <div className={styles.navbar_ele}>Home</div>
+        </Link>
+
         <Link to="/portfolio" className="no-underline">
           <div className={styles.navbar_ele}>Portfolio</div>
         </Link>

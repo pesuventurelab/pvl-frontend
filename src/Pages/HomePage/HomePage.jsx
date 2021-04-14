@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./HomePage.module.css";
 
+import { Link } from "react-router-dom";
+
+/*IMPORT VARIABLES */
+import { websiteBaseURL } from "../../Config/Config";
+
 /* IMPORT COMPONENT HERE */
 import UpcomingEventCard from "../../Components/UpcomingEventCard/UpcomingEventCard";
 import WhatWeOfferCard from "../../Components/WhatWeOfferCard/WhatWeOfferCard";
@@ -112,9 +117,15 @@ const HomePage = () => {
           }
         />
       </div>
-      <button id={styles.contact_us_btn} className={`${"basic-button_one"}`}>
+
+      <a
+        id={styles.contact_us_btn}
+        rel="noopener noreferrer"
+        href={websiteBaseURL + "contactus"}
+        className={`${"basic-button_one"}`}
+      >
         COntact us
-      </button>
+      </a>
 
       <Footer />
     </div>
