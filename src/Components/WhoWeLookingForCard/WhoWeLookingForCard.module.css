@@ -34,8 +34,10 @@
 
 .para {
     font-family: var(--fonts-paragraph);
-    color: var(--primary-yellow);
+    color: var(--text-color-black);
     text-align: left;
     font-size: 24px;
-    text-transform: justify;
+    font-weight: 900;
+    text-align: justify;
+    text-justify: inter-word;
 }

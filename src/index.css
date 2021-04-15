@@ -22,8 +22,10 @@
   --secondary-bg-two: #e5e5e5;
   --border_gray: #949494;
   --hint-or-error-message-color: #595959;
+  --text-color-always-black : #1B1919;
 
   /* INHERITED COLORS */
+  --text-color-black: var(--text-color-always-black);
 }
 
 body {

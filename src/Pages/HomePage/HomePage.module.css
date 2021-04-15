@@ -5,6 +5,82 @@
   flex-direction: column;
 }
 
+
+/* SECTION ONE */
+#section_one{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section_one_info_ctnr {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0px;
+}
+
+#section_one_header {
+  color: var(--primary-dark-green);
+  font-weight: 900;
+  font-family: var(--fonts-heading);
+  font-size: 54px;
+  text-transform: uppercase;
+  margin-bottom: 2vh;
+}
+
+#section_one_secondary_header {
+  color: var(--primary-dark-green);
+  font-weight: 900;
+  font-family: var(--fonts-heading);
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+.section_one_para {
+  color: var(--primary-yellow);
+  font-weight: 900;
+  font-family: var(--fonts-heading);
+  font-size: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#PVL_LOGO {
+
+  width: 40%;
+  height: auto;
+  margin: auto 0px;
+}
+
+.upper_section_container:nth-child(even) p:nth-child(odd) {
+  color: var(--primary-yellow);
+
+}
+
+.upper_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.upper_section_info_ctnr {
+  color: var(--primary-dark-green);
+  font-weight: 900;
+  font-family: var(--fonts-heading);
+  font-size: 48px;
+  margin: auto 0px;
+  text-align: center;
+  width: 40%;
+}
+
+.section_banner {
+  width: 40%;
+  height: auto;
+  margin: auto 0px;
+}
+
 .section_heading {
   color: var(--primary-dark-green);
   font-size: 64px;
@@ -19,8 +95,6 @@
   margin-bottom: 128px;
 }
 
-#section_one {
-}
 
 #upcoming_events {
   display: grid;
@@ -32,6 +106,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+}
+
+#what_we_looking_for {
+  display: flex;
+  flex-direction: column;
+}
+
+.what_we_looking_for_card_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#what_we_looking_for_second_section {
+  position: relative;
+  top : -275px;
+  left : 50px;
 }
 
 #who_we_looking_for {

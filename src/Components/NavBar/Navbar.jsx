@@ -5,7 +5,6 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 
 /* ANT DESIGN IMPORTS */
-import { Menu, Dropdown, Button } from "antd";
 
 /* IMPORT IMAGES HERE */
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";

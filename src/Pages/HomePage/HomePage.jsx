@@ -14,25 +14,72 @@ import WhoWeLookingForCard from "../../Components/WhoWeLookingForCard/WhoWeLooki
 
 import Footer from "../../Components/Footer/Footer";
 
+/* IMPORT IMAGES HERE */
+import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
+
 import STEP_1 from "../../Images/Steps/step1.svg";
 import STEP_2 from "../../Images/Steps/step2.svg";
 import STEP_3 from "../../Images/Steps/step3.svg";
 import STEP_4 from "../../Images/Steps/step4.svg";
 
 import BANNER_1 from "../../Images/Banners/banner1.svg";
-import BANNER_9 from "../../Images/Banners/banner9.svg";
-import BANNER_17 from "../../Images/Banners/banner17.svg";
-
-import BANNER_6 from "../../Images/Banners/banner6.svg";
-import BANNER_20 from "../../Images/Banners/banner20.svg";
-import BANNER_7 from "../../Images/Banners/banner7.svg";
+import BANNER_4 from "../../Images/Banners/banner4.svg";
 import BANNER_5 from "../../Images/Banners/banner5.svg";
+import BANNER_6 from "../../Images/Banners/banner6.svg";
+import BANNER_7 from "../../Images/Banners/banner7.svg";
+import BANNER_9 from "../../Images/Banners/banner9.svg";
+import BANNER_16 from "../../Images/Banners/banner16.svg";
+import BANNER_17 from "../../Images/Banners/banner17.svg";
+import BANNER_20 from "../../Images/Banners/banner20.svg";
 
 const HomePage = () => {
   return (
     <div className={styles.container}>
-      <div id={styles.section_one} className={styles.section}></div>
+      <div id={styles.section_one} className={styles.section}>
+        <div className={styles.section_one_info_ctnr}>
+          <div id={styles.section_one_header}>PESU VENTURE LABS</div>
+          <div id={styles.section_one_secondary_header}>
+            Make your ideas see the light
+          </div>
+          <p className={styles.section_one_para}>
+            A unique fund that operates in the pre-prototype or pre-ideation
+            phase. Founder-friendly terms (no special rights to PVL) and
+            flexibility in terms of equity spent{" "}
+          </p>
+        </div>
+        <img id={styles.PVL_LOGO} src={PVL_LOGO} alt="Image" />
+      </div>
 
+      <div className={styles.upper_section_container}>
+        <div className={`${styles.upper_section} ${styles.section}`}>
+          <img className={styles.section_banner} src={BANNER_6} alt="Images" />
+          <p className={styles.upper_section_info_ctnr}>
+            Funding of <br /> <b>$150K+</b>
+          </p>
+        </div>
+
+        <div className={`${styles.upper_section} ${styles.section}`}>
+          <p className={styles.upper_section_info_ctnr}>
+            Research and Market insights in focused areas
+          </p>
+          <img className={styles.section_banner} src={BANNER_7} alt="Images" />
+        </div>
+
+        <div className={`${styles.upper_section} ${styles.section}`}>
+          <img className={styles.section_banner} src={BANNER_16} alt="Images" />
+          <p className={styles.upper_section_info_ctnr}>
+            Mentoring, connect to investors and customers
+          </p>
+        </div>
+
+        <div className={`${styles.upper_section} ${styles.section}`}>
+          <p className={styles.upper_section_info_ctnr}>
+            Resources to get started with your plan quickly - Technology,
+            Marketing, co-founders, etc.
+          </p>
+          <img className={styles.section_banner} src={BANNER_4} alt="Images" />
+        </div>
+      </div>
       <div className={styles.section_heading}>upcoming events</div>
       <div id={styles.upcoming_events} className={styles.section}>
         <UpcomingEventCard
@@ -93,6 +140,36 @@ const HomePage = () => {
         />
       </div>
       <div className={styles.section_heading}>what we're looking for</div>
+      <div id={styles.what_we_looking_for} className={styles.section}>
+        <div className={styles.what_we_looking_for_card_section}>
+          <WhatWeLookingForCard
+            title={"deep tech ideas"}
+            para={
+              "Ideas around IoT, Automation, Extended Reality (AR,ER,VR), quantum computing, AI/ML, personalized and predictive medicine"
+            }
+          />
+          <WhatWeLookingForCard
+            title={"Campus Tech Ideas"}
+            para={
+              "Ideas that can transform the way academic programs are created and delivered"
+            }
+          />
+        </div>
+        <div id={styles.what_we_looking_for_second_section} className={styles.what_we_looking_for_card_section}>
+          <WhatWeLookingForCard
+            title={"Social Tech Ideas"}
+            para={
+              "Ideas that use  human, intellectual and digital resources in order to influence social processes."
+            }
+          />
+          <WhatWeLookingForCard
+            title={"Multi Disciplinary Innovation​"}
+            para={
+              "Ideas that demand multidisciplinary innovations involving disciplines like design, computing, biotech, engineering, devices, food tech and others"
+            }
+          />
+        </div>
+      </div>
       <div className={styles.section_heading}>who we're looking for</div>
       <div id={styles.who_we_looking_for} className={styles.section}>
         <WhoWeLookingForCard
