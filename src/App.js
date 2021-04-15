@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // IMPORT PAGES HERE
 import HomePage from "./Pages/HomePage/HomePage";
+import AboutUsPage from "./Pages/AboutUsPage/AboutUsPage";
+import MeetTheTeamPage from "./Pages/MeetTheTeamPage/MeetTheTeamPage";
 import ResourcesPage from "./Pages/ResourcesPage/ResourcesPage";
 import ContactUsPage from "./Pages/ContactUsPage/ContactUsPage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFound";
@@ -19,6 +21,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/home" component={HomePage} />
+          <Route exact path="/aboutus" component={AboutUsPage} />
+          <Route exact path="/team" component={MeetTheTeamPage} />
           <Route exact path="/resources" component={ResourcesPage} />
           <Route exact path="/contactus" component={ContactUsPage} />
           <Route exact path="/*" component={NotFoundPage} />

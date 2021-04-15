@@ -1,5 +1,5 @@
 .container {
-  border-top: 2px solid red;
+  /* border: 10px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,6 +7,14 @@
   position: sticky;
   top: -28px;
   margin-bottom: 13px;
+  z-index: 69000;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-bg),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.98),
+    rgba(255, 255, 255, 0.9)
+  );
 }
 
 /* LOGO */
@@ -44,8 +52,10 @@
   font-family: var(--fonts-heading);
   font-size: 24px;
   font-weight: 900;
-  border: none;
   transition: color 0.3s ease-in-out;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
 
 .navbar_ele:hover {

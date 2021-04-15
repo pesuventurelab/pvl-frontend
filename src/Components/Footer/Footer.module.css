@@ -7,7 +7,8 @@
   justify-content: space-between;
   padding: 0 47px;
   padding-top: 49px;
-  padding-bottom: 27px;
+  padding-bottom: 10vh;
+  width: 100%;
 }
 
 /* LEFT COLUMN */

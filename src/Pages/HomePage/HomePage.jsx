@@ -3,6 +3,10 @@ import styles from "./HomePage.module.css";
 
 import { Link } from "react-router-dom";
 
+/*LIBRARY IMPORTS */
+// import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+
+
 /*IMPORT VARIABLES */
 import { websiteBaseURL } from "../../Config/Config";
 
@@ -11,7 +15,6 @@ import UpcomingEventCard from "../../Components/UpcomingEventCard/UpcomingEventC
 import WhatWeOfferCard from "../../Components/WhatWeOfferCard/WhatWeOfferCard";
 import WhatWeLookingForCard from "../../Components/WhatWeLookingForCard/WhatWeLookingForCard";
 import WhoWeLookingForCard from "../../Components/WhoWeLookingForCard/WhoWeLookingForCard";
-
 import Footer from "../../Components/Footer/Footer";
 
 /* IMPORT IMAGES HERE */
@@ -74,8 +77,7 @@ const HomePage = () => {
 
         <div className={`${styles.upper_section} ${styles.section}`}>
           <p className={styles.upper_section_info_ctnr}>
-            Resources to get started with your plan quickly - Technology,
-            Marketing, co-founders, etc.
+            Resources to get started with your plan quickly
           </p>
           <img className={styles.section_banner} src={BANNER_4} alt="Images" />
         </div>

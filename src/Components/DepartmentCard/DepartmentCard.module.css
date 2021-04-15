@@ -1,0 +1,86 @@
+.container {
+  border-radius: 72px;
+  box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-bg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 0 5vw; */
+  margin-bottom: 4.2rem;
+  width: 100%;
+}
+
+.dept_info_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border : 3px solid red; */
+}
+
+.banner {
+    width: 40%;
+    height: auto;
+    margin: auto 0px;
+}
+
+.dept_info_ctnr {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: auto 0px;
+}
+
+.title {
+    color: var(--primary-dark-green);
+    font-weight: 900;
+    font-family: var(--fonts-heading);
+    font-size: 3.2rem;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+    word-spacing: 0.7rem;
+}
+
+.para {
+    color: var(--primary-yellow);
+    font-weight: 900;
+    font-family: var(--fonts-paragraph);
+    font-size: 1.7rem;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+}
+
+.view_team_btn {
+    min-width: 18vw;
+    width: 18vw;
+    word-spacing: 0.3rem;
+}
+
+.dept_members_ctnr {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: display 0.3s ease-in-out;
+    width: 100%;
+    padding-top: 7vh;
+}
+
+.member_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border 0.3s ease-in-out;
+  border-bottom: 2px solid var(--primary-bg);
+  margin-bottom: 5vh;
+}
+
+.member_card:hover{
+    border-bottom: 2px solid var(--primary-dark-green);
+}
+
+.member_name {
+    color: var(--primary-dark-green);
+    font-weight: 900;
+    font-size: 24px;
+    font-family: var(--fonts-heading);
+    text-transform: uppercase;
+}

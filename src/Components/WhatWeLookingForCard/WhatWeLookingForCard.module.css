@@ -19,10 +19,12 @@
     font-family: var(--fonts-heading);
     color: var(--primary-dark-green);
     text-transform: capitalize;
+    font-weight: 900;
 }
 
 .para {
     font-family: var(--fonts-paragraph);
     font-size: 24px;
     color: var(--primary-bg);
+    font-weight: 900;
 }
