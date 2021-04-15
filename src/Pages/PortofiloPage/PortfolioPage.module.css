@@ -1,0 +1,43 @@
+.container {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: var(--primary-dark-green);
+  font-family: var(--fonts-heading);
+  font-weight: 900;
+  font-size: 72px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7vh;
+}
+
+.heading:after {
+  border-bottom: 5px solid var(--primary-yellow);
+  content: "";
+  display: block;
+  width: 61%;
+  margin-left: 39%;
+  position: relative;
+  top: -13px;
+}
+
+.para {
+  color: var(--primary-yellow);
+  font-weight: 900;
+  font-family: var(--fonts-paragraph);
+  font-size: 1.3rem;
+  width: 50%;
+  text-align: center;
+}
+
+.portfolio_cards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 5vh;
+}

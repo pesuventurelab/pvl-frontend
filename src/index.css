@@ -53,7 +53,7 @@ code {
   padding: 10px 26px;
   border: none;
   text-transform: uppercase;
-
+  text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
