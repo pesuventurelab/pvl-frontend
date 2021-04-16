@@ -130,15 +130,7 @@ const NavbarComponent = () => {
             <div className={styles.menu_droppable_container}>
               <div className={styles.menu_droppable_btn_ctnr}>
                 <div
-                  onMouseOver={() => {
-                    handleDropdownToggle(
-                      aboutUsDropdownREF,
-                      isAboutUsVisible,
-                      setAboutUsVisibility
-                    );
-                  }}
-
-                  onMouseOut={() => {
+                  onClick={() => {
                     handleDropdownToggle(
                       aboutUsDropdownREF,
                       isAboutUsVisible,
@@ -181,15 +173,7 @@ const NavbarComponent = () => {
             <div className={styles.menu_droppable_container}>
               <div className={styles.menu_droppable_btn_ctnr}>
                 <div
-                  onMouseOver={() => {
-                    handleDropdownToggle(
-                      pesDropdownRef,
-                      isPESVisible,
-                      setPESVisibility
-                    );
-                  }}
-
-                  onMouseOut={() => {
+                  onClick={() => {
                     handleDropdownToggle(
                       pesDropdownRef,
                       isPESVisible,
