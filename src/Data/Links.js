@@ -1,0 +1,1 @@
+export const aboutUsPageVideoURL = "https://www.youtube.com/watch?v=Z63s-nOK-8A"

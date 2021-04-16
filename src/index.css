@@ -23,6 +23,7 @@
   --border_gray: #949494;
   --hint-or-error-message-color: #595959;
   --text-color-always-black : #1B1919;
+  --dark-bg: #021529;
 
   /* INHERITED COLORS */
   --text-color-black: var(--text-color-always-black);
@@ -72,4 +73,5 @@ code {
 
 .no-underline {
   text-decoration: none;
+  color: white;
 }

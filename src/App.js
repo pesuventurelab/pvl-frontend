@@ -14,6 +14,8 @@ import ContactUsPage from "./Pages/ContactUsPage/ContactUsPage";
 import ApplyPage from "./Pages/ApplyPage/ApplyPage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFound";
 
+import TestPage from "./Pages/TestPage/TestPage";
+
 import NavbarComponent from "./Components/NavBar/Navbar";
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
           <Route exact path="/resources" component={ResourcesPage} />
           <Route exact path="/contactus" component={ContactUsPage} />
           <Route exact path="/apply" component={ApplyPage} />
+          <Route exact path="/testpage" component={TestPage} />
           <Route exact path="/*" component={NotFoundPage} />
         </Switch>
       </BrowserRouter>

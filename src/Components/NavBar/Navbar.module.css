@@ -5,9 +5,9 @@
   justify-content: space-between;
   padding: 25px 7px 5px 7px;
   position: sticky;
-  top: -28px;
+  top: -20px;
   margin-bottom: 13px;
-  z-index: 69000;
+  z-index: 101;
   background: linear-gradient(
     to bottom,
     var(--primary-bg),
@@ -38,35 +38,175 @@
   font-weight: bolder;
 }
 
-/* ELEMENTS */
-.navbar_ele_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.hamburger_icon_container {
+  font-size: 36px;
+  padding-right: 1vw;
   margin: auto 0px;
-  width: 60vw;
+  cursor: pointer;
+  color: var(--primary-dark-green);
 }
 
-.navbar_ele {
+.menu_drawer_ctnr {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: left 0.3s ease-in-out;
+  z-index: 102;
+  background-color: var(--primary-bg);
+}
+
+.menu_drawer_left_col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: var(--dark-bg);
+  color: var(--primary-yellow);
+  align-items: center;
+  text-align: center;
+  padding: 0 2.5vw;
+  overflow: hidden;
+}
+
+.drawer_logo {
+  background-color: var(--dark-bg);
+  width: 60%;
+  margin-bottom: 2vh;
+}
+
+.drawer_heading {
   color: var(--primary-yellow);
   font-family: var(--fonts-heading);
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: 900;
-  transition: color 0.3s ease-in-out;
-  border: none;
-  outline: none;
-  text-decoration: none;
+  margin-bottom: 2vh;
 }
 
-.navbar_ele:hover {
-  color: var(--primary-dark-green) !important;
+.drawer_para {
+  color: var(--primary-yellow);
+  font-family: var(--fonts-heading);
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 2vh;
 }
 
-/* ABOUT US */
-.aboutus_container {
-  margin: auto 0px;
-  width: 10vw;
+.menu_drawer_right_col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 1vw;
+}
+
+.menu_drawer_close_ctnr {
+  /* width: 100%; */
+  cursor: pointer;
+  text-align: right;
+  padding: 2vh 0;
+  color: var(--primary-dark-green);
+}
+
+.menu_drawer_close_btn {
+  position: relative;
+  left: 7px;
+  font-size: 3rem;
+}
+
+.menu_drawer_menu_ctnr {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu_ele_ctnr {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.menu_ele {
+  text-transform: uppercase;
+  font-family: var(--fonts-heading);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--primary-dark-green);
+  width: 100%;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  padding: 5px 7px;
+}
+
+.menu_ele:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-dark-green);
+  cursor: pointer;
+}
+
+/* DROPPABLE MENU */
+.menu_droppable_container {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--primary-bg);
+  transition: border 0.3s ease-in-out;
+}
+
+.menu_droppable_container:hover {
+  border: 3px solid var(--primary-yellow);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.menu_droppable_btn_ctnr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 7px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu_droppable_btn_ctnr:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-yellow) !important;
+  cursor: pointer;
+}
+
+.menu_drop_icon {
+  color: var(--primary-dark-green);
+  margin: auto 0px;
+  font-size: 2rem;
+}
+
+.menu_droppable_btn {
+  text-transform: uppercase;
+  font-family: var(--fonts-heading);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--primary-dark-green);
+  width: 100%;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  padding: 5px 0px;
+  cursor: pointer;
+  margin: auto 0px;
+}
+
+.menu_dropdown_ctnr {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  height: 0;
+  /* border: 2px solid var(--primary-yellow); */
+  /* border-radius: 0 0 5px 5px; */
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu_drawer_left_col {
+    display: none;
+  }
+
+  .menu_drawer_right_col {
+    width: 100%;
+  }
 }

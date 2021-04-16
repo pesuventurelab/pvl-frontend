@@ -6,6 +6,7 @@ import { quotesList } from "../../Data/Quotes/Quotes.js";
 
 /*IMPORT COMPONENTS */
 import Footer from "../../Components/Footer/Footer.jsx";
+import { aboutUsPageVideoURL } from "../../Data/Links";
 
 /* IMPORT IMAGES */
 import BANNER from "../../Images/Banners/banner1.svg";
@@ -34,6 +35,9 @@ const AboutUsPage = () => {
       </div>
 
       <img id={styles.section_two} src={BANNER} alt="Image" />
+
+
+
       <div id={styles.section_three} className={`${styles.section}`}>
         <img className={styles.section_banner} src={BANNER} alt="Image" />
         <p>
