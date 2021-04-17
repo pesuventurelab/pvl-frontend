@@ -3,12 +3,12 @@ import styles from "./OpportunitiesCard.module.css";
 
 const OpportunitiesCard = (props) => {
   const category_to_image = {
-    Developer: "👨‍💻",
-    Designer: "👨‍🎨",
-    Analyst: "📈",
-    Marketing: "📺",
-    Finance: "💰",
-    Hr: "👩‍💼",
+    "Developer": "👨‍💻",
+    "Designer": "👨‍🎨",
+    "Analyst": "📈",
+    "Marketing": "📺",
+    "Finance": "💰",
+    "Human Resource Management": "👩‍💼",
   };
 
   return (

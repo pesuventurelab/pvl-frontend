@@ -8,6 +8,7 @@
   color: var(--primary-dark-green);
   font-weight: 900;
   font-size: 72px;
+  font-family: var(--fonts-heading);
   text-transform: uppercase;
   margin: 100px 0px;
   margin-bottom: 0px;

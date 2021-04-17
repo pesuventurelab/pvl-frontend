@@ -9,6 +9,33 @@ import { websiteBaseURL } from "../../Config/Config";
 
 const { Option } = Select;
 
+const selectRoleData = [
+  {
+    title: "Developer",
+    emoji: "👨‍💻",
+  },
+  {
+    title: "Designer",
+    emoji: "👨‍🎨",
+  },
+  {
+    title: "Analyst",
+    emoji: "📈",
+  },
+  {
+    title: "Marketing",
+    emoji: "📺",
+  },
+  {
+    title: "Finance",
+    emoji: "💰",
+  },
+  {
+    title: "Human Resource Management",
+    emoji: "👩‍💼",
+  },
+];
+
 const OpportunitiesPage = () => {
   let [curPositions, setCurPositions] = useState([]);
   let [curTypes, setCurTypes] = useState([]);
@@ -41,74 +68,20 @@ const OpportunitiesPage = () => {
             optionLabelProp="label"
             className={styles.filters_container}
           >
-            <Option value="Developer" label="Developer">
-              <div className="demo-option-label-item">
-                <span
-                  className={styles.tags_text}
-                  role="img"
-                  aria-label="Developer"
-                >
-                  👨‍💻
-                </span>
-                Developer
-              </div>
-            </Option>
-            <Option value="Designer" label="Designer">
-              <div className="demo-option-label-item">
-                <span
-                  className={styles.tags_text}
-                  role="img"
-                  aria-label="Designer"
-                >
-                  👨‍🎨
-                </span>
-                Designer
-              </div>
-            </Option>
-            <Option value="Analyst" label="Analyst">
-              <div className="demo-option-label-item">
-                <span
-                  className={styles.tags_text}
-                  role="img"
-                  aria-label="Analyst"
-                >
-                  📈
-                </span>
-                Analyst
-              </div>
-            </Option>
-            <Option value="Marketing" label="Marketing">
-              <div className="demo-option-label-item">
-                <span
-                  className={styles.tags_text}
-                  role="img"
-                  aria-label="Marketing"
-                >
-                  📺
-                </span>
-                Marketing
-              </div>
-            </Option>
-            <Option value="Finance" label="Finance">
-              <div className="demo-option-label-item">
-                <span
-                  className={styles.tags_text}
-                  role="img"
-                  aria-label="Finance"
-                >
-                  💰
-                </span>
-                Finance
-              </div>
-            </Option>
-            <Option value="Hr" label="Hr">
-              <div className="demo-option-label-item">
-                <span className={styles.tags_text} role="img" aria-label="Hr">
-                  👩‍💼
-                </span>
-                Hr
-              </div>
-            </Option>
+            {selectRoleData.map((item, index) => (
+              <Option key={index} value={item.title} label={item.title}>
+                <div className="demo-option-label-item">
+                  <span
+                    className={styles.tags_text}
+                    role="img"
+                    aria-label={item.title}
+                  >
+                    {item.emoji}
+                  </span>
+                  {item.title}
+                </div>
+              </Option>
+            ))}
           </Select>
 
           <Select
@@ -154,7 +127,7 @@ const OpportunitiesPage = () => {
           <OpportunitiesCard category={"Designer"} />
           <OpportunitiesCard category={"Finance"} />
           <OpportunitiesCard category={"Analyst"} />
-          <OpportunitiesCard category={"Hr"} />
+          <OpportunitiesCard category={"Human Resource Management"} />
         </div>
       </div>
 
