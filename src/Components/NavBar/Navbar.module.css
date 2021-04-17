@@ -209,4 +209,12 @@
   .menu_drawer_right_col {
     width: 100%;
   }
+
+  .menu_droppable_btn_ctnr {
+    padding : 0;
+  }
+
+  .menu_ele, .menu_droppable_btn {
+    padding-left: 7vw;
+  }
 }

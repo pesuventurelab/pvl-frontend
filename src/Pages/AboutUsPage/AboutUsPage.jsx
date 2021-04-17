@@ -22,7 +22,7 @@ const AboutUsPage = () => {
           Who we are ? <br />
           How we help you ?
         </div>
-        <p>
+        <p id={styles.section_one_ans} >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices enim
           aenean tincidunt lectus parturient mauris, a. Phasellus fermare
           pretium sit aliquet adipiscing. Adipiscing tellus, dignissim luctus

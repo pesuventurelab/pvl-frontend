@@ -39,8 +39,8 @@
   font-family: var(--fonts-paragraph);
   font-weight: 900;
   font-size: 24px;
-  text-align: justify;
-  text-justify: inter-word;
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
   width: 70%;
   margin: auto 0px;
   line-height: 42px;
@@ -77,4 +77,46 @@
   width: 70%;
   margin: auto 0px;
   /* line-height: 42px; */
+}
+
+
+@media only screen and (max-width: 1024px) {
+  
+  .heading {
+    font-size: 42px;
+  }
+  
+  #section_one, #section_three, #section_four {
+    flex-direction: column;
+    min-height : 70vh;
+    margin-bottom: 20vh;
+  }
+  
+  #section_one_questions {
+    width: 100%;
+    /* border : 1px solid black; */
+    font-size : 32px;
+    text-align : center;
+    margin-bottom: 2vh;
+  }
+
+  .section p, #section_three p, #section_three p {
+    width : 100%;
+    font-size : 14px;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .quotes {
+    font-size : 22px;
+  }
+
+  .section_banner {
+    width : 100%;
+  }
+
+  #section_four {
+    flex-direction: column-reverse;
+  }
+  
 }
