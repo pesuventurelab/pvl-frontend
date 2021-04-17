@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 0 5vw;
   width: 100%;
+  background-color: var(--primary-bg);
 }
 
 .info_container {
@@ -25,8 +26,8 @@
   border-bottom: 5px solid var(--primary-yellow);
   content: "";
   display: block;
-  margin-left: 17%;
-  width: 83%;
+  /* margin-left: 17%; */
+  width: 53%;
   position: relative;
   top: -10px;
 }

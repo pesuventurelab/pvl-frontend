@@ -1,7 +1,6 @@
-import 'antd/dist/antd.css';
+import "antd/dist/antd.css";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
 
 // IMPORT PAGES HERE
 import HomePage from "./Pages/HomePage/HomePage";
@@ -17,8 +16,17 @@ import NotFoundPage from "./Pages/NotFoundPage/NotFound";
 import TestPage from "./Pages/TestPage/TestPage";
 
 import NavbarComponent from "./Components/NavBar/Navbar";
+import { setTheme } from "./Helpers";
 
 function App() {
+  // Managing themes
+  let userINFO = JSON.parse(localStorage.getItem("pvlUserInfo"));
+  if (userINFO === null) {
+    setTheme("light");
+  } else {
+    setTheme(userINFO.theme);
+  }
+
   return (
     <div>
       <BrowserRouter>

@@ -55,7 +55,7 @@ const HomePage = () => {
 
       <div className={styles.upper_section_container}>
         <div id={styles.upper_section_one} className={`${styles.upper_section} ${styles.section}`}>
-          <img className={styles.section_banner} src={BANNER_6} alt="Images" />
+          <img loading="lazy" className={styles.section_banner} src={BANNER_6} alt="Images" />
           <p className={styles.upper_section_info_ctnr}>
             Funding of <br /> <b>$150K+</b>
           </p>
@@ -65,11 +65,11 @@ const HomePage = () => {
           <p className={styles.upper_section_info_ctnr}>
             Research and Market insights in focused areas
           </p>
-          <img className={styles.section_banner} src={BANNER_7} alt="Images" />
+          <img loading="lazy" className={styles.section_banner} src={BANNER_7} alt="Images" />
         </div>
 
         <div id={styles.upper_section_three} className={`${styles.upper_section} ${styles.section}`}>
-          <img className={styles.section_banner} src={BANNER_16} alt="Images" />
+          <img loading="lazy" className={styles.section_banner} src={BANNER_16} alt="Images" />
           <p className={styles.upper_section_info_ctnr}>
             Mentoring, connect to investors and customers
           </p>
@@ -79,7 +79,7 @@ const HomePage = () => {
           <p className={styles.upper_section_info_ctnr}>
             Resources to get started with your plan quickly
           </p>
-          <img className={styles.section_banner} src={BANNER_4} alt="Images" />
+          <img loading="lazy" className={styles.section_banner} src={BANNER_4} alt="Images" />
         </div>
       </div>
 
@@ -102,10 +102,10 @@ const HomePage = () => {
       </div>
 
       <div className={styles.section_heading}>our process</div>
-      <img id={styles.step_one} src={STEP_1} />
-      <img id={styles.step_two} src={STEP_2} />
-      <img id={styles.step_three} src={STEP_3} />
-      <img id={styles.step_four} src={STEP_4} />
+      <img loading="lazy" id={styles.step_one} src={STEP_1} />
+      <img loading="lazy" id={styles.step_two} src={STEP_2} />
+      <img loading="lazy" id={styles.step_three} src={STEP_3} />
+      <img loading="lazy" id={styles.step_four} src={STEP_4} />
       <div className={styles.section_heading}>what we offer</div>
       <div id={styles.what_we_offer} className={styles.section}>
         <WhatWeOfferCard

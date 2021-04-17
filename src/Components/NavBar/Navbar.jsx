@@ -15,6 +15,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
 
 /* CUSTOM MADE COMPONENT COMPONENTS */
+import { setTheme } from "../../Helpers";
 
 // submenu keys of first level
 const rootSubmenuKeys = ["aboutus", "pes"];
@@ -45,13 +46,16 @@ const NavbarComponent = () => {
       menuDrawerREF.current.style.left = "0";
     }
   };
-  
+
+  let [isThemesVisible, setThemesVisibility] = useState(false);
+  const themesDropdownREF = useRef(null);
+
   let [isAboutUsVisible, setAboutUsVisibility] = useState(false);
   const aboutUsDropdownREF = useRef(null);
-  
+
   let [isPESVisible, setPESVisibility] = useState(false);
   const pesDropdownRef = useRef(null);
-  
+
   const handleDropdownToggle = (ctnrRef, curState, setCurState) => {
     setCurState(!curState);
     if (curState) {
@@ -152,7 +156,6 @@ const NavbarComponent = () => {
                   <a
                     href={`${websiteBaseURL}aboutus`}
                     rel="noopener noreferrer"
-                    boutus_container
                     className={styles.menu_ele}
                   >
                     About Us
@@ -162,7 +165,6 @@ const NavbarComponent = () => {
                   <a
                     href={`${websiteBaseURL}team`}
                     rel="noopener noreferrer"
-                    boutus_container
                     className={styles.menu_ele}
                   >
                     meet the team
@@ -192,7 +194,6 @@ const NavbarComponent = () => {
                   <a
                     href="https://pes.edu/"
                     rel="noopener noreferrer"
-                    boutus_container
                     target="_blank"
                     className={styles.menu_ele}
                   >
@@ -203,7 +204,6 @@ const NavbarComponent = () => {
                   <a
                     href="https://cie.pes.edu/"
                     rel="noopener noreferrer"
-                    boutus_container
                     target="_blank"
                     className={styles.menu_ele}
                   >
@@ -217,7 +217,6 @@ const NavbarComponent = () => {
               <a
                 href={`${websiteBaseURL}resources`}
                 rel="noopener noreferrer"
-                boutus_container
                 className={styles.menu_ele}
               >
                 Resources
@@ -228,7 +227,6 @@ const NavbarComponent = () => {
               <a
                 href={`${websiteBaseURL}opportunities`}
                 rel="noopener noreferrer"
-                boutus_container
                 className={styles.menu_ele}
               >
                 Opportunities
@@ -239,7 +237,6 @@ const NavbarComponent = () => {
               <a
                 href={`${websiteBaseURL}apply`}
                 rel="noopener noreferrer"
-                boutus_container
                 className={styles.menu_ele}
               >
                 Apply
@@ -249,11 +246,55 @@ const NavbarComponent = () => {
               <a
                 href={`${websiteBaseURL}contactus`}
                 rel="noopener noreferrer"
-                boutus_container
                 className={styles.menu_ele}
               >
                 contact us
               </a>
+            </div>
+
+            <div className={styles.menu_droppable_container}>
+              <div className={styles.menu_droppable_btn_ctnr}>
+                <div
+                  onClick={() => {
+                    handleDropdownToggle(
+                      themesDropdownREF,
+                      isThemesVisible,
+                      setThemesVisibility
+                    );
+                  }}
+                  className={styles.menu_droppable_btn}
+                >
+                  Themes
+                </div>
+                <IoMdArrowDropdown className={styles.menu_drop_icon} />
+              </div>
+              <div
+                ref={themesDropdownREF}
+                className={styles.menu_dropdown_ctnr}
+              >
+                <div className={styles.menu_ele_ctnr}>
+                  <div
+                    className={styles.menu_ele}
+                    onClick={() => {
+                      setTheme("light");
+                      console.log("light theme here");
+                    }}
+                  >
+                    Light Theme
+                  </div>
+                </div>
+                <div className={styles.menu_ele_ctnr}>
+                  <div
+                    className={styles.menu_ele}
+                    onClick={() => {
+                      setTheme("dark");
+                      console.log("dark theme here");
+                    }}
+                  >
+                    Dark Theme
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -11,6 +11,9 @@
 
   /* PRIMARY COLOR PALLET */
   --primary-bg: #ffffff;
+  --primary-bg-lighter: rgba(255, 255, 255, 0.9);
+  --primary-bg-always-light: #ffffff;
+
   --primary-black-one: #455a64;
   --primary-purple: #543fd3;
   --primary-yellow: #efb76c;
@@ -29,6 +32,31 @@
   --text-color-black: var(--text-color-always-black);
 }
 
+[data-theme="dark"] {
+
+  --primary-bg: #161718;
+  --primary-bg-lighter: rgba(22, 23, 24, 0.9);
+  --primary-bg-always-light: #ffffff;
+  
+  --primary-black-one: #455a64;
+  --primary-purple: #543fd3;
+  --primary-yellow: #efb76c;
+  --primary-dark-green: #41868e;
+  --primary-light-green-one: #c8dede;
+  --primary-light-green-two: #a4c8c8;
+  --primary-gray: #a8a8a8;
+  --secondary-bg-one: #fafafa;
+  --secondary-bg-two: #e5e5e5;
+  --border_gray: #949494;
+  --hint-or-error-message-color: #595959;
+  --text-color-always-black : #c2bfa0;
+  --dark-bg: #021529;
+
+  /* INHERITED COLORS */
+  --text-color-black: var(--text-color-always-black);
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -36,6 +64,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-bg) !important;
 }
 
 code {

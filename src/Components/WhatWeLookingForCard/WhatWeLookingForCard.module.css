@@ -3,7 +3,7 @@
   height: 40vh;
   width: 40vh;
   padding: 5vh;
-  background-color: var(--primary-bg);
+  background-color: var(--primary-bg-always-light);
   transition: background-color 0.3s ease-in-out;
   display: flex;
   justify-content: center;
