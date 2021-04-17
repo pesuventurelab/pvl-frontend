@@ -10,7 +10,7 @@ const UpcomingEventCard = (props) => {
       <a
         rel="noopener noreferrer"
         className={`${"basic-button_one"} ${styles.know_more_btn}`}
-        href="#"
+        href={props.link}
       >Know More</a>
     </div>
   );

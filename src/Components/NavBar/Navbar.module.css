@@ -79,9 +79,9 @@
 }
 
 .drawer_heading {
-  color: var(--primary-yellow);
+  color: var(--primary-dark-green);
   font-family: var(--fonts-heading);
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 900;
   margin-bottom: 2vh;
 }
@@ -89,7 +89,7 @@
 .drawer_para {
   color: var(--primary-yellow);
   font-family: var(--fonts-heading);
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 900;
   margin-bottom: 2vh;
 }

@@ -13,12 +13,10 @@ const OpportunitiesPage = () => {
   let [curPositions, setCurPositions] = useState([]);
   let [curTypes, setCurTypes] = useState([]);
 
-
   useEffect(() => {
     console.log(curTypes);
     console.log(curPositions);
-
-  }, [curPositions, curTypes])
+  }, [curPositions, curTypes]);
 
   return (
     <div className={styles.container}>
@@ -151,10 +149,13 @@ const OpportunitiesPage = () => {
             </Option>
           </Select>
         </div>
-        <OpportunitiesCard />
-        <OpportunitiesCard />
-        <OpportunitiesCard />
-        <OpportunitiesCard />
+        <div className={styles.opportunities_cards_ctnr}>
+          <OpportunitiesCard category={"Developer"} />
+          <OpportunitiesCard category={"Designer"} />
+          <OpportunitiesCard category={"Finance"} />
+          <OpportunitiesCard category={"Analyst"} />
+          <OpportunitiesCard category={"Hr"} />
+        </div>
       </div>
 
       <div className={styles.footer_heading}>

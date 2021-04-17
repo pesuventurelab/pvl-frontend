@@ -50,6 +50,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 3vh;
 }
 
 .tags_text {
@@ -63,6 +64,18 @@
     padding: 7px 13px;
     border-radius: 36px; */
 }
+
+.opportunities_cards_ctnr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid green;
+  padding: 2vh 1vw 7vh 1vw;
+  max-height: 70vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 
 .footer_heading {
   color: var(--primary-yellow);

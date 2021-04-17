@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 /*LIBRARY IMPORTS */
 // import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 
-
 /*IMPORT VARIABLES */
 import { websiteBaseURL } from "../../Config/Config";
+import { upcomingEvents } from "../../Data/Data";
 
 /* IMPORT COMPONENT HERE */
 import UpcomingEventCard from "../../Components/UpcomingEventCard/UpcomingEventCard";
@@ -82,29 +82,23 @@ const HomePage = () => {
           <img className={styles.section_banner} src={BANNER_4} alt="Images" />
         </div>
       </div>
-      <div className={styles.section_heading}>upcoming events</div>
+
+      {upcomingEvents.length > 0 ? (
+        <div className={styles.section_heading}>upcoming events</div>
+      ) : (
+        <></>
+      )}
+
       <div id={styles.upcoming_events} className={styles.section}>
-        <UpcomingEventCard
-          img={BANNER_1}
-          title={"Dummy title"}
-          para={
-            "lorem ipsum doler sit tues le maro dumero preppo ilahi mera ji ya ye ye"
-          }
-        />
-        <UpcomingEventCard
-          img={BANNER_9}
-          title={"Dummy title"}
-          para={
-            "lorem ipsum doler sit tues le maro dumero preppo ilahi mera ji ya ye ye"
-          }
-        />
-        <UpcomingEventCard
-          img={BANNER_17}
-          title={"Dummy title"}
-          para={
-            "lorem ipsum doler sit tues le maro dumero preppo ilahi mera ji ya ye ye"
-          }
-        />
+        {upcomingEvents.map((item, index) => (
+          <UpcomingEventCard
+            img={BANNER_1}
+            title={item.title}
+            para={item.para}
+            link={item.link}
+            key={index}
+          />
+        ))}
       </div>
 
       <div className={styles.section_heading}>our process</div>
@@ -157,7 +151,10 @@ const HomePage = () => {
             }
           />
         </div>
-        <div id={styles.what_we_looking_for_second_section} className={styles.what_we_looking_for_card_section}>
+        <div
+          id={styles.what_we_looking_for_second_section}
+          className={styles.what_we_looking_for_card_section}
+        >
           <WhatWeLookingForCard
             title={"Social Tech Ideas"}
             para={

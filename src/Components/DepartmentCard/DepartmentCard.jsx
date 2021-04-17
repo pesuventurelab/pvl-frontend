@@ -53,7 +53,7 @@ const DepartmentCard = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.dept_info_wrapper}>
-        <img className={styles.banner} src={BANNER} alt="Image" />
+        <img className={styles.banner} src={props.banner} alt="Image" />
         <div className={styles.dept_info_ctnr}>
           <div className={styles.title}>{props.title}</div>
           <p className={styles.para}>{props.para}</p>

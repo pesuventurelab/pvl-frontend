@@ -42,15 +42,16 @@ const NavbarComponent = () => {
       menuDrawerREF.current.style.left = "-100vw";
     } else {
       menuDrawerREF.current.style.left = "0";
+      menuDrawerREF.current.style.left = "0";
     }
   };
-
+  
   let [isAboutUsVisible, setAboutUsVisibility] = useState(false);
   const aboutUsDropdownREF = useRef(null);
-
+  
   let [isPESVisible, setPESVisibility] = useState(false);
   const pesDropdownRef = useRef(null);
-
+  
   const handleDropdownToggle = (ctnrRef, curState, setCurState) => {
     setCurState(!curState);
     if (curState) {
@@ -192,6 +193,7 @@ const NavbarComponent = () => {
                     href="https://pes.edu/"
                     rel="noopener noreferrer"
                     boutus_container
+                    target="_blank"
                     className={styles.menu_ele}
                   >
                     pes
@@ -202,6 +204,7 @@ const NavbarComponent = () => {
                     href="https://cie.pes.edu/"
                     rel="noopener noreferrer"
                     boutus_container
+                    target="_blank"
                     className={styles.menu_ele}
                   >
                     CIE
@@ -240,6 +243,16 @@ const NavbarComponent = () => {
                 className={styles.menu_ele}
               >
                 Apply
+              </a>
+            </div>
+            <div className={styles.menu_ele_ctnr}>
+              <a
+                href={`${websiteBaseURL}contactus`}
+                rel="noopener noreferrer"
+                boutus_container
+                className={styles.menu_ele}
+              >
+                contact us
               </a>
             </div>
           </div>
