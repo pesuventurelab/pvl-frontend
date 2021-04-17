@@ -28,3 +28,16 @@
   height: auto;
   margin: 0px auto;
 }
+
+
+@media only screen and (max-width: 1024px) {
+
+  .heading {
+    font-size: 42px;
+    margin-bottom: 5vh;
+  }
+
+  .banner {
+    width: 100%;
+  }
+}
