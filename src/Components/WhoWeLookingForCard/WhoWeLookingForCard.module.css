@@ -41,3 +41,35 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner {
+    width:  70vw;
+  }
+
+  .info_container {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 26px;
+    text-align: center;
+    width: 90vw;
+  }
+  
+  .para {
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
+    margin : 0 auto;
+  }
+
+
+}

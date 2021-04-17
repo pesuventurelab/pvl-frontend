@@ -1,17 +1,16 @@
 .container {
   font-size: 32px;
-  border-top: 1px solid green;
+  /* border-top: 1px solid green; */
   display: flex;
   flex-direction: column;
 }
 
-
 /* SECTION ONE */
-#section_one{
-
+#section_one {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-height: 90vh;
 }
 
 .section_one_info_ctnr {
@@ -47,7 +46,6 @@
 }
 
 #PVL_LOGO {
-
   width: 40%;
   height: auto;
   margin: auto 0px;
@@ -55,15 +53,17 @@
 
 .upper_section_container:nth-child(even) p:nth-child(odd) {
   color: var(--primary-yellow);
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .upper_section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* border: 3px solid green; */
 }
-
 
 .upper_section_info_ctnr {
   color: var(--primary-dark-green);
@@ -76,7 +76,7 @@
 }
 
 .section_banner {
-  width: 40%;
+  width: 50%;
   height: auto;
   margin: auto 0px;
 }
@@ -95,11 +95,14 @@
   margin-bottom: 128px;
 }
 
-
 #upcoming_events {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+}
+
+#step_four {
+  margin-bottom: 5vh;
 }
 
 #what_we_offer {
@@ -121,8 +124,8 @@
 
 #what_we_looking_for_second_section {
   position: relative;
-  top : -275px;
-  left : 50px;
+  top: -275px;
+  left: 50px;
 }
 
 #who_we_looking_for {
@@ -136,4 +139,97 @@
   font-size: 36px;
   margin-bottom: 42px;
   letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #section_one {
+    flex-direction: column-reverse;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0px auto;
+    padding: 5vw;
+  }
+
+  .section_one_info_ctnr {
+    text-align: center;
+  }
+
+  #section_one_header {
+    font-size: 42px;
+  }
+
+  #section_one_secondary_header {
+    font-size: 28px;
+    margin-bottom: 2vh;
+  }
+
+  .section_one_para {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  /*SECTIONS */
+
+  .upper_section {
+    margin: 0;
+    margin-bottom: 5vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+  }
+
+  .section_banner {
+    width: 90%;
+    margin-bottom: 5vh;
+  }
+  .upper_section_info_ctnr {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  #upper_section_two, #upper_section_four {
+    flex-direction: column-reverse;
+  }
+
+
+  /*SECTION HEADER*/
+  .section_heading {
+    font-size: 32px;
+    padding: 0 1vw;
+  }
+
+  /*UPCOMING_EVENTS */
+  #upcoming_events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* WHAT WE OFFER */
+  #what_we_offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* WHAT WE R LOOKING FOR */
+  #what_we_looking_for {
+
+  }
+
+  .what_we_looking_for_card_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #what_we_looking_for_second_section {
+    top: 0;
+    left: 0;
+  }
+
+  #contact_us_btn {
+    font-size: 24px;
+  }
 }

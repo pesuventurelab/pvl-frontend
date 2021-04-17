@@ -34,15 +34,16 @@
   color: var(--primary-yellow);
   font-weight: 900;
   font-family: var(--fonts-heading);
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0px;
+  margin-bottom: 2vh;
 }
 
 .tagline {
   color: var(--primary-yellow);
   font-weight: 900;
   font-family: var(--fonts-heading);
-  font-size: 2.7em;
+  font-size: 2rem;
   margin: 0px;
   margin-bottom: 2vh;
   border-bottom: 2px solid var(--primary-yellow);
@@ -131,7 +132,6 @@
   .icons_container {
     justify-content: center;
   }  
-
 
 }
 

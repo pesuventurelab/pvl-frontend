@@ -4,7 +4,7 @@
   border-radius: 36px;
   padding: 20px;
   width: 90%;
-  margin-bottom: 80px;
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
 }
@@ -32,4 +32,23 @@
 
 .know_more_btn {
   text-align: center;
+}
+
+@media only screen and (max-width: 1124px) {
+
+  .container {
+    width: 90vw;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  .know_more_btn {
+    font-size: 18px;
+  }
 }
