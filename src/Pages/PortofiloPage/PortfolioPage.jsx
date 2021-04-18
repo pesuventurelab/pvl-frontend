@@ -20,6 +20,7 @@ const PortfolioPage = () => {
       <div className={styles.portfolio_cards_container}>
         <PortfolioCard title={"Pesu venture Labs"} para={"males tiego huahiu kHDJ KJQHDK QEJEHDKQEHWE F HFDFKQK HWKJF HWK KUQHDQ UFJQQKJ HIQUEHDH QHI IDH II QWEWFDBWWJ JBWEB B BWF "} />
         <PortfolioCard title={"Pesu venture Labs"} para={"males tiego huahiu kHDJ KJQHDK QEJEHDKQEHWE F HFDFKQK HWKJF HWK KUQHDQ UFJQQKJ HIQUEHDH QHI IDH II QWEWFDBWWJ JBWEB B BWF "} />
+        <PortfolioCard title={"Pesu venture Labs"} para={"males tiego huahiu kHDJ KJQHDK QEJEHDKQEHWE F HFDFKQK HWKJF HWK KUQHDQ UFJQQKJ HIQUEHDH QHI IDH II QWEWFDBWWJ JBWEB B BWF "} />
       </div>
       < Footer />
     </div>

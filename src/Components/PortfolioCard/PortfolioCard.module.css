@@ -1,6 +1,6 @@
 .container {
-  width: 40vw;
-  height: 40vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 5px;
   border: 3px solid var(--primary-bg);
   background-color: var(--primary-bg);
@@ -29,7 +29,7 @@
 
 .show_drawer_btn {
   position: absolute;
-  bottom: 10vw;
+  bottom: 1vw;
   color: var(--primary-bg);
   background-color: var(--primary-dark-green);
   margin: 0 auto;
@@ -46,7 +46,7 @@
 
 .container:hover .show_drawer_btn {
   opacity: 1;
-  bottom: 15vw;
+  bottom: 10vw;
 }
 
 /* DRAWER */
@@ -128,15 +128,19 @@
   font-size: 42px;
 }
 
+
+
+
 @media only screen and (max-width: 1024px) {
   .container {
     border: 1px solid var(--text-color-always-black);
-    width: 90vw;
-    height: 90vw;
+    width: 40vw;
+    height: 40vw;
+    padding: 2vw;
   }
 
   .title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   /* DRAWER */
@@ -167,5 +171,15 @@
       width: 95vw;
       font-size: 14px;
       padding-bottom: 10vh;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .container {
+    width: 80vw;
+    height: 80vw;
+    padding: 2vw;
   }
 }
