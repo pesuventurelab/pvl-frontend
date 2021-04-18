@@ -38,6 +38,7 @@
 
   .container {
     width: 90vw;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
   }
 
   .title {

@@ -85,3 +85,54 @@
     font-family: var(--fonts-heading);
     text-transform: uppercase;
 }
+
+
+@media only screen and (max-width: 1224px) {
+    .dept_members_ctnr {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+    .container {
+        box-shadow: none;
+        text-align: center;
+        width: 100vw;
+        /* border: 1px solid red; */
+    }
+
+    .dept_info_wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .banner {
+        width: 80vw;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    .view_team_btn  {
+        margin: 0 auto;
+        width: 60vw;
+    }
+
+    /* CARD */
+    .dept_members_ctnr {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .member_name {
+        font-size: 16px;
+    }
+}
+

@@ -23,7 +23,7 @@ const MeetTheTeamPage = () => {
         <DepartmentCard banner={BANNER_10} title={"Developers  Team"} para={"lorem ipsum doler sit tues la meri speaki nichao hinta gullu bhyga iu aj jhqolnkinuw kuGH KJBU KG SK"} />
         <DepartmentCard banner={BANNER_11} title={"Marketing  Team"} para={"lorem ipsum doler sit tues la meri speaki nichao hinta gullu bhyga iu aj jhqolnkinuw kuGH KJBU KG SK"} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

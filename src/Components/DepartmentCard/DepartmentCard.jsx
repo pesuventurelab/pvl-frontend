@@ -24,12 +24,18 @@ const ProfileImageContainer = styled.div`
       border: 5px solid #41868e;
   }
 
-  @media screen and (max-width: 800px) {
+  @media only screen and (max-width: 1024px) {
     height: 100px;
     width: 100px;
     top: -50px;
     border: 2px solid #fafafa;
   }
+
+  @media only screen and (max-width: 700px) {
+    height: 70px;
+    width: 70px;
+  }
+
 `;
 
 
