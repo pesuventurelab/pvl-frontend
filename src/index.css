@@ -34,10 +34,10 @@
 
 [data-theme="dark"] {
 
+  /* https://dbramwell.github.io/react-animate-on-scroll/#home */
   --primary-bg: #161718;
   --primary-bg-lighter: rgba(22, 23, 24, 0.9);
   --primary-bg-always-light: #ffffff;
-  
   --primary-black-one: #455a64;
   --primary-purple: #543fd3;
   --primary-yellow: #efb76c;

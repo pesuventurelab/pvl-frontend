@@ -35,78 +35,133 @@ import BANNER_16 from "../../Images/Banners/banner16.svg";
 import BANNER_17 from "../../Images/Banners/banner17.svg";
 import BANNER_20 from "../../Images/Banners/banner20.svg";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 const HomePage = () => {
   return (
     <div className={styles.container}>
       <div id={styles.section_one} className={styles.section}>
         <div className={styles.section_one_info_ctnr}>
-          <div id={styles.section_one_header}>PESU VENTURE LABS</div>
-          <div id={styles.section_one_secondary_header}>
-            Make your ideas see the light
-          </div>
-          <p className={styles.section_one_para}>
-            A unique fund that operates in the pre-prototype or pre-ideation
-            phase. Founder-friendly terms (no special rights to PVL) and
-            flexibility in terms of equity spent{" "}
-          </p>
+          <ScrollAnimation duration="1" animateIn="fadeInUp">
+            <div id={styles.section_one_header}>PESU VENTURE LABS</div>
+          </ScrollAnimation>
+          <ScrollAnimation duration="1.2" animateIn="fadeInUp">
+            <div id={styles.section_one_secondary_header}>
+              Make your ideas see the light
+            </div>
+          </ScrollAnimation>
+
+          <ScrollAnimation duration="1.4" animateIn="fadeInUp">
+            <p className={styles.section_one_para}>
+              A unique fund that operates in the pre-prototype or pre-ideation
+              phase. Founder-friendly terms (no special rights to PVL) and
+              flexibility in terms of equity spent{" "}
+            </p>
+          </ScrollAnimation>
         </div>
         <img id={styles.PVL_LOGO} src={PVL_LOGO} alt="Image" />
       </div>
 
       <div className={styles.upper_section_container}>
-        <div id={styles.upper_section_one} className={`${styles.upper_section} ${styles.section}`}>
-          <img loading="lazy" className={styles.section_banner} src={BANNER_6} alt="Images" />
+        <div
+          id={styles.upper_section_one}
+          className={`${styles.upper_section} ${styles.section}`}
+        >
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_6}
+            alt="Images"
+          />
           <p className={styles.upper_section_info_ctnr}>
             Funding of <br /> <b>$150K+</b>
           </p>
         </div>
 
-        <div id={styles.upper_section_two} className={`${styles.upper_section} ${styles.section}`}>
+        <div
+          id={styles.upper_section_two}
+          className={`${styles.upper_section} ${styles.section}`}
+        >
           <p className={styles.upper_section_info_ctnr}>
             Research and Market insights in focused areas
           </p>
-          <img loading="lazy" className={styles.section_banner} src={BANNER_7} alt="Images" />
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_7}
+            alt="Images"
+          />
         </div>
 
-        <div id={styles.upper_section_three} className={`${styles.upper_section} ${styles.section}`}>
-          <img loading="lazy" className={styles.section_banner} src={BANNER_16} alt="Images" />
+        <div
+          id={styles.upper_section_three}
+          className={`${styles.upper_section} ${styles.section}`}
+        >
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_16}
+            alt="Images"
+          />
           <p className={styles.upper_section_info_ctnr}>
             Mentoring, connect to investors and customers
           </p>
         </div>
 
-        <div id={styles.upper_section_four} className={`${styles.upper_section} ${styles.section}`}>
+        <div
+          id={styles.upper_section_four}
+          className={`${styles.upper_section} ${styles.section}`}
+        >
           <p className={styles.upper_section_info_ctnr}>
             Resources to get started with your plan quickly
           </p>
-          <img loading="lazy" className={styles.section_banner} src={BANNER_4} alt="Images" />
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_4}
+            alt="Images"
+          />
         </div>
       </div>
 
       {upcomingEvents.length > 0 ? (
-        <div className={styles.section_heading}>upcoming events</div>
+        <ScrollAnimation duration="1" animateIn="fadeInUp">
+          <div className={styles.section_heading}>upcoming events</div>
+        </ScrollAnimation>
       ) : (
         <></>
       )}
 
       <div id={styles.upcoming_events} className={styles.section}>
         {upcomingEvents.map((item, index) => (
-          <UpcomingEventCard
-            img={BANNER_1}
-            title={item.title}
-            para={item.para}
-            link={item.link}
-            key={index}
-          />
+          <ScrollAnimation
+            duration={Math.random() * 1.5 + 1}
+            animateIn="slideInUp"
+          >
+            <UpcomingEventCard
+              img={BANNER_1}
+              title={item.title}
+              para={item.para}
+              link={item.link}
+              key={index}
+            />
+          </ScrollAnimation>
         ))}
       </div>
 
-      <div className={styles.section_heading}>our process</div>
+      <ScrollAnimation duration="1" animateIn="fadeInUp">
+        <div className={styles.section_heading}>our process</div>
+      </ScrollAnimation>
+
       <img loading="lazy" id={styles.step_one} src={STEP_1} />
       <img loading="lazy" id={styles.step_two} src={STEP_2} />
       <img loading="lazy" id={styles.step_three} src={STEP_3} />
       <img loading="lazy" id={styles.step_four} src={STEP_4} />
-      <div className={styles.section_heading}>what we offer</div>
+
+      <ScrollAnimation duration="1" animateIn="fadeInUp">
+        <div className={styles.section_heading}>what we offer</div>
+      </ScrollAnimation>
+
       <div id={styles.what_we_offer} className={styles.section}>
         <WhatWeOfferCard
           img={BANNER_6}
@@ -135,7 +190,11 @@ const HomePage = () => {
           para={"Markets an customers, Partnerships, Investors,Team members"}
         />
       </div>
-      <div className={styles.section_heading}>what we're looking for</div>
+
+      <ScrollAnimation duration="1" animateIn="fadeInUp">
+        <div className={styles.section_heading}>what we're looking for</div>
+      </ScrollAnimation>
+
       <div id={styles.what_we_looking_for} className={styles.section}>
         <div className={styles.what_we_looking_for_card_section}>
           <WhatWeLookingForCard

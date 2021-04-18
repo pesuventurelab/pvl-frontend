@@ -76,6 +76,9 @@
   font-size: 64px;
   color: var(--primary-dark-green);
   cursor: pointer;
+  box-shadow: 1px 1px 10px 2px var(--text-color-always-black);
+  border-radius: 50%;
+  padding: 0px;
 }
 
 .drawer_info_ctnr {
