@@ -1,3 +1,171 @@
 .container {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 5px;
+  border: 3px solid var(--primary-bg);
+  background-color: var(--primary-bg);
+  transition: border-color 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container:hover {
+  border-color: var(--text-color-always-black);
+}
+
+.title {
+  font-family: var(--fonts-heading);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--primary-dark-green);
+  background-color: var(--primary-bg);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.show_drawer_btn {
+  position: absolute;
+  bottom: 10vw;
+  color: var(--primary-bg);
+  background-color: var(--primary-dark-green);
+  margin: 0 auto;
+  padding: 7px 13px;
+  font-family: var(--fonts-heading);
+  font-weight: 900;
+  font-size: 16px;
+  border-radius: 13px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container:hover .show_drawer_btn {
+  opacity: 1;
+  bottom: 15vw;
+}
+
+/* DRAWER */
+.portfolio_card_drawer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-bg);
+  left: 200vw;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: left 0.3s ease-in-out;
+  z-index: 105;
+}
+
+.close_btn_ctnr {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.close_icon {
+  font-size: 64px;
+  color: var(--primary-dark-green);
+  cursor: pointer;
+}
+
+.drawer_info_ctnr {
+  width: 80%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+  border: 2px solid var(--primary-dark-green);
+}
+
+.para {
+  width: 60%;
+  color: var(--primary-dark-green);
+  font-family: var(--fonts-paragraph);
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 3vh 0;
+  padding-bottom: 2vh;
+  border-bottom: 5px solid var(--primary-dark-green);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon_wrapper {
+  /* border: 1px solid red; */
+  color: var(--primary-dark-green);
+  margin: 0 7px;
+}
+
+.icon_wrapper:hover {
+  color: var(--primary-dark-green);
+}
+
+.icon {
+  background-color: var(--primary-bg);
+  font-size: 42px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    border: 1px solid var(--text-color-always-black);
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  /* DRAWER */
+  .portfolio_card_drawer {
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+
+  .close_btn_ctnr {
+      width: 100vw;
+      /* border: 2px solid red; */
+      padding: 2vh 0;
+    }
     
+    
+    .drawer_info_ctnr {
+        padding-top: 10vh;
+      /* border: 2px solid red; */
+      width: 100vw;
+  }
+
+  .logo {
+      width: 22vh;
+      height: 22vh;
+  }
+
+  .para {
+      width: 95vw;
+      font-size: 14px;
+      padding-bottom: 10vh;
+  }
 }
