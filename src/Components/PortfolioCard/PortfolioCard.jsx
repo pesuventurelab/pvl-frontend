@@ -2,9 +2,10 @@ import React, { useRef, useState } from "react";
 import styles from "./PortfolioCard.module.css";
 
 import { AiFillCloseCircle } from "react-icons/ai";
-import { FaGlobe, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGlobe, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import BANNER from "../../Images/Banners/banner1.svg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const PortfolioCard = (props) => {
   const drawerREF = useRef(null);
@@ -19,7 +20,9 @@ const PortfolioCard = (props) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.title}>{props.title}</div>
+      <ScrollAnimation duration="1" animateIn="fadeInUp">
+        <div className={styles.title}>{props.title}</div>
+      </ScrollAnimation>
       <div
         onClick={() => {
           toggleDrawer(true);
@@ -42,28 +45,53 @@ const PortfolioCard = (props) => {
           <div className={styles.title}>{props.title}</div>
           <p className={styles.para}>{props.para}</p>
           <div className={styles.icons_container}>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className={styles.icon_wrapper}
-            >
-              <FaGlobe className={styles.icon} />
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className={styles.icon_wrapper}
-            >
-              <FaInstagram className={styles.icon} />
-            </a>
+            {props.website === "" ? (
+              <></>
+            ) : (
+              <a
+                rel="noopener noreferrer"
+                href={props.website}
+                className={styles.icon_wrapper}
+              >
+                <FaGlobe className={styles.icon} />
+              </a>
+            )}
 
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className={styles.icon_wrapper}
-            >
-              <FaLinkedin className={styles.icon} />
-            </a>
+            {props.instagram === "" ? (
+              <></>
+            ) : (
+              <a
+                rel="noopener noreferrer"
+                href={props.instagram}
+                className={styles.icon_wrapper}
+              >
+                <FaInstagram className={styles.icon} />
+              </a>
+            )}
+
+            {props.linkedin === "" ? (
+              <></>
+            ) : (
+              <a
+                rel="noopener noreferrer"
+                href={props.linkedin}
+                className={styles.icon_wrapper}
+              >
+                <FaLinkedin className={styles.icon} />
+              </a>
+            )}
+
+            {props.twitter === "" ? (
+              <></>
+            ) : (
+              <a
+                rel="noopener noreferrer"
+                href={props.twitter}
+                className={styles.icon_wrapper}
+              >
+                <FaTwitter className={styles.icon} />
+              </a>
+            )}
           </div>
         </div>
       </div>

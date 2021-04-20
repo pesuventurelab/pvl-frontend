@@ -5,8 +5,6 @@ import styles from "./PortfolioPage.module.css";
 import PortfolioCard from "../../Components/PortfolioCard/PortfolioCard";
 import Footer from "../../Components/Footer/Footer";
 
-import ScrollAnimation from "react-animate-on-scroll";
-
 import { portfolioData } from "../../Data/Data";
 
 const PortfolioPage = () => {
@@ -22,7 +20,14 @@ const PortfolioPage = () => {
 
       <div className={styles.portfolio_cards_container}>
         {portfolioData.map((item, index) => (
-            <PortfolioCard title={item.title} para={item.para} />
+          <PortfolioCard
+            title={item.title}
+            para={item.para}
+            linkedin={item.linkedin}
+            twitter={item.twitter}
+            instagram={item.instagram}
+            website={item.website}
+          />
         ))}
       </div>
       <Footer />
