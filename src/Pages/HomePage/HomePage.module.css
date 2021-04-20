@@ -52,7 +52,7 @@
   width: 40%;
   height: auto;
   margin: auto 0px;
-  /* background-color: var(--primary-bg); */
+  background-color: var(--primary-bg);
 }
 
 .upper_section_container:nth-child(even) p:nth-child(odd) {

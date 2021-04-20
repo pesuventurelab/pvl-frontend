@@ -83,7 +83,7 @@ export const portfolioData = [
     {
         "title" : "PESU Venture Labs",
         "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo, inventore",
-        "linkedin": "",
+        "linkedin": "#",
         "instagram" : "",
         "website" : "",
         "twitter" : "",
@@ -99,10 +99,10 @@ export const portfolioData = [
     {
         "title" : "PESU Venture Labs",
         "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo, inventore",
-        "linkedin": "",
+        "linkedin": "#",
         "instagram" : "",
-        "website" : "",
-        "twitter" : "",
+        "website" : "#",
+        "twitter" : "#",
     },
     {
         "title" : "PESU Venture Labs",

@@ -185,7 +185,7 @@ const NavbarComponent = () => {
                   }}
                   className={styles.menu_droppable_btn}
                 >
-                  PES
+                  PESU
                 </div>
                 <IoMdArrowDropdown className={styles.menu_drop_icon} />
               </div>
@@ -197,7 +197,7 @@ const NavbarComponent = () => {
                     target="_blank"
                     className={styles.menu_ele}
                   >
-                    pes
+                    PESU
                   </a>
                 </div>
                 <div className={styles.menu_ele_ctnr}>
