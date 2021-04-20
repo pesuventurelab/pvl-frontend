@@ -67,14 +67,18 @@ const HomePage = () => {
           id={styles.upper_section_one}
           className={`${styles.upper_section} ${styles.section}`}
         >
-          <img
-            loading="lazy"
-            className={styles.section_banner}
-            src={BANNER_6}
-            alt="Images"
-          />
+          <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+            <img
+              loading="lazy"
+              className={styles.section_banner}
+              src={BANNER_6}
+              alt="Images"
+            />
+          </ScrollAnimation>
           <p className={styles.upper_section_info_ctnr}>
-            Funding of <br /> <b>$150K+</b>
+            <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+              Funding of <br /> <b>$150K+</b>
+            </ScrollAnimation>
           </p>
         </div>
 
@@ -83,28 +87,36 @@ const HomePage = () => {
           className={`${styles.upper_section} ${styles.section}`}
         >
           <p className={styles.upper_section_info_ctnr}>
-            Research and Market insights in focused areas
+            <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+              Research and Market insights in focused areas
+            </ScrollAnimation>
           </p>
-          <img
-            loading="lazy"
-            className={styles.section_banner}
-            src={BANNER_7}
-            alt="Images"
-          />
+          <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+            <img
+              loading="lazy"
+              className={styles.section_banner}
+              src={BANNER_7}
+              alt="Images"
+            />
+          </ScrollAnimation>
         </div>
 
         <div
           id={styles.upper_section_three}
           className={`${styles.upper_section} ${styles.section}`}
         >
-          <img
-            loading="lazy"
-            className={styles.section_banner}
-            src={BANNER_16}
-            alt="Images"
-          />
+          <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+            <img
+              loading="lazy"
+              className={styles.section_banner}
+              src={BANNER_16}
+              alt="Images"
+            />
+          </ScrollAnimation>
           <p className={styles.upper_section_info_ctnr}>
-            Mentoring, connect to investors and customers
+            <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+              Mentoring, connect to investors and customers
+            </ScrollAnimation>
           </p>
         </div>
 
@@ -113,14 +125,18 @@ const HomePage = () => {
           className={`${styles.upper_section} ${styles.section}`}
         >
           <p className={styles.upper_section_info_ctnr}>
-            Resources to get started with your plan quickly
+            <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+              Resources to get started with your plan quickly
+            </ScrollAnimation>
           </p>
-          <img
-            loading="lazy"
-            className={styles.section_banner}
-            src={BANNER_4}
-            alt="Images"
-          />
+          <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+            <img
+              loading="lazy"
+              className={styles.section_banner}
+              src={BANNER_4}
+              alt="Images"
+            />
+          </ScrollAnimation>
         </div>
       </div>
 
@@ -129,7 +145,7 @@ const HomePage = () => {
           <div className={styles.section_heading}>upcoming events</div>
         </ScrollAnimation>
       ) : (
-        <></>
+        <div></div>
       )}
 
       <div id={styles.upcoming_events} className={styles.section}>
@@ -152,43 +168,72 @@ const HomePage = () => {
       <ScrollAnimation duration="1" animateIn="fadeInUp">
         <div className={styles.section_heading}>our process</div>
       </ScrollAnimation>
+      <img
+        loading="lazy"
+        className={styles.step_img}
+        id={styles.step_one}
+        src={STEP_1}
+      />
+      <img
+        loading="lazy"
+        className={styles.step_img}
+        id={styles.step_two}
+        src={STEP_2}
+      />
+      <img
+        loading="lazy"
+        className={styles.step_img}
+        id={styles.step_three}
+        src={STEP_3}
+      />
 
-      <img loading="lazy" id={styles.step_one} src={STEP_1} />
-      <img loading="lazy" id={styles.step_two} src={STEP_2} />
-      <img loading="lazy" id={styles.step_three} src={STEP_3} />
-      <img loading="lazy" id={styles.step_four} src={STEP_4} />
+      <img
+        loading="lazy"
+        className={styles.step_img}
+        id={styles.step_four}
+        src={STEP_4}
+      />
 
       <ScrollAnimation duration="1" animateIn="fadeInUp">
         <div className={styles.section_heading}>what we offer</div>
       </ScrollAnimation>
 
       <div id={styles.what_we_offer} className={styles.section}>
-        <WhatWeOfferCard
-          img={BANNER_6}
-          title={"Resource pool"}
-          para={
-            "Design - UI, UX, product design, packaging and models, technology expertise, programming and full stack development, access to Labs (Security/High-end computing/ Biotech), brand and marketing support,IP and legal support finance and operational support"
-          }
-        />
-        <WhatWeOfferCard
-          img={BANNER_20}
-          title={"funding"}
-          para={
-            "Financial support up to external funding, no operational overhead and cashflow issues, no challenges in hiring and finding talent"
-          }
-        />
-        <WhatWeOfferCard
-          img={BANNER_7}
-          title={"Personal Guidance"}
-          para={
-            "Business Planning, Company structuring and documentation, Pitch deck, presentations and positioning"
-          }
-        />
-        <WhatWeOfferCard
-          img={BANNER_5}
-          title={"Access"}
-          para={"Markets an customers, Partnerships, Investors,Team members"}
-        />
+        <ScrollAnimation duration="1.3" animateIn="fadeIn">
+          <WhatWeOfferCard
+            img={BANNER_6}
+            title={"Resource pool"}
+            para={
+              "Product design, packaging and models, technology expertise, full stack development, access to Labs, brand & marketing support,IP and legal support finance and operational support"
+            }
+          />
+        </ScrollAnimation>
+
+        <ScrollAnimation duration="1.3" animateIn="fadeIn">
+          <WhatWeOfferCard
+            img={BANNER_20}
+            title={"funding"}
+            para={
+              "Financial support up to external funding, no operational overhead and cashflow issues, no challenges in hiring and finding talent"
+            }
+          />
+        </ScrollAnimation>
+        <ScrollAnimation duration="1.3" animateIn="fadeIn">
+          <WhatWeOfferCard
+            img={BANNER_7}
+            title={"Personal Guidance"}
+            para={
+              "Business Planning, Company structuring and documentation, Pitch deck, presentations and positioning"
+            }
+          />
+        </ScrollAnimation>
+        <ScrollAnimation duration="1.3" animateIn="fadeIn">
+          <WhatWeOfferCard
+            img={BANNER_5}
+            title={"Access"}
+            para={"Markets an customers, Partnerships, Investors,Team members"}
+          />
+        </ScrollAnimation>
       </div>
 
       <ScrollAnimation duration="1" animateIn="fadeInUp">
@@ -197,38 +242,51 @@ const HomePage = () => {
 
       <div id={styles.what_we_looking_for} className={styles.section}>
         <div className={styles.what_we_looking_for_card_section}>
-          <WhatWeLookingForCard
-            title={"deep tech ideas"}
-            para={
-              "Ideas around IoT, Automation, Extended Reality (AR,ER,VR), quantum computing, AI/ML, personalized and predictive medicine"
-            }
-          />
-          <WhatWeLookingForCard
-            title={"Campus Tech Ideas"}
-            para={
-              "Ideas that can transform the way academic programs are created and delivered"
-            }
-          />
+          <ScrollAnimation duration="0.7" animateIn="fadeInLeft">
+            <WhatWeLookingForCard
+              title={"deep tech ideas"}
+              para={
+                "Ideas around IoT, Automation, Extended Reality (AR,ER,VR), quantum computing, AI/ML, personalized and predictive medicine"
+              }
+            />
+          </ScrollAnimation>
+
+          <ScrollAnimation duration="0.7" animateIn="fadeInRight">
+            <WhatWeLookingForCard
+              title={"Campus Tech Ideas"}
+              para={
+                "Ideas that can transform the way academic programs are created and delivered"
+              }
+            />
+          </ScrollAnimation>
         </div>
         <div
           id={styles.what_we_looking_for_second_section}
           className={styles.what_we_looking_for_card_section}
         >
-          <WhatWeLookingForCard
-            title={"Social Tech Ideas"}
-            para={
-              "Ideas that use  human, intellectual and digital resources in order to influence social processes."
-            }
-          />
-          <WhatWeLookingForCard
-            title={"Multi Disciplinary Innovation​"}
-            para={
-              "Ideas that demand multidisciplinary innovations involving disciplines like design, computing, biotech, engineering, devices, food tech and others"
-            }
-          />
+          <ScrollAnimation duration="0.9" animateIn="fadeInLeft">
+            <WhatWeLookingForCard
+              title={"Social Tech Ideas"}
+              para={
+                "Ideas that use  human, intellectual and digital resources in order to influence social processes."
+              }
+            />
+          </ScrollAnimation>
+          <ScrollAnimation duration="0.9" animateIn="fadeInRight">
+            <WhatWeLookingForCard
+              title={"Multi Disciplinary Innovation​"}
+              para={
+                "Ideas that demand multidisciplinary innovations involving disciplines like design, computing, biotech, engineering, devices, food tech and others"
+              }
+            />
+          </ScrollAnimation>
         </div>
       </div>
-      <div className={styles.section_heading}>who we're looking for</div>
+
+      <ScrollAnimation duration="1" animateIn="fadeInUp">
+        <div className={styles.section_heading}>who we're looking for</div>
+      </ScrollAnimation>
+
       <div id={styles.who_we_looking_for} className={styles.section}>
         <WhoWeLookingForCard
           img={BANNER_6}
@@ -253,14 +311,16 @@ const HomePage = () => {
         />
       </div>
 
-      <a
-        id={styles.contact_us_btn}
-        rel="noopener noreferrer"
-        href={websiteBaseURL + "contactus"}
-        className={`${"basic-button_one"}`}
-      >
-        COntact us
-      </a>
+      <ScrollAnimation duration="0.9" animateIn="fadeInUp">
+        <a
+          id={styles.contact_us_btn}
+          rel="noopener noreferrer"
+          href={websiteBaseURL + "contactus"}
+          className={`${"basic-button_one"}`}
+        >
+          COntact us
+        </a>
+      </ScrollAnimation>
 
       <Footer />
     </div>

@@ -1,8 +1,8 @@
 .container {
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 5px;
-  border: 3px solid var(--primary-bg);
+  border: 3px solid var(--grey-border);
   background-color: var(--primary-bg);
   transition: border-color 0.5s ease-in-out;
   display: flex;
@@ -11,6 +11,7 @@
   margin: 1vh;
   box-sizing: border-box;
   position: relative;
+  padding: 1vw;
 }
 
 .container:hover {
@@ -29,7 +30,7 @@
 
 .show_drawer_btn {
   position: absolute;
-  bottom: 1vw;
+  bottom: 0vw;
   color: var(--primary-bg);
   background-color: var(--primary-dark-green);
   margin: 0 auto;
@@ -39,14 +40,14 @@
   font-size: 16px;
   border-radius: 13px;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   transition: bottom 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .container:hover .show_drawer_btn {
   opacity: 1;
-  bottom: 10vw;
+  bottom: 4vw;
 }
 
 /* DRAWER */
@@ -61,7 +62,7 @@
   flex-direction: row;
   justify-content: space-between;
   transition: left 0.5s ease-in-out;
-  z-index: 105;
+  z-index: 110;
 }
 
 .close_btn_ctnr {

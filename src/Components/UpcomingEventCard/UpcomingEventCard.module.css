@@ -15,7 +15,7 @@
 }
 .title {
   font-family: var(--fonts-heading);
-  color: var(--primary-yellow);
+  color: var(--primary-dark-green);
   text-align: center;
   font-weight: 900;
   font-size: 26px;
@@ -24,9 +24,10 @@
 
 .para {
   font-family: var(--fonts-paragraph);
-  color: var(--primary-gray);
+  color: var(--primary-yellow);
   text-align: center;
   font-size: 18px;
+  font-weight: 900;
   margin-bottom: 5vh;
 }
 

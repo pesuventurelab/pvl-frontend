@@ -23,17 +23,18 @@
   display: flex;
   flex-direction: row;
   width: 10vw;
+  margin-left: 5vw;
 }
 
 .logo {
-  width: 36px;
-  height: 45px;
+  width: 56px;
+  height: auto;
   margin: auto 0px;
 }
 
 .logo_text {
   font-family: var(--fonts-heading);
-  font-size: 36px;
+  font-size: 42px;
   margin: auto 0px;
   color: var(--primary-dark-green);
   font-weight: bolder;
@@ -64,16 +65,17 @@
 .menu_drawer_left_col {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  background-color: var(--dark-bg);
+  width: 0%;
+  background-color: var(--primary-dark-green);
   color: var(--primary-yellow);
   align-items: center;
   text-align: center;
   padding: 0 2.5vw;
   overflow: hidden;
+  opacity: 1;
 }
 
-.drawer_logo {
+/* .drawer_logo {
   background-color: var(--dark-bg);
   width: 60%;
   margin-bottom: 2vh;
@@ -93,12 +95,12 @@
   font-size: 1.3rem;
   font-weight: 900;
   margin-bottom: 2vh;
-}
+} */
 
 .menu_drawer_right_col {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100vw;
   padding: 0 1vw;
 }
 

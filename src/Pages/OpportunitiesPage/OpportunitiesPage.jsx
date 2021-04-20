@@ -6,6 +6,7 @@ import { Select } from "antd";
 /* IMPORT COMPONENT HERE */
 import OpportunitiesCard from "../../Components/OpportunitiesCard/OpportunitiesCard";
 import { websiteBaseURL } from "../../Config/Config";
+import {opportunities} from "../../Data/Data";
 
 const { Option } = Select;
 
@@ -56,7 +57,7 @@ const OpportunitiesPage = () => {
       </p>
 
       <div className={styles.opportunities_container}>
-        <div className={styles.opportunities_filter_ctnr}>
+        {/* <div className={styles.opportunities_filter_ctnr}>
           <Select
             mode="multiple"
             style={{ width: "100%" }}
@@ -122,12 +123,15 @@ const OpportunitiesPage = () => {
             </Option>
           </Select>
         </div>
+         */}
         <div className={styles.opportunities_cards_ctnr}>
-          <OpportunitiesCard category={"Developer"} />
-          <OpportunitiesCard category={"Designer"} />
-          <OpportunitiesCard category={"Finance"} />
-          <OpportunitiesCard category={"Analyst"} />
-          <OpportunitiesCard category={"Human Resource Management"} />
+          {
+            opportunities.map((item, index) => (
+
+              <OpportunitiesCard category={item.category} position={item.position} summary={item.summary} link={item.link} type={item.type} />
+            ))
+          }
+
         </div>
       </div>
 

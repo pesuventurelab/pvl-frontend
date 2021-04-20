@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./PortfolioPage.module.css";
 
-
 /* IMPORT COMPONENTS */
 import PortfolioCard from "../../Components/PortfolioCard/PortfolioCard";
 import Footer from "../../Components/Footer/Footer";
+
+import ScrollAnimation from "react-animate-on-scroll";
+
+import { portfolioData } from "../../Data/Data";
 
 const PortfolioPage = () => {
   return (
@@ -18,11 +21,11 @@ const PortfolioPage = () => {
       </p>
 
       <div className={styles.portfolio_cards_container}>
-        <PortfolioCard title={"Pesu venture Labs"} para={"males tiego huahiu kHDJ KJQHDK QEJEHDKQEHWE F HFDFKQK HWKJF HWK KUQHDQ UFJQQKJ HIQUEHDH QHI IDH II QWEWFDBWWJ JBWEB B BWF "} />
-        <PortfolioCard title={"Pesu venture Labs"} para={"males tiego huahiu kHDJ KJQHDK QEJEHDKQEHWE F HFDFKQK HWKJF HWK KUQHDQ UFJQQKJ HIQUEHDH QHI IDH II QWEWFDBWWJ JBWEB B BWF "} />
-        <PortfolioCard title={"Pesu venture Labs"} para={"males tiego huahiu kHDJ KJQHDK QEJEHDKQEHWE F HFDFKQK HWKJF HWK KUQHDQ UFJQQKJ HIQUEHDH QHI IDH II QWEWFDBWWJ JBWEB B BWF "} />
+        {portfolioData.map((item, index) => (
+            <PortfolioCard title={item.title} para={item.para} />
+        ))}
       </div>
-      < Footer />
+      <Footer />
     </div>
   );
 };

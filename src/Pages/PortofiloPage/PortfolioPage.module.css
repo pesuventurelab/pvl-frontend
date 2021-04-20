@@ -39,7 +39,7 @@
 
 .portfolio_cards_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 90%;
   /* padding: 5vh; */
   align-items: center;

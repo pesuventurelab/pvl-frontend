@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   background-color: var(--primary-bg);
+  align-items: center;
+  overflow-x: hidden;
 }
 
 /* SECTION ONE */
@@ -74,11 +76,11 @@
   font-size: 48px;
   margin: auto 0px;
   text-align: center;
-  width: 40%;
+  width: 40vw;
 }
 
 .section_banner {
-  width: 50%;
+  width: 40vw;
   height: auto;
   margin: auto 0px;
 }
@@ -102,6 +104,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   margin-bottom: 40vh;
+}
+
+.step_img {
+  width: 100vw;
 }
 
 #step_four {

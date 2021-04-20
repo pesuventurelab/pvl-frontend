@@ -2,18 +2,20 @@
   background-color: var(--secondary-bg-one);
   box-shadow: 0px 11px 40px rgba(0, 0, 0, 0.1);
   border-radius: 36px;
-  padding: 20px;
-  width: 70%;
-  margin-bottom: 80px;
+  padding: 2vw;
+  min-width: 34vw;
+  min-height: 34vw;
+  margin: 4vh;
 }
 
 .banner {
   width: 100%;
   height: auto;
+  margin-bottom: 3vh;
 }
 .title {
   font-family: var(--fonts-heading);
-  color: var(--primary-yellow);
+  color: var(--primary-dark-green);
   text-align: center;
   font-weight: 900;
   font-size: 26px;
@@ -22,7 +24,8 @@
 
 .para {
   font-family: var(--fonts-paragraph);
-  color: var(--primary-gray);
+  color: var(--primary-yellow);
+  font-weight: 900;
   text-align: center;
   font-size: 18px;
 }

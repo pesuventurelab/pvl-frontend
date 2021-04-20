@@ -88,7 +88,7 @@ const NavbarComponent = () => {
 
       <div ref={menuDrawerREF} className={styles.menu_drawer_ctnr}>
         <div className={styles.menu_drawer_left_col}>
-          <img className={styles.drawer_logo} src={PVL_LOGO} alt="Image" />
+          {/* <img className={styles.drawer_logo} src={PVL_LOGO} alt="Image" />
           <div className={styles.drawer_heading}>PESU VENTURE LABS</div>
           <div className={styles.drawer_heading}>
             MAKE YOUR IDEAS SEE THE LIGHT
@@ -97,7 +97,7 @@ const NavbarComponent = () => {
             A unique fund that operates in the pre-prototype or pre-ideation
             phase. Founder-friendly terms (no special rights to PVL) and
             flexibility in terms of equity spent
-          </p>
+          </p> */}
         </div>
 
         <div className={styles.menu_drawer_right_col}>

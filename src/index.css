@@ -27,13 +27,14 @@
   --hint-or-error-message-color: #595959;
   --text-color-always-black : #1B1919;
   --dark-bg: #021529;
-
+  --grey-border: #f8f8f8;
+  
   /* INHERITED COLORS */
   --text-color-black: var(--text-color-always-black);
 }
 
 [data-theme="dark"] {
-
+  
   /* https://dbramwell.github.io/react-animate-on-scroll/#home */
   --primary-bg: #161718;
   --primary-bg-lighter: rgba(22, 23, 24, 0.9);
@@ -51,6 +52,8 @@
   --hint-or-error-message-color: #595959;
   --text-color-always-black : #c2bfa0;
   --dark-bg: #021529;
+
+  --grey-border: #f8f8f8;
 
   /* INHERITED COLORS */
   --text-color-black: var(--text-color-always-black);
