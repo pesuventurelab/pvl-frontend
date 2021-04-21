@@ -48,7 +48,8 @@ const AboutUsPage = () => {
         <p>
           PESU is one of the top 10 universities in India attracting some of the
           best brains in the country for research & studies. PES has special
-          focus on developing entrepreneurship through Centre for Inovation and Entrepreneurship (CIE).
+          focus on developing entrepreneurship through Centre for Inovation and
+          Entrepreneurship (CIE).
         </p>
         <img className={styles.section_banner} src={BANNER} alt="Image" />
       </div>
@@ -63,6 +64,17 @@ const AboutUsPage = () => {
           amongst others. Through its concern Upaghna, we are helping many
           amazing consumer product companies.
         </p>
+      </div>
+
+      <div id={styles.section_five} className={`${styles.section}`}>
+        <p>
+          Our first fund was to transform businesses that are already funded &
+          worth surviving. We invested in JustBOoks & Bonhomia ensured they are
+          transformed and survive Now we are working with PESU & few more
+          organizations to setup microfunds to provide quality dealflow for VC
+          echo systems.
+        </p>
+        <img className={styles.section_banner} src={BANNER} alt="Image" />
       </div>
 
       <Footer />

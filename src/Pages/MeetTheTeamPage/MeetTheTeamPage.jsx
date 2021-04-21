@@ -16,12 +16,15 @@ const MeetTheTeamPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>Meet the team</div>
-      <div className={styles.heading}>DEPARTMENTS</div>
       <div className={styles.departments_ctnr}>
-        <DepartmentCard banner={BANNER_2} title={"Analyst  Team"} para={"lorem ipsum doler sit tues la meri speaki nichao hinta gullu bhyga iu aj jhqolnkinuw kuGH KJBU KG SK"} />
-        <DepartmentCard banner={BANNER_14} title={"Design  Team"} para={"lorem ipsum doler sit tues la meri speaki nichao hinta gullu bhyga iu aj jhqolnkinuw kuGH KJBU KG SK"} />
-        <DepartmentCard banner={BANNER_10} title={"Developers  Team"} para={"lorem ipsum doler sit tues la meri speaki nichao hinta gullu bhyga iu aj jhqolnkinuw kuGH KJBU KG SK"} />
-        <DepartmentCard banner={BANNER_11} title={"Marketing  Team"} para={"lorem ipsum doler sit tues la meri speaki nichao hinta gullu bhyga iu aj jhqolnkinuw kuGH KJBU KG SK"} />
+        <DepartmentCard banner={BANNER_2} title={"Management partners"} para={"Strategic planning, employee and office  management  are few of the many ways how our  experienced management partners  contribute and enable PVL to reach new milestones everyday."} />
+        <DepartmentCard banner={BANNER_2} title={"Entrepreneur partner"} para={"These passionate and balanced individuals  are determined to build better teams and products. Their synergy with PVL has been the driving force in making PVL what it is today."} />
+        <DepartmentCard banner={BANNER_2} title={"Mentors"} para={"These domain experts guide startups working with PVL onto the right track by not only giving them critical feedback but also words of encouragement."} />
+        <DepartmentCard banner={BANNER_2} title={"Investment Partners"} para={"With their critical thinking and  high attention to detail , these individuals are helping startups under PVL evolve into their better versions by the day."} />
+        <DepartmentCard banner={BANNER_2} title={"Technology partners"} para={"A skilled team converting designs into wondrous products, our tech team is adept and passionate in all aspects of development."} />
+        <DepartmentCard banner={BANNER_2} title={"Design partners"} para={"Our in-house creative talents bring your product ideas to life and design incredible user experiences."} />
+        <DepartmentCard banner={BANNER_2} title={"Growth partners"} para={"Making products reach bigger audiences through their impressive content and the right strategies for marketing."} />
+        
       </div>
       {/* <Footer /> */}
     </div>
