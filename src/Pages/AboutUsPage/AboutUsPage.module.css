@@ -87,7 +87,7 @@
     font-size: 42px;
   }
   
-  #section_one, #section_three, #section_four {
+  #section_one, #section_three, #section_five {
     flex-direction: column;
     min-height : 70vh;
     margin-bottom: 20vh;
@@ -116,7 +116,7 @@
     width : 100%;
   }
 
-  #section_four {
+  #section_four, #section_six {
     flex-direction: column-reverse;
   }
   

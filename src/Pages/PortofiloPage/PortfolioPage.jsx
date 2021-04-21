@@ -12,10 +12,9 @@ const PortfolioPage = () => {
     <div className={styles.container}>
       <div className={styles.heading}>Portfolio</div>
       <p className={styles.para}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut
-        eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo,
-        inventore possimus reiciendis, ad tenetur libero explicabo illo quia
-        asperiores sequi rem!
+        We believe in innovation every step of the way and our entrepreneurs
+        swear by it. Venturing into entrepreneurship requires ambition and
+        commitment. Meet the startups that live by these values.
       </p>
 
       <div className={styles.portfolio_cards_container}>

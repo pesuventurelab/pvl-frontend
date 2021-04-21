@@ -6,7 +6,7 @@ import { Select } from "antd";
 /* IMPORT COMPONENT HERE */
 import OpportunitiesCard from "../../Components/OpportunitiesCard/OpportunitiesCard";
 import { websiteBaseURL } from "../../Config/Config";
-import {opportunities} from "../../Data/Data";
+import { opportunities } from "../../Data/Data";
 
 const { Option } = Select;
 
@@ -50,10 +50,8 @@ const OpportunitiesPage = () => {
     <div className={styles.container}>
       <div className={styles.heading}>Opportunities</div>
       <p className={styles.para}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut
-        eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo,
-        inventore possimus reiciendis, ad tenetur libero explicabo illo quia
-        asperiores sequi rem!
+        We’re looking for fresh talent that is daring enough to venture into
+        limitless opportunities. Check out our open positions below!
       </p>
 
       <div className={styles.opportunities_container}>
@@ -125,13 +123,15 @@ const OpportunitiesPage = () => {
         </div>
          */}
         <div className={styles.opportunities_cards_ctnr}>
-          {
-            opportunities.map((item, index) => (
-
-              <OpportunitiesCard category={item.category} position={item.position} summary={item.summary} link={item.link} type={item.type} />
-            ))
-          }
-
+          {opportunities.map((item, index) => (
+            <OpportunitiesCard
+              category={item.category}
+              position={item.position}
+              summary={item.summary}
+              link={item.link}
+              type={item.type}
+            />
+          ))}
         </div>
       </div>
 

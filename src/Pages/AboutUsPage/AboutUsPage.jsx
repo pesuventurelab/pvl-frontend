@@ -22,7 +22,7 @@ const AboutUsPage = () => {
           Who we are ? <br />
           How we help you ?
         </div>
-        <p id={styles.section_one_ans} >
+        <p id={styles.section_one_ans}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices enim
           aenean tincidunt lectus parturient mauris, a. Phasellus fermare
           pretium sit aliquet adipiscing. Adipiscing tellus, dignissim luctus
@@ -36,8 +36,6 @@ const AboutUsPage = () => {
 
       <img id={styles.section_two} src={BANNER} alt="Image" />
 
-
-
       <div id={styles.section_three} className={`${styles.section}`}>
         <img className={styles.section_banner} src={BANNER} alt="Image" />
         <p>
@@ -48,12 +46,23 @@ const AboutUsPage = () => {
 
       <div id={styles.section_four} className={`${styles.section}`}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi
-          dolore illo qui. Eligendi id animi libero deserunt. Tenetur delectus
-          ipsum illo mollitia quos sunt incidunt quaerat necessitatibus eius
-          saepe!
+          PESU is one of the top 10 universities in India attracting some of the
+          best brains in the country for research & studies. PES has special
+          focus on developing entrepreneurship through Centre for Inovation and Entrepreneurship (CIE).
         </p>
         <img className={styles.section_banner} src={BANNER} alt="Image" />
+      </div>
+
+      <div id={styles.section_five} className={`${styles.section}`}>
+        <img className={styles.section_banner} src={BANNER} alt="Image" />
+        <p>
+          CoCreate is focused around strengthening the startup ecosystem by
+          Operating microfunds to help build amazing deep tech startups.
+          CoCreate also focuses on transforming great consumer focused
+          businesses & has transformed companies like JustBooks.in, Bonhomia
+          amongst others. Through its concern Upaghna, we are helping many
+          amazing consumer product companies.
+        </p>
       </div>
 
       <Footer />
