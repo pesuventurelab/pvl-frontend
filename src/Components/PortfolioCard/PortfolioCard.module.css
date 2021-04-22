@@ -1,5 +1,5 @@
 .container {
-  width: 20vw;
+  width: 25vw;
   height: 20vw;
   border-radius: 5px;
   border: 3px solid var(--grey-border);
@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1vh;
+  margin: 2vh;
   box-sizing: border-box;
   position: relative;
   padding: 1vw;
@@ -137,10 +137,18 @@
 
 @media only screen and (max-width: 1024px) {
   .container {
-    border: 1px solid var(--text-color-always-black);
+    border: 3px solid var(--primary-dark-green);
     width: 40vw;
     height: 40vw;
     padding: 2vw;
+  }
+
+  .show_drawer_btn {
+    bottom: 0vw;
+  }
+  .container:hover .show_drawer_btn {
+    opacity: 1;
+    bottom: 7vw;
   }
 
   .title {
@@ -184,6 +192,14 @@
   .container {
     width: 80vw;
     height: 80vw;
-    padding: 2vw;
+    padding: 4vw;
+  }
+
+  .show_drawer_btn {
+    bottom: 5vw;
+  }
+  .container:hover .show_drawer_btn {
+    opacity: 1;
+    bottom: 15vw;
   }
 }
