@@ -5,7 +5,8 @@ import styled from "styled-components";
 
 /*IMPORT IMAGES */
 import BANNER from "../../Images/Banners/banner1.svg";
-
+import AVATAR_MALE from "../../Images/Avatars/AVATAR1.svg";
+import AVATAR_FEMALE from "../../Images/Avatars/AVATAR16.svg";
 
 const ProfileImageContainer = styled.div`
   background-image: ${(props) => `url(${props.img})`};
@@ -17,11 +18,11 @@ const ProfileImageContainer = styled.div`
   border-radius: 50%;
   margin-bottom: 20px;
   border: 5px solid #fafafa;
-  
+
   transition: border-color 0.3s ease-in-out;
 
   &:hover {
-      border: 5px solid #41868e;
+    border: 5px solid #41868e;
   }
 
   @media only screen and (max-width: 1024px) {
@@ -35,9 +36,7 @@ const ProfileImageContainer = styled.div`
     height: 70px;
     width: 70px;
   }
-
 `;
-
 
 const DepartmentCard = (props) => {
   const departmentMembersCtnrREF = useRef(null);
@@ -71,39 +70,29 @@ const DepartmentCard = (props) => {
           </button>
         </div>
       </div>
-      <div
-        ref={departmentMembersCtnrREF}
-        className={styles.dept_members_ctnr}
-      >
-          <div className={styles.member_card}>
-            <ProfileImageContainer img={BANNER} />
-            <div className={styles.member_name}>Some</div>
-          </div>
-          <div className={styles.member_card}>
-            <ProfileImageContainer img={BANNER} />
-            <div className={styles.member_name}>Some</div>
-          </div>
-          <div className={styles.member_card}>
-            <ProfileImageContainer img={BANNER} />
-            <div className={styles.member_name}>Some</div>
-          </div>
-          <div className={styles.member_card}>
-            <ProfileImageContainer img={BANNER} />
-            <div className={styles.member_name}>Some</div>
-          </div>
-          <div className={styles.member_card}>
-            <ProfileImageContainer img={BANNER} />
-            <div className={styles.member_name}>Some</div>
-          </div>
-          <div className={styles.member_card}>
-            <ProfileImageContainer img={BANNER} />
-            <div className={styles.member_name}>Some</div>
-          </div>
+      <div ref={departmentMembersCtnrREF} className={styles.dept_members_ctnr}>
+        {props.teamList.map((item, index) => (
+          item.image !== null ? (
+            <div key={index} className={styles.member_card}>
+              <ProfileImageContainer img={BANNER} />
+              <div className={styles.member_name}>{item.name}</div>
+            </div>
+          ) : item.gender === "Male" ? (
+            <div key={index} className={styles.member_card}>
+              <ProfileImageContainer img={AVATAR_MALE} />
+              <div className={styles.member_name}>{item.name}</div>
+            </div>
+          ) : (
+            <div key={index} className={styles.member_card}>
+              <ProfileImageContainer img={AVATAR_FEMALE} />
+              <div className={styles.member_name}>{item.name}</div>
+            </div>
+          )
+        ))}
+       
       </div>
     </div>
   );
 };
 
 export default DepartmentCard;
-
-

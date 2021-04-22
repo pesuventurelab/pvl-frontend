@@ -7,7 +7,7 @@
   position: sticky;
   top: -20px;
   margin-bottom: 13px;
-  z-index: 101;
+  z-index: 105;
   background: linear-gradient(
     to bottom,
     var(--primary-bg),

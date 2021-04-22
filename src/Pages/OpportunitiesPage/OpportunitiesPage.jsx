@@ -3,6 +3,8 @@ import styles from "./OpportunitiesPage.module.css";
 
 import { Select } from "antd";
 
+import Footer from "../../Components/Footer/Footer";
+
 /* IMPORT COMPONENT HERE */
 import OpportunitiesCard from "../../Components/OpportunitiesCard/OpportunitiesCard";
 import { websiteBaseURL } from "../../Config/Config";
@@ -139,10 +141,9 @@ const OpportunitiesPage = () => {
         Don’t see what you’re looking for?
       </div>
       <p className={styles.para}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut
-        eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo,
-        inventore possimus reiciendis, ad tenetur libero explicabo illo quia
-        asperiores sequi rem!
+        Want to be part of the PVL family but not sure how you can
+        contribute? Don’t worry! Unique talents are always appreciated here at
+        PVL! Feel free to reach out to us via mail!
       </p>
       <a
         rel="noopener noreferrer"
@@ -152,6 +153,7 @@ const OpportunitiesPage = () => {
       >
         MAIL us
       </a>
+      <Footer />
     </div>
   );
 };

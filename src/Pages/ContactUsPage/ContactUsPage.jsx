@@ -19,9 +19,7 @@ const ContactUsPage = () => {
 
         <div className={styles.sub_info_container}>
           <div className={styles.sub_info_header}>or simply drop a mail</div>
-          <p className={styles.para}>
-          loremipsum@loremipsum.com
-          </p>
+          <p className={styles.para}>hello@pesuventurelabs.com</p>
         </div>
       </div>
 

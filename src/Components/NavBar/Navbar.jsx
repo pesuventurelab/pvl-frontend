@@ -12,7 +12,8 @@ import { BsPersonSquare } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 /* IMPORT IMAGES HERE */
-import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
+// import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
+import PVL_LOGO from "../../Images/Logos/PVL_LOGO_S.png";
 
 /* CUSTOM MADE COMPONENT COMPONENTS */
 import { setTheme } from "../../Helpers";

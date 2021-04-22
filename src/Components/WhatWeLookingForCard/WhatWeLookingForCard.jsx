@@ -9,11 +9,11 @@ const WhatWeLookingForCard = (props) => {
 
   const handleMouseOver = () => {
     containerREF.current.style.backgroundColor = "#41868e";
-    containerREF.current.style.zIndex = "100";
+    containerREF.current.style.zIndex = "103";
     setText(props.para);
     alterFocus(!isFocused);
   };
-  
+
   const handleMouseOut = () => {
     containerREF.current.style.backgroundColor = "#FFFFFF";
     containerREF.current.style.zIndex = "1";

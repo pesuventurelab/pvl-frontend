@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--primary-bg);
+  overflow-x: hidden;
 }
 
 .heading {
@@ -91,7 +92,7 @@
 #mail_us_btn {
     margin: 4vh 0px;
     width: 17vw;
-    margin-bottom: 30vh;
+    margin-bottom: 7vh;
 }
 
 

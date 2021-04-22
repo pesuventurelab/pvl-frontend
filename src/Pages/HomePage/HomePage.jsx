@@ -18,7 +18,8 @@ import WhoWeLookingForCard from "../../Components/WhoWeLookingForCard/WhoWeLooki
 import Footer from "../../Components/Footer/Footer";
 
 /* IMPORT IMAGES HERE */
-import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
+// import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
+import PVL_LOGO from "../../Images/Logos/PVL_LOGO_S.png";
 
 import STEP_1 from "../../Images/Steps/step1.svg";
 import STEP_2 from "../../Images/Steps/step2.svg";
@@ -34,6 +35,8 @@ import BANNER_9 from "../../Images/Banners/banner9.svg";
 import BANNER_16 from "../../Images/Banners/banner16.svg";
 import BANNER_17 from "../../Images/Banners/banner17.svg";
 import BANNER_20 from "../../Images/Banners/banner20.svg";
+import BANNER_24 from "../../Images/Banners/banner24.svg";
+import BANNER_25 from "../../Images/Banners/banner25.svg";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -242,44 +245,44 @@ const HomePage = () => {
 
       <div id={styles.what_we_looking_for} className={styles.section}>
         <div className={styles.what_we_looking_for_card_section}>
-          <ScrollAnimation duration="0.7" animateIn="fadeInLeft">
+          {/* <ScrollAnimation duration="0.7" animateIn="fadeInLeft"> */}
             <WhatWeLookingForCard
               title={"deep tech ideas"}
               para={
                 "Ideas around IoT, Automation, Extended Reality (AR,ER,VR), quantum computing, AI/ML, personalized and predictive medicine"
               }
             />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
 
-          <ScrollAnimation duration="0.7" animateIn="fadeInRight">
+          {/* <ScrollAnimation duration="0.7" animateIn="fadeInRight"> */}
             <WhatWeLookingForCard
               title={"Campus Tech Ideas"}
               para={
                 "Ideas that can transform the way academic programs are created and delivered"
               }
             />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
         <div
           id={styles.what_we_looking_for_second_section}
           className={styles.what_we_looking_for_card_section}
         >
-          <ScrollAnimation duration="0.9" animateIn="fadeInLeft">
+          {/* <ScrollAnimation duration="0.9" animateIn="fadeInLeft"> */}
             <WhatWeLookingForCard
               title={"Social Tech Ideas"}
               para={
                 "Ideas that use  human, intellectual and digital resources in order to influence social processes."
               }
             />
-          </ScrollAnimation>
-          <ScrollAnimation duration="0.9" animateIn="fadeInRight">
+          {/* </ScrollAnimation> */}
+          {/* <ScrollAnimation duration="0.9" animateIn="fadeInRight"> */}
             <WhatWeLookingForCard
               title={"Multi Disciplinary Innovation​"}
               para={
                 "Ideas that demand multidisciplinary innovations involving disciplines like design, computing, biotech, engineering, devices, food tech and others"
               }
             />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
       </div>
 
@@ -289,21 +292,21 @@ const HomePage = () => {
 
       <div id={styles.who_we_looking_for} className={styles.section}>
         <WhoWeLookingForCard
-          img={BANNER_6}
+          img={BANNER_25}
           title={"Students"}
           para={
             "We help students find a balance between academics and entrepreneurship. We employ models that ensure great rewards and security to students in terms of finance and careers."
           }
         />
         <WhoWeLookingForCard
-          img={BANNER_6}
+          img={BANNER_7}
           title={"Industry Professionals"}
           para={
             "We deliver everything that helps you transform your idea to a business. We act like your cofounders and bring in team, expertise, mentoring, capital and infrastructure."
           }
         />
         <WhoWeLookingForCard
-          img={BANNER_6}
+          img={BANNER_24}
           title={"Faculty"}
           para={
             "We enable academicians to balance their teaching and research.  Models where academicians can spend more time on research or development with substantial commercial value will be followed."
