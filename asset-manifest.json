@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pvl-frontend/static/css/main.2cb2b83f.chunk.css",
-    "main.js": "/pvl-frontend/static/js/main.aabf9f47.chunk.js",
-    "main.js.map": "/pvl-frontend/static/js/main.aabf9f47.chunk.js.map",
+    "main.js": "/pvl-frontend/static/js/main.79d239c1.chunk.js",
+    "main.js.map": "/pvl-frontend/static/js/main.79d239c1.chunk.js.map",
     "runtime-main.js": "/pvl-frontend/static/js/runtime-main.fb050d03.js",
     "runtime-main.js.map": "/pvl-frontend/static/js/runtime-main.fb050d03.js.map",
     "static/css/2.45f96635.chunk.css": "/pvl-frontend/static/css/2.45f96635.chunk.css",
@@ -46,6 +46,6 @@
     "static/css/2.45f96635.chunk.css",
     "static/js/2.8c0305e7.chunk.js",
     "static/css/main.2cb2b83f.chunk.css",
-    "static/js/main.aabf9f47.chunk.js"
+    "static/js/main.79d239c1.chunk.js"
   ]
 }
