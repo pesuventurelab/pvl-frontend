@@ -139,6 +139,7 @@
   transition: color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   padding: 5px 7px;
+  cursor: pointer;
 }
 
 .menu_ele:hover {

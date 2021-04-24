@@ -16,7 +16,8 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO_S.png";
 
 /* CUSTOM MADE COMPONENT COMPONENTS */
-import { setTheme } from "../../Helpers";
+import { setTheme } from "../Helpers";
+import { handleRoute } from "../Helpers";
 
 // submenu keys of first level
 const rootSubmenuKeys = ["aboutus", "pes"];
@@ -113,24 +114,34 @@ const NavbarComponent = () => {
 
           <div className={styles.menu_drawer_menu_ctnr}>
             <div className={styles.menu_ele_ctnr}>
-              <a
-                href={`${websiteBaseURL}home`}
-                rel="noopener noreferrer"
-                boutus_container
+              <div
+                // href={`${websiteBaseURL}home`}
+                // rel="noopener noreferrer"
+                // boutus_container
                 className={styles.menu_ele}
+                onClick={() => {
+                  toggleMenuDrawer(false);
+
+                  handleRoute(websiteBaseURL + "home");
+                }}
               >
                 home
-              </a>
+              </div>
             </div>
             <div className={styles.menu_ele_ctnr}>
-              <a
-                href={`${websiteBaseURL}portfolio`}
-                rel="noopener noreferrer"
-                boutus_container
+              <div
+                // href={`${websiteBaseURL}portfolio`}
+                // rel="noopener noreferrer"
+                // boutus_container
                 className={styles.menu_ele}
+                onClick={() => {
+                  toggleMenuDrawer(false);
+
+                  handleRoute(websiteBaseURL + "portfolio");
+                }}
               >
                 PORTFOLIO
-              </a>
+              </div>
             </div>
 
             <div className={styles.menu_droppable_container}>
@@ -154,22 +165,31 @@ const NavbarComponent = () => {
                 className={styles.menu_dropdown_ctnr}
               >
                 <div className={styles.menu_ele_ctnr}>
-                  <a
-                    href={`${websiteBaseURL}aboutus`}
-                    rel="noopener noreferrer"
+                  <div
+                    // href={`${websiteBaseURL}aboutus`}
+                    // rel="noopener noreferrer"
                     className={styles.menu_ele}
+                    onClick={() => {
+                      toggleMenuDrawer(false);
+                      handleRoute(websiteBaseURL + "aboutus");
+                    }}
                   >
                     About Us
-                  </a>
+                  </div>
                 </div>
                 <div className={styles.menu_ele_ctnr}>
-                  <a
-                    href={`${websiteBaseURL}team`}
-                    rel="noopener noreferrer"
+                  <div
+                    // href={`${websiteBaseURL}team`}
+                    // rel="noopener noreferrer"
                     className={styles.menu_ele}
+                    onClick={() => {
+                      toggleMenuDrawer(false);
+
+                      handleRoute(websiteBaseURL + "team");
+                    }}
                   >
                     meet the team
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,6 +217,9 @@ const NavbarComponent = () => {
                     rel="noopener noreferrer"
                     target="_blank"
                     className={styles.menu_ele}
+                    onClick={() => {
+                      toggleMenuDrawer(false);
+                    }}
                   >
                     PESU
                   </a>
@@ -207,6 +230,9 @@ const NavbarComponent = () => {
                     rel="noopener noreferrer"
                     target="_blank"
                     className={styles.menu_ele}
+                    onClick={() => {
+                      toggleMenuDrawer(false);
+                    }}
                   >
                     CIE
                   </a>
@@ -215,44 +241,64 @@ const NavbarComponent = () => {
             </div>
 
             <div className={styles.menu_ele_ctnr}>
-              <a
-                href={`${websiteBaseURL}resources`}
-                rel="noopener noreferrer"
+              <div
+                // href={`${websiteBaseURL}resources`}
+                // rel="noopener noreferrer"
                 className={styles.menu_ele}
+                onClick={() => {
+                  toggleMenuDrawer(false);
+
+                  handleRoute(websiteBaseURL + "resources");
+                }}
               >
                 Resources
-              </a>
+              </div>
             </div>
 
             <div className={styles.menu_ele_ctnr}>
-              <a
-                href={`${websiteBaseURL}opportunities`}
-                rel="noopener noreferrer"
+              <div
+                // href={`${websiteBaseURL}opportunities`}
+                // rel="noopener noreferrer"
                 className={styles.menu_ele}
+                onClick={() => {
+                  toggleMenuDrawer(false);
+
+                  handleRoute(websiteBaseURL + "opportunities");
+                }}
               >
                 Opportunities
-              </a>
+              </div>
             </div>
 
             <div className={styles.menu_ele_ctnr}>
-              <a
-                href={`${websiteBaseURL}apply`}
-                rel="noopener noreferrer"
+              <div
+                // href={`${websiteBaseURL}apply`}
+                // rel="noopener noreferrer"
                 className={styles.menu_ele}
+                onClick={() => {
+                  toggleMenuDrawer(false);
+
+                  handleRoute(websiteBaseURL + "apply");
+                }}
               >
                 Apply
-              </a>
+              </div>
             </div>
             <div className={styles.menu_ele_ctnr}>
-              <a
-                href={`${websiteBaseURL}contactus`}
-                rel="noopener noreferrer"
+              <div
+                // href={`${websiteBaseURL}contactus`}
+                // rel="noopener noreferrer"
                 className={styles.menu_ele}
+                onClick={() => {
+                  toggleMenuDrawer(false);
+
+                  handleRoute(websiteBaseURL + "contactus");
+                }}
               >
                 contact us
-              </a>
+              </div>
             </div>
-
+{/* 
             <div className={styles.menu_droppable_container}>
               <div className={styles.menu_droppable_btn_ctnr}>
                 <div
@@ -296,7 +342,9 @@ const NavbarComponent = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+          
+          
           </div>
         </div>
       </div>

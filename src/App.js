@@ -17,7 +17,7 @@ import NotFoundPage from "./Pages/NotFoundPage/NotFound";
 import TestPage from "./Pages/TestPage/TestPage";
 
 import NavbarComponent from "./Components/NavBar/Navbar";
-import { setTheme } from "./Helpers";
+import { setTheme } from "./Components/Helpers";
 
 function App() {
   // Managing themes

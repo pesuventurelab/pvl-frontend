@@ -20,6 +20,7 @@ import Footer from "../../Components/Footer/Footer";
 /* IMPORT IMAGES HERE */
 // import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO_S.png";
+import LOGO_ANIMATION from "../../Images/gifs/logo.gif";
 
 import STEP_1 from "../../Images/Steps/step1.svg";
 import STEP_2 from "../../Images/Steps/step2.svg";
@@ -63,6 +64,7 @@ const HomePage = () => {
           </ScrollAnimation>
         </div>
         <img id={styles.PVL_LOGO} src={PVL_LOGO} alt="Image" />
+        {/* <img id={styles.PVL_LOGO} src={LOGO_ANIMATION} alt="Image" /> */}
       </div>
 
       <div className={styles.upper_section_container}>
