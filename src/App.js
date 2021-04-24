@@ -1,6 +1,7 @@
 import "antd/dist/antd.css";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom'
 
 // IMPORT PAGES HERE
 import HomePage from "./Pages/HomePage/HomePage";
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <NavbarComponent />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -42,9 +43,9 @@ function App() {
           <Route exact path="/contactus" component={ContactUsPage} />
           <Route exact path="/apply" component={ApplyPage} />
           <Route exact path="/testpage" component={TestPage} />
-          <Route exact path="/*" component={NotFoundPage} />
+          <Route exact path="/*" component={NotFoundPage} status={404} />
         </Switch>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
