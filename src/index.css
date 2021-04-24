@@ -14,11 +14,11 @@
   --primary-bg-always: #ffffff;
   --primary-bg-lighter: rgba(255, 255, 255, 0.9);
   --primary-bg-always-light: #ffffff;
-  
+
   --primary-black-one: #455a64;
   --primary-purple: #543fd3;
   --primary-yellow: #efb76c;
-  --primary-red: #E64B31;
+  --primary-red: #e64b31;
   --primary-dark-green: #41868e;
   --primary-light-green-one: #c8dede;
   --primary-light-green-two: #a4c8c8;
@@ -27,16 +27,15 @@
   --secondary-bg-two: #e5e5e5;
   --border_gray: #949494;
   --hint-or-error-message-color: #595959;
-  --text-color-always-black : #1B1919;
+  --text-color-always-black: #1b1919;
   --dark-bg: #021529;
   --grey-border: #f8f8f8;
-  
+
   /* INHERITED COLORS */
   --text-color-black: var(--text-color-always-black);
 }
 
 [data-theme="dark"] {
-  
   /* https://dbramwell.github.io/react-animate-on-scroll/#home */
   --primary-bg: #161718;
   --primary-bg-always: #ffffff;
@@ -45,7 +44,7 @@
   --primary-black-one: #455a64;
   --primary-purple: #543fd3;
   --primary-yellow: #efb76c;
-  --primary-red: #E64B31;
+  --primary-red: #e64b31;
   --primary-dark-green: #41868e;
   --primary-light-green-one: #c8dede;
   --primary-light-green-two: #a4c8c8;
@@ -54,14 +53,13 @@
   --secondary-bg-two: #e5e5e5;
   --border_gray: #949494;
   --hint-or-error-message-color: #595959;
-  --text-color-always-black : #c2bfa0;
+  --text-color-always-black: #c2bfa0;
   --dark-bg: #021529;
 
   --grey-border: #f8f8f8;
 
   /* INHERITED COLORS */
   --text-color-black: var(--text-color-always-black);
-
 }
 
 body {
@@ -110,4 +108,54 @@ code {
 .no-underline {
   text-decoration: none;
   color: white;
+}
+
+/* INPUTS */
+.basic-input {
+  background-color: var(--primary-bg);
+  color: var(--primary-dark-green);
+  font-family: var(--fonts-paragraph);
+  font-weight: 900;
+  font-size: 16px;
+  border-radius: 7px;
+  border: 2px solid var(--primary-dark-green);
+  margin: 13px 0;
+  padding: 7px 13px;
+  width: min(420px, 90%);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: text;
+}
+
+.basic-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 2px var(--primary-dark-green);
+}
+
+
+.basic-input::-webkit-scrollbar {
+  width: 7px;
+}
+
+.basic-input::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+  border-radius: 7px !important;
+}
+
+.basic-input::-webkit-scrollbar-thumb {
+  background-color: var(--primary-bg);
+  border-radius: 10px;
+  margin-right: 5px;
+  border: 2px solid var(--primary-bg);
+}
+
+.basic-input:hover::-webkit-scrollbar-thumb {
+  background-color: var(--primary-dark-green);
+}
+
+
+.basic-textarea {
+  min-height: 44px;
+  height: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
 }

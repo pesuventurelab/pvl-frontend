@@ -6,7 +6,7 @@ import styled from "styled-components";
 /*IMPORT IMAGES */
 import BANNER from "../../Images/Banners/banner1.svg";
 import AVATAR_MALE from "../../Images/Avatars/AVATAR1.svg";
-import AVATAR_FEMALE from "../../Images/Avatars/AVATAR16.svg";
+import AVATAR_FEMALE from "../../Images/Avatars/AVATAR15.svg";
 
 const ProfileImageContainer = styled.div`
   background-image: ${(props) => `url(${props.img})`};
