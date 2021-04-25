@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import styles from "./PortfolioCard.module.css";
 
 import { AiFillCloseCircle } from "react-icons/ai";
-import { FaGlobe, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGlobe, FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
 
 import BANNER from "../../Images/Banners/banner1.svg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -41,7 +41,7 @@ const PortfolioCard = (props) => {
           />
         </div>
         <div className={styles.drawer_info_ctnr}>
-          <img className={styles.logo} src={BANNER} alt="Image" />
+          <img className={styles.logo} src={props.image} alt="Image" />
           <div className={styles.title}>{props.title}</div>
           <p className={styles.para}>{props.para}</p>
           <div className={styles.icons_container}>
@@ -90,6 +90,18 @@ const PortfolioCard = (props) => {
                 className={styles.icon_wrapper}
               >
                 <FaTwitter className={styles.icon} />
+              </a>
+            )}
+
+            {props.facebook === "" ? (
+              <></>
+            ) : (
+              <a
+                rel="noopener noreferrer"
+                href={props.facebook}
+                className={styles.icon_wrapper}
+              >
+                <FaFacebook className={styles.icon} />
               </a>
             )}
           </div>

@@ -20,11 +20,13 @@ const PortfolioPage = () => {
       <div className={styles.portfolio_cards_container}>
         {portfolioData.map((item, index) => (
           <PortfolioCard
+            image={ item.image}
             title={item.title}
             para={item.para}
             linkedin={item.linkedin}
             twitter={item.twitter}
             instagram={item.instagram}
+            facebook={item.facebook}
             website={item.website}
           />
         ))}

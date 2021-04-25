@@ -1,3 +1,12 @@
+import Tealdr_LOGO from "../Images/Portfolio/Tealdr.png";
+import Punarva_LOGO from "../Images/Portfolio/Punarva.png";
+import Frizzle_LOGO from "../Images/Portfolio/Frizzle.png";
+import Fond_LOGO from "../Images/Portfolio/Fond.png";
+import Consuma_LOGO from "../Images/Portfolio/Consuma.png";
+import Assert_LOGO from "../Images/Portfolio/Assert.png";
+import Abhaya_LOGO from "../Images/Portfolio/Abhaya.jpeg";
+
+
 export const upcomingEvents = [
   // {
   //     "title" : "title 1",
@@ -76,50 +85,84 @@ export const opportunities = [
 
 export const portfolioData = [
   {
-    title: "PESU Venture Labs",
+    title: "Tealder",
     para:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo, inventore",
-    linkedin: "#",
-    instagram: "#",
+      "",
+    linkedin: "https://www.linkedin.com/in/tealdr-a88bb520b/",
+    instagram: "https://www.instagram.com/tealdr._/?hl=en",
     website: "",
-    twitter: "",
+    twitter: "https://twitter.com/Tealdr1",
+    facebook: "",
+    image : Tealdr_LOGO
   },
   {
-    title: "PESU Venture Labs",
+    title: "Punarva",
     para:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo, inventore",
-    linkedin: "#",
-    instagram: "",
-    website: "",
-    twitter: "",
-  },
-  {
-    title: "PESU Venture Labs",
-    para:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo, inventore",
-    linkedin: "#",
-    instagram: "#",
-    website: "#",
-    twitter: "#",
-  },
-  {
-    title: "PESU Venture Labs",
-    para:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo, inventore",
-    linkedin: "#",
-    instagram: "",
-    website: "#",
-    twitter: "#",
-  },
-  {
-    title: "PESU Venture Labs",
-    para:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut eius dignissimos molestiae unde, voluptatum nesciunt repudiandae quo, inventore",
+      "",
     linkedin: "",
     instagram: "",
     website: "",
     twitter: "",
+    facebook: "",
+    image : Punarva_LOGO
   },
+  {
+    title: "Frizzle",
+    para:
+      "",
+    linkedin: "https://www.linkedin.com/company/kurtle-technologies",
+    instagram: "https://instagram.com/kurtletechnologies?igshid=15s87n547g5mt",
+    website: "https://www.kurtle.net/",
+    twitter: "https://twitter.com/kurtletech?s=21",
+    facebook: "",
+    image : Frizzle_LOGO
+  },
+  {
+    title: "Fond",
+    para:
+      "",
+    linkedin: "",
+    instagram: "https://www.instagram.com/fond.pets.india/",
+    website: "",
+    twitter: "",
+    facebook: "",
+    image : Fond_LOGO
+  },
+  {
+    title: "Consuma",
+    para:
+      "",
+    linkedin: "http://linkedin.com/company/consuma-ai",
+    instagram: "http://instagram.com/consuma_ai",
+    website: "http://consuma.ai",
+    twitter: "",
+    facebook: "http://facebook.com/consumaai",
+    image : Consuma_LOGO
+  },
+  {
+    title: "Assert",
+    para:
+      "",
+    linkedin: "",
+    instagram: "",
+    website: "",
+    twitter: "",
+    facebook: "",
+    image : Assert_LOGO
+  },
+  {
+    title: "Abhaya",
+    para:
+      "",
+    linkedin: "",
+    instagram: "",
+    website: "",
+    twitter: "",
+    facebook: "",
+    image : Abhaya_LOGO
+  }
+
+
 ];
 
 export const designPartners = [
