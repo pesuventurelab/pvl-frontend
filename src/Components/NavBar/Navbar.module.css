@@ -214,6 +214,10 @@
     width: 100%;
   }
 
+  .menu_ele, .menu_droppable_btn {
+    font-size: 22px;
+  }
+
   .menu_droppable_btn_ctnr {
     padding : 0;
   }

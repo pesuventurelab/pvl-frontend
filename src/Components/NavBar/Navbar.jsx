@@ -298,7 +298,7 @@ const NavbarComponent = () => {
                 contact us
               </div>
             </div>
-{/* 
+
             <div className={styles.menu_droppable_container}>
               <div className={styles.menu_droppable_btn_ctnr}>
                 <div
@@ -342,9 +342,7 @@ const NavbarComponent = () => {
                   </div>
                 </div>
               </div>
-            </div> */}
-          
-          
+            </div>
           </div>
         </div>
       </div>
