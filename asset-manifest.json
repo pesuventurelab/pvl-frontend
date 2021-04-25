@@ -1,23 +1,30 @@
 {
   "files": {
     "main.css": "/pvl-frontend/static/css/main.016cf3db.chunk.css",
-    "main.js": "/pvl-frontend/static/js/main.e7b72768.chunk.js",
-    "main.js.map": "/pvl-frontend/static/js/main.e7b72768.chunk.js.map",
+    "main.js": "/pvl-frontend/static/js/main.144e67df.chunk.js",
+    "main.js.map": "/pvl-frontend/static/js/main.144e67df.chunk.js.map",
     "runtime-main.js": "/pvl-frontend/static/js/runtime-main.fb050d03.js",
     "runtime-main.js.map": "/pvl-frontend/static/js/runtime-main.fb050d03.js.map",
     "static/css/2.45f96635.chunk.css": "/pvl-frontend/static/css/2.45f96635.chunk.css",
-    "static/js/2.8c0305e7.chunk.js": "/pvl-frontend/static/js/2.8c0305e7.chunk.js",
-    "static/js/2.8c0305e7.chunk.js.map": "/pvl-frontend/static/js/2.8c0305e7.chunk.js.map",
+    "static/js/2.44354bf5.chunk.js": "/pvl-frontend/static/js/2.44354bf5.chunk.js",
+    "static/js/2.44354bf5.chunk.js.map": "/pvl-frontend/static/js/2.44354bf5.chunk.js.map",
     "static/js/3.40ec53c0.chunk.js": "/pvl-frontend/static/js/3.40ec53c0.chunk.js",
     "static/js/3.40ec53c0.chunk.js.map": "/pvl-frontend/static/js/3.40ec53c0.chunk.js.map",
     "index.html": "/pvl-frontend/index.html",
     "static/css/2.45f96635.chunk.css.map": "/pvl-frontend/static/css/2.45f96635.chunk.css.map",
     "static/css/main.016cf3db.chunk.css.map": "/pvl-frontend/static/css/main.016cf3db.chunk.css.map",
-    "static/js/2.8c0305e7.chunk.js.LICENSE.txt": "/pvl-frontend/static/js/2.8c0305e7.chunk.js.LICENSE.txt",
+    "static/js/2.44354bf5.chunk.js.LICENSE.txt": "/pvl-frontend/static/js/2.44354bf5.chunk.js.LICENSE.txt",
     "static/media/AVATAR1.0578384c.svg": "/pvl-frontend/static/media/AVATAR1.0578384c.svg",
     "static/media/AVATAR15.8b94f66e.svg": "/pvl-frontend/static/media/AVATAR15.8b94f66e.svg",
+    "static/media/Abhaya.9049bfd0.jpeg": "/pvl-frontend/static/media/Abhaya.9049bfd0.jpeg",
+    "static/media/Assert.bd5dfecd.png": "/pvl-frontend/static/media/Assert.bd5dfecd.png",
+    "static/media/Consuma.e6d50671.png": "/pvl-frontend/static/media/Consuma.e6d50671.png",
+    "static/media/Fond.8d301811.png": "/pvl-frontend/static/media/Fond.8d301811.png",
+    "static/media/Frizzle.91d15b98.png": "/pvl-frontend/static/media/Frizzle.91d15b98.png",
     "static/media/PVL_LOGO_S.ce9a8bb0.png": "/pvl-frontend/static/media/PVL_LOGO_S.ce9a8bb0.png",
     "static/media/PVL_LOGO_WHITE.9c0839ab.png": "/pvl-frontend/static/media/PVL_LOGO_WHITE.9c0839ab.png",
+    "static/media/Punarva.e0e53a63.png": "/pvl-frontend/static/media/Punarva.e0e53a63.png",
+    "static/media/Tealdr.81cfe1a3.png": "/pvl-frontend/static/media/Tealdr.81cfe1a3.png",
     "static/media/banner1.63432e48.svg": "/pvl-frontend/static/media/banner1.63432e48.svg",
     "static/media/banner10.74781e58.svg": "/pvl-frontend/static/media/banner10.74781e58.svg",
     "static/media/banner11.1ed9c6c1.svg": "/pvl-frontend/static/media/banner11.1ed9c6c1.svg",
@@ -45,8 +52,8 @@
   "entrypoints": [
     "static/js/runtime-main.fb050d03.js",
     "static/css/2.45f96635.chunk.css",
-    "static/js/2.8c0305e7.chunk.js",
+    "static/js/2.44354bf5.chunk.js",
     "static/css/main.016cf3db.chunk.css",
-    "static/js/main.e7b72768.chunk.js"
+    "static/js/main.144e67df.chunk.js"
   ]
 }
