@@ -119,11 +119,13 @@ code {
   font-size: 16px;
   border-radius: 7px;
   border: 2px solid var(--primary-dark-green);
-  margin: 13px 0;
+  margin: 3px 0;
+  margin-bottom: 24px;
   padding: 7px 13px;
   width: min(420px, 90%);
   transition: box-shadow 0.3s ease-in-out;
   cursor: text;
+  width: 100%;
 }
 
 .basic-input:focus {
@@ -156,6 +158,6 @@ code {
 .basic-textarea {
   min-height: 44px;
   height: 300px;
-  max-height: 300px;
+  max-height: 600px;
   overflow-y: scroll;
 }

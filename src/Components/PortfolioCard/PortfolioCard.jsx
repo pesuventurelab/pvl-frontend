@@ -52,6 +52,7 @@ const PortfolioCard = (props) => {
                 rel="noopener noreferrer"
                 href={props.website}
                 className={styles.icon_wrapper}
+                target="_blank"
               >
                 <FaGlobe className={styles.icon} />
               </a>
@@ -64,6 +65,7 @@ const PortfolioCard = (props) => {
                 rel="noopener noreferrer"
                 href={props.instagram}
                 className={styles.icon_wrapper}
+                target="_blank"
               >
                 <FaInstagram className={styles.icon} />
               </a>
@@ -76,6 +78,7 @@ const PortfolioCard = (props) => {
                 rel="noopener noreferrer"
                 href={props.linkedin}
                 className={styles.icon_wrapper}
+                target="_blank"
               >
                 <FaLinkedin className={styles.icon} />
               </a>
@@ -88,6 +91,7 @@ const PortfolioCard = (props) => {
                 rel="noopener noreferrer"
                 href={props.twitter}
                 className={styles.icon_wrapper}
+                target="_blank"
               >
                 <FaTwitter className={styles.icon} />
               </a>
@@ -100,6 +104,7 @@ const PortfolioCard = (props) => {
                 rel="noopener noreferrer"
                 href={props.facebook}
                 className={styles.icon_wrapper}
+                target="_blank"
               >
                 <FaFacebook className={styles.icon} />
               </a>

@@ -124,7 +124,7 @@ export const portfolioData = [
     linkedin: "",
     instagram: "https://www.instagram.com/fond.pets.india/",
     website: "",
-    twitter: "",
+    twitter: "https://twitter.com/fond_pets_india",
     facebook: "",
     image : Fond_LOGO
   },
@@ -135,7 +135,7 @@ export const portfolioData = [
     linkedin: "http://linkedin.com/company/consuma-ai",
     instagram: "http://instagram.com/consuma_ai",
     website: "http://consuma.ai",
-    twitter: "",
+    twitter: "https://twitter.com/consuma_ai",
     facebook: "http://facebook.com/consumaai",
     image : Consuma_LOGO
   },
