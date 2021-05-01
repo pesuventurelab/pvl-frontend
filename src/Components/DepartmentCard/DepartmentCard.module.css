@@ -91,10 +91,13 @@
     .dept_members_ctnr {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .member_name{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
-
 
     .container {
         box-shadow: none;
@@ -132,7 +135,7 @@
     }
 
     .member_name {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 

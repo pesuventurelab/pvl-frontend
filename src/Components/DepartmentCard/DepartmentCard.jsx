@@ -3,6 +3,12 @@ import styles from "./DepartmentCard.module.css";
 
 import styled from "styled-components";
 
+import axios from "axios";
+import { apiURL } from "../../Config/Config";
+import { openNotificationWithIcon } from "../../Helpers";
+
+import { Spin } from "antd";
+
 /*IMPORT IMAGES */
 import BANNER from "../../Images/Banners/banner1.svg";
 import AVATAR_MALE from "../../Images/Avatars/AVATAR1.svg";
@@ -43,6 +49,30 @@ const DepartmentCard = (props) => {
   let [teamVisible, setTeamvisibility] = useState(false);
   let [viewTeamBtnText, setViewTeamBtnText] = useState("View Team");
 
+  let [teamList, setTeamList] = useState([]);
+
+
+  const fetchMemberData = () => {
+    const request_data = {
+      departmentId: props.departmentId,
+    };
+
+    axios
+      .post(`${apiURL}/api/info/department/members`, request_data)
+      .then((res) => {
+        if (res.data["status"] === 200) {
+          setTeamList(res.data["data"]);
+        } else {
+          openNotificationWithIcon(
+            "error",
+            "Internal Server Error",
+            res.data["msg"]
+          );
+        }
+      });
+  };
+
+
   const toggleTeamVisibility = () => {
     setTeamvisibility(!teamVisible);
 
@@ -63,7 +93,10 @@ const DepartmentCard = (props) => {
           <div className={styles.title}>{props.title}</div>
           <p className={styles.para}>{props.para}</p>
           <button
-            onClick={toggleTeamVisibility}
+            onClick={() => {
+              fetchMemberData();
+              toggleTeamVisibility();
+            }}
             className={`${"basic-button_one"} ${styles.view_team_btn}`}
           >
             {viewTeamBtnText}
@@ -71,25 +104,20 @@ const DepartmentCard = (props) => {
         </div>
       </div>
       <div ref={departmentMembersCtnrREF} className={styles.dept_members_ctnr}>
-        {props.teamList.map((item, index) => (
-          item.image !== null ? (
+        {teamList === [] ? (
+          <Spin />
+        ) : (
+          teamList.map((item, index) => (
             <div key={index} className={styles.member_card}>
-              <ProfileImageContainer img={BANNER} />
+              {item.gender === "M" ? (
+                <ProfileImageContainer img={AVATAR_MALE} />
+              ) : (
+                <ProfileImageContainer img={AVATAR_FEMALE} />
+              )}
               <div className={styles.member_name}>{item.name}</div>
             </div>
-          ) : item.gender === "Male" ? (
-            <div key={index} className={styles.member_card}>
-              <ProfileImageContainer img={AVATAR_MALE} />
-              <div className={styles.member_name}>{item.name}</div>
-            </div>
-          ) : (
-            <div key={index} className={styles.member_card}>
-              <ProfileImageContainer img={AVATAR_FEMALE} />
-              <div className={styles.member_name}>{item.name}</div>
-            </div>
-          )
-        ))}
-       
+          ))
+        )}
       </div>
     </div>
   );
