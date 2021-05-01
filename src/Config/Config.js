@@ -4,4 +4,4 @@
 
 /* PRODUCTION  CONFIGURATION*/
 export const websiteBaseURL = "https://pesuventurelab.github.io/pvl-frontend/#/";
-export const apiURL = "http://localhost:5000"
+export const apiURL = "https://pesuventurelabs.com"
