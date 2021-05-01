@@ -78,38 +78,41 @@ const OpportunitiesCard = (props) => {
       request_data["contact"] = contactREF.current.value;
     }
 
-    // if (resumeREF.current.value === "") {
-    //   openNotificationWithIcon(
-    //     "error",
-    //     "Please upload your Resume",
-    //     "Resume field cannot be empty. Please upload your Resume."
-    //   );
-    //   return;
-    // } else {
-    //   request_data["resume"] = resumeREF.current.value;
-    // }
+    if (resumeREF.current.value === "") {
+      openNotificationWithIcon(
+        "error",
+        "Please upload your Resume link",
+        "Resume field cannot be empty. Please upload your Resume link."
+      );
+      return;
+    } else {
+      request_data["resume"] = resumeREF.current.value;
+    }
 
     request_data["opportunityId"]=props.opportunityId;
 
 
-    axios.post(`${apiURL}/opportunity/apply`, request_data).then((res) => {
+    axios.post(`${apiURL}/api/opportunity/apply`, request_data).then((res) => {
       if (res.data["status"] === 200) {
         openNotificationWithIcon(
           "success",
           "Application Successful",
-          "Your application has been successfully submitted. Please await our mail."
+          res.data["msg"]
         );
 
         nameREF.current.value = "";
         emailREF.current.value = "";
         contactREF.current.value = "";
+        resumeREF.current.value = "";
+
+        // toggleApplyform(false);
 
       } else {
         openNotificationWithIcon(
           "error",
           "Internal Server Error",
-          "Sorry for the inconvenience. There seems to be an issue on the server end. Please try again after some time."
-        );
+          res.data["msg"]
+          );
       }
     });
 
@@ -184,15 +187,14 @@ const OpportunitiesCard = (props) => {
 
         <InputLabel
           isRequired={true}
-          title={"Resume"}
-          info={"Please upload your resume in PDF format only."}
+          title={"Resume Link"}
+          info={"Please upload your resume  on Drive/Linkedin and share the link for the same."}
         />
         <input
           className="basic-input"
-          type="file"
-          placeholder="Enter your contact..."
-          maxlength="100"
-          accept=".pdf"
+          type="url"
+          placeholder="Please upload your resume  on Drive/Linkedin and share the link for the same..."
+          maxlength="1024"
           ref={resumeREF}
         />
 
