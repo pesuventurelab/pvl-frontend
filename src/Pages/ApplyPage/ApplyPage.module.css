@@ -79,6 +79,12 @@
 .radio_input {
   margin-right: 7px;
 }
+
+.radio_text{
+  color: var(--primary-dark-green);
+  font-size: 22px;
+}
+
 /* FORM */
 .form_container {
   /* border : 1px solid red; */
@@ -87,6 +93,7 @@
   flex-direction: column;
   padding-bottom: 10vh;
 }
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -107,5 +114,9 @@
 
   .form_container {
     width: 90%;
+  }
+
+  .radio_text{
+    font-size: 18px;
   }
 }

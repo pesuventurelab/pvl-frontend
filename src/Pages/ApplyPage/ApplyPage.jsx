@@ -14,6 +14,7 @@ import STUDENT_BANNER from "../../Images/Banners/banner25.svg";
 import FACULTY_BANNER from "../../Images/Banners/banner24.svg";
 import INDUSTRY_BANNER from "../../Images/Banners/banner6.svg";
 
+
 const ApplyPage = () => {
   const nameREF = useRef(null);
   const emailREF = useRef(null);
@@ -138,29 +139,48 @@ const ApplyPage = () => {
       request_data["team_description"] = teamDescriptionREF.current.value;
     }
 
-    axios.post(`${apiURL}/portfolio/apply`, request_data).then((res) => {
+
+    /*passing applicant type to request json */
+    request_data["appplicantType"]=appplicantType
+
+    axios.post(`${apiURL}/api/portfolio/apply`, request_data).then((res) => {
       if (res.data["status"] === 200) {
         openNotificationWithIcon(
           "success",
           "Application Successful",
-          "Your application has been successfully submitted. Please await our mail."
-        );
+          res.data["msg"]
+          );
 
         nameREF.current.value = "";
-        universityREF.current.value = "";
         emailREF.current.value = "";
-        departmentREF.current.value = "";
-        yearOfStudyRef.current.value = "";
-        organizationREF.current.value = "";
         ideaTitleREF.current.value = "";
         ideaDescriptionREF.current.value = "";
         teamDescriptionREF.current.value = "";
-      } else {
+        
+        if (appplicantType === "IndustryExpert"){
+          organizationREF.current.value = "";
+        }
+        
+        if (appplicantType === "Student" || appplicantType === "Faculty"){       
+          universityREF.current.value = "";
+          departmentREF.current.value = "";
+        }
+        
+        if (appplicantType ==="Student"){
+          yearOfStudyRef.current.value = "";
+        }
+      } else if(res.data["status"]===400) {
         openNotificationWithIcon(
           "error",
-          "Internal Server Error",
-          "Sorry for the inconvenience. There seems to be an issue on the server end. Please try again after some time."
-        );
+          "Bad Request",
+          res.data["msg"]
+          );
+      }else{
+        openNotificationWithIcon(
+          "error",
+          "Interval Server Error",
+          res.data["msg"]
+          );
       }
     });
   };
@@ -176,11 +196,6 @@ const ApplyPage = () => {
         reach new heights APPLY NOW!!
       </p>
       <div className={styles.applicant_type_container}>
-        <InputLabel
-          isRequired={true}
-          title={"Select an Option"}
-          info={"Please select your occupation."}
-        />
         <div className={styles.occupation_container}>
           <div className={styles.occupation_wrapper}>
             <img
@@ -196,7 +211,7 @@ const ApplyPage = () => {
                 className={styles.radio_input}
                 value="Student"
               />
-              <label for="Student">Student</label>
+              <label for="Student" className={styles.radio_text}>Student</label>
             </div>
           </div>
 
@@ -214,7 +229,7 @@ const ApplyPage = () => {
                 className={styles.radio_input}
                 value="Faculty"
               />
-              <label for="Faculty">Faculty</label>
+              <label for="Faculty" className={styles.radio_text}>Faculty</label>
             </div>
           </div>
 
@@ -232,7 +247,7 @@ const ApplyPage = () => {
                 className={styles.radio_input}
                 value="IndustryExpert"
               />
-              <label for="IndustryExpert">IndustryExpert</label>
+              <label for="IndustryExpert" className={styles.radio_text}>IndustryExpert</label>
             </div>
           </div>
         </div>
