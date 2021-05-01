@@ -7,7 +7,7 @@ import { linkedinURL, instagramURL } from "../../Data/Links";
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-import {handleRoute} from "../Helpers";
+import { handleRoute } from "../Helpers";
 
 /* IMPORT IMAGES HERE */
 import LOGO from "../../Images/Logos/PVL_LOGO_WHITE.png";
@@ -137,6 +137,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               href={instagramURL}
               className={styles.icon_wrapper}
+              target="_blank"
             >
               <FaInstagram className={styles.icon} />
             </a>
@@ -145,6 +146,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               href={linkedinURL}
               className={styles.icon_wrapper}
+              target="_blank"
             >
               <FaLinkedin className={styles.icon} />
             </a>
