@@ -8,14 +8,22 @@ import { apiURL } from "../../Config/Config";
 import InputLabel from "../../Components/InputComponent/InputLabel/InputLabel";
 import { openNotificationWithIcon } from "../../Helpers";
 
+import INVESTMENT_PARTNERS_ICON from "../../Images/Icons/icon6.svg";
+import ENTREPRENUER_PARTNERS_ICON from "../../Images/Icons/icon6.svg";
+import MANAGEMENT_PARTNERS_ICON from "../../Images/Icons/icon1.svg";
+import DESIGN_PARTNERS_ICON from "../../Images/Icons/icon2.svg";
+import TECHNOLOGY_PARTNERS_ICON from "../../Images/Icons/icon3.svg";
+import GROWTH_PARTNERS_ICON from "../../Images/Icons/icon4.svg";
+import MENTORS_ICON from "../../Images/Icons/icon5.svg";
+
 const category_to_image = {
-  Developer: "👨‍💻",
-  Designer: "👨‍🎨",
-  Analyst: "📈",
-  Marketing: "📺",
-  Finance: "💰",
-  "Human Resource Management": "👩‍💼",
-  "Content Writer": "✍🏻",
+  1:INVESTMENT_PARTNERS_ICON,
+  2:ENTREPRENUER_PARTNERS_ICON,
+  3:MANAGEMENT_PARTNERS_ICON,
+  4:DESIGN_PARTNERS_ICON,
+  5:TECHNOLOGY_PARTNERS_ICON,
+  6:GROWTH_PARTNERS_ICON,
+  7:MENTORS_ICON
 };
 
 const OpportunitiesCard = (props) => {
@@ -81,7 +89,8 @@ const OpportunitiesCard = (props) => {
     //   request_data["resume"] = resumeREF.current.value;
     // }
 
-    
+    request_data["opportunityId"]=props.opportunityId;
+
 
     axios.post(`${apiURL}/opportunity/apply`, request_data).then((res) => {
       if (res.data["status"] === 200) {
@@ -115,7 +124,7 @@ const OpportunitiesCard = (props) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.image}>{category_to_image[props.category]}</div>
+      <img className={styles.image} src={category_to_image[props.category]} alt="Image"/>
       <div className={styles.info_container}>
         <div className={styles.title}>{props.position}</div>
         <p className={styles.para}>{props.summary}</p>
