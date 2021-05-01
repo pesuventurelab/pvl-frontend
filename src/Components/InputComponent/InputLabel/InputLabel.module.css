@@ -40,46 +40,11 @@
   color: var(--primary-dark-green);
 }
 
-/* TOOLTIP */
-/* .tooltip_container {
-    visibility: hidden;
-    opacity: 0;
-    background-color: var(--primary-dark-green);
-    color: var(--primary-bg-always);
-    font-weight: 900;
-    font-family: var(--fonts-heading);
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 7px;
-    border-radius: 3px;
-    transition: opacity 0.3s ease-in-out;
-    position: relative;
-    left: -19px;
-    top: -60%;
-    max-width: 80vw;
-    z-index: 101;
-}
-
-
-.tooltip_container::after{
-    content: " ";
-    position: absolute;
-    top: 97%; 
-    left: 5px;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: var(--primary-dark-green) transparent transparent transparent;
-}
-
-.icon:hover + .tooltip_container {
-    visibility: visible;
-    opacity: 1;
-} */
 
 
 @media only screen and (max-width: 1024px) {
 
+  .title {
+    font-size: 18px;
+  }
 }

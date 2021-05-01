@@ -42,8 +42,43 @@
   font-family: var(--fonts-heading);
   font-size: 20px;
   font-weight: 900;
+  text-align: center;
+  width: 80%;
 }
 
+
+.applicant_type_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.occupation_container {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.occupation_wrapper {
+
+  flex: 1 0 50%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.occupation_img {
+  width: 369px;
+  height: auto;
+  margin-bottom: 13px;
+}
+
+.radio_input {
+  margin-right: 7px;
+}
 /* FORM */
 .form_container {
   /* border : 1px solid red; */
@@ -52,7 +87,6 @@
   flex-direction: column;
   padding-bottom: 10vh;
 }
-
 
 
 @media only screen and (max-width: 1024px) {
@@ -65,6 +99,10 @@
   .para {
     font-size: 16px;
     width: 90%;
+  }
+
+  .occupation_img {
+    width: 120px; 
   }
 
   .form_container {

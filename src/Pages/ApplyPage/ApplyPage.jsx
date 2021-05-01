@@ -10,6 +10,10 @@ import Footer from "../../Components/Footer/Footer";
 
 import { openNotificationWithIcon } from "../../Helpers";
 
+import STUDENT_BANNER from "../../Images/Banners/banner25.svg";
+import FACULTY_BANNER from "../../Images/Banners/banner24.svg";
+import INDUSTRY_BANNER from "../../Images/Banners/banner6.svg";
+
 const ApplyPage = () => {
   const nameREF = useRef(null);
   const emailREF = useRef(null);
@@ -24,7 +28,7 @@ const ApplyPage = () => {
   const ideaDescriptionREF = useRef(null);
   const teamDescriptionREF = useRef(null);
 
-  let [appplicantType, setApplicantType] = useState("Faculty");
+  let [appplicantType, setApplicantType] = useState("");
 
   const handleFormSubmit = () => {
     const request_data = {};
@@ -171,10 +175,71 @@ const ApplyPage = () => {
         doors to new opportunities. If you believe that PVL will enable you to
         reach new heights APPLY NOW!!
       </p>
-      <div className={styles.applicant_type_container}></div>
+      <div className={styles.applicant_type_container}>
+        <InputLabel
+          isRequired={true}
+          title={"Select an Option"}
+          info={"Please select your occupation."}
+        />
+        <div className={styles.occupation_container}>
+          <div className={styles.occupation_wrapper}>
+            <img
+              className={styles.occupation_img}
+              src={STUDENT_BANNER}
+              alt="Student"
+            />
+            <div>
+              <input
+                onClick={() => setApplicantType("Student")}
+                type="radio"
+                name="occupation"
+                className={styles.radio_input}
+                value="Student"
+              />
+              <label for="Student">Student</label>
+            </div>
+          </div>
+
+          <div className={styles.occupation_wrapper}>
+            <img
+              className={styles.occupation_img}
+              src={FACULTY_BANNER}
+              alt="Faculty"
+            />
+            <div>
+              <input
+                onClick={() => setApplicantType("Faculty")}
+                type="radio"
+                name="occupation"
+                className={styles.radio_input}
+                value="Faculty"
+              />
+              <label for="Faculty">Faculty</label>
+            </div>
+          </div>
+
+          <div className={styles.occupation_wrapper}>
+            <img
+              className={styles.occupation_img}
+              src={INDUSTRY_BANNER}
+              alt="IndustryExpert"
+            />
+            <div>
+              <input
+                onClick={() => setApplicantType("IndustryExpert")}
+                type="radio"
+                name="occupation"
+                className={styles.radio_input}
+                value="IndustryExpert"
+              />
+              <label for="IndustryExpert">IndustryExpert</label>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {appplicantType === "" ? (
-        <div className={styles.message}>Please select an Option</div>
+        <div className={styles.message}>Please select an Option to proceed with the application</div>
       ) : (
         <div className={styles.form_container}>
           <InputLabel
