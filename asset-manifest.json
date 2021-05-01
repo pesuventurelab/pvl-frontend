@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pvl-frontend/static/css/main.0843d1f0.chunk.css",
-    "main.js": "/pvl-frontend/static/js/main.36e0b2a0.chunk.js",
-    "main.js.map": "/pvl-frontend/static/js/main.36e0b2a0.chunk.js.map",
+    "main.css": "/pvl-frontend/static/css/main.61a84242.chunk.css",
+    "main.js": "/pvl-frontend/static/js/main.4e0bfe2d.chunk.js",
+    "main.js.map": "/pvl-frontend/static/js/main.4e0bfe2d.chunk.js.map",
     "runtime-main.js": "/pvl-frontend/static/js/runtime-main.e99edadc.js",
     "runtime-main.js.map": "/pvl-frontend/static/js/runtime-main.e99edadc.js.map",
     "static/css/2.558413a2.chunk.css": "/pvl-frontend/static/css/2.558413a2.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.3321b7a1.chunk.js.map": "/pvl-frontend/static/js/3.3321b7a1.chunk.js.map",
     "index.html": "/pvl-frontend/index.html",
     "static/css/2.558413a2.chunk.css.map": "/pvl-frontend/static/css/2.558413a2.chunk.css.map",
-    "static/css/main.0843d1f0.chunk.css.map": "/pvl-frontend/static/css/main.0843d1f0.chunk.css.map",
+    "static/css/main.61a84242.chunk.css.map": "/pvl-frontend/static/css/main.61a84242.chunk.css.map",
     "static/js/2.233917e8.chunk.js.LICENSE.txt": "/pvl-frontend/static/js/2.233917e8.chunk.js.LICENSE.txt",
     "static/media/AVATAR1.0578384c.svg": "/pvl-frontend/static/media/AVATAR1.0578384c.svg",
     "static/media/AVATAR15.8b94f66e.svg": "/pvl-frontend/static/media/AVATAR15.8b94f66e.svg",
@@ -34,9 +34,11 @@
     "static/media/banner16.696367a7.svg": "/pvl-frontend/static/media/banner16.696367a7.svg",
     "static/media/banner17.9dcbb00a.svg": "/pvl-frontend/static/media/banner17.9dcbb00a.svg",
     "static/media/banner18.219cd8e0.svg": "/pvl-frontend/static/media/banner18.219cd8e0.svg",
+    "static/media/banner2.99d84bc5.svg": "/pvl-frontend/static/media/banner2.99d84bc5.svg",
     "static/media/banner20.ff363afd.svg": "/pvl-frontend/static/media/banner20.ff363afd.svg",
     "static/media/banner24.cd9d8b30.svg": "/pvl-frontend/static/media/banner24.cd9d8b30.svg",
     "static/media/banner25.1774e064.svg": "/pvl-frontend/static/media/banner25.1774e064.svg",
+    "static/media/banner3.f23868c6.svg": "/pvl-frontend/static/media/banner3.f23868c6.svg",
     "static/media/banner4.17bb027b.svg": "/pvl-frontend/static/media/banner4.17bb027b.svg",
     "static/media/banner5.1079fe2e.svg": "/pvl-frontend/static/media/banner5.1079fe2e.svg",
     "static/media/banner6.9b32e602.svg": "/pvl-frontend/static/media/banner6.9b32e602.svg",
@@ -58,7 +60,7 @@
     "static/js/runtime-main.e99edadc.js",
     "static/css/2.558413a2.chunk.css",
     "static/js/2.233917e8.chunk.js",
-    "static/css/main.0843d1f0.chunk.css",
-    "static/js/main.36e0b2a0.chunk.js"
+    "static/css/main.61a84242.chunk.css",
+    "static/js/main.4e0bfe2d.chunk.js"
   ]
 }
