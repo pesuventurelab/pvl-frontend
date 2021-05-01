@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./HomePage.module.css";
 
 import { Link } from "react-router-dom";
+
+import axios from "axios";
+
+import { apiURL } from "../../Config/Config";
+
+import { openNotificationWithIcon } from "../../Helpers";
+
+import { IoIosArrowDown } from "react-icons/io";
+
+import InputLabel from "../../Components/InputComponent/InputLabel/InputLabel";
 
 /*LIBRARY IMPORTS */
 // import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
@@ -42,6 +52,53 @@ import BANNER_25 from "../../Images/Banners/banner25.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const HomePage = () => {
+  const emailREF = useRef(null);
+  const emailCtnrREF = useRef(null);
+  const toggleEmailContainer = (visibility) => {
+    if (visibility) {
+      emailCtnrREF.current.style.bottom = "0";
+    } else {
+      emailCtnrREF.current.style.bottom = "-200vh";
+    }
+  };
+
+  const handleSubscription = () => {
+    const request_data = {};
+    if (emailREF.current.value === "") {
+      openNotificationWithIcon(
+        "Error",
+        "Email cannot be empty",
+        "Email field cannot be empty please enter email"
+      );
+      return;
+    } else {
+      request_data["email"] = emailREF.current.value;
+      var d = new Date();
+      let month = "" + (d.getMonth() + 1);
+      let day = "" + d.getDate();
+      let year = d.getFullYear();
+
+      request_data["date"] = [year, month, day].join("-");
+    }
+    toggleEmailContainer(false);
+    emailCtnrREF.current.style.bottom="-200vh";
+    axios.post(`${apiURL}/api/subscribe`, request_data).then((res) => {
+      if (res.data["status"] === 200) {
+        openNotificationWithIcon(
+          "success",
+          "Succesfully subscribed",
+          res.data["msg"]
+        );
+      } else {
+        openNotificationWithIcon(
+          "error",
+          "Internal Server Error",
+          res.data["msg"]
+        );
+      }
+    });
+  };
+
   return (
     <div className={styles.container}>
       <div id={styles.section_one} className={styles.section}>
@@ -248,21 +305,21 @@ const HomePage = () => {
       <div id={styles.what_we_looking_for} className={styles.section}>
         <div className={styles.what_we_looking_for_card_section}>
           {/* <ScrollAnimation duration="0.7" animateIn="fadeInLeft"> */}
-            <WhatWeLookingForCard
-              title={"deep tech ideas"}
-              para={
-                "Ideas around IoT, Automation, Extended Reality (AR,ER,VR), quantum computing, AI/ML, personalized and predictive medicine"
-              }
-            />
+          <WhatWeLookingForCard
+            title={"deep tech ideas"}
+            para={
+              "Ideas around IoT, Automation, Extended Reality (AR,ER,VR), quantum computing, AI/ML, personalized and predictive medicine"
+            }
+          />
           {/* </ScrollAnimation> */}
 
           {/* <ScrollAnimation duration="0.7" animateIn="fadeInRight"> */}
-            <WhatWeLookingForCard
-              title={"Campus Tech Ideas"}
-              para={
-                "Ideas that can transform the way academic programs are created and delivered"
-              }
-            />
+          <WhatWeLookingForCard
+            title={"Campus Tech Ideas"}
+            para={
+              "Ideas that can transform the way academic programs are created and delivered"
+            }
+          />
           {/* </ScrollAnimation> */}
         </div>
         <div
@@ -270,20 +327,20 @@ const HomePage = () => {
           className={styles.what_we_looking_for_card_section}
         >
           {/* <ScrollAnimation duration="0.9" animateIn="fadeInLeft"> */}
-            <WhatWeLookingForCard
-              title={"Social Tech Ideas"}
-              para={
-                "Ideas that use  human, intellectual and digital resources in order to influence social processes."
-              }
-            />
+          <WhatWeLookingForCard
+            title={"Social Tech Ideas"}
+            para={
+              "Ideas that use  human, intellectual and digital resources in order to influence social processes."
+            }
+          />
           {/* </ScrollAnimation> */}
           {/* <ScrollAnimation duration="0.9" animateIn="fadeInRight"> */}
-            <WhatWeLookingForCard
-              title={"Multi Disciplinary Innovation​"}
-              para={
-                "Ideas that demand multidisciplinary innovations involving disciplines like design, computing, biotech, engineering, devices, food tech and others"
-              }
-            />
+          <WhatWeLookingForCard
+            title={"Multi Disciplinary Innovation​"}
+            para={
+              "Ideas that demand multidisciplinary innovations involving disciplines like design, computing, biotech, engineering, devices, food tech and others"
+            }
+          />
           {/* </ScrollAnimation> */}
         </div>
       </div>
@@ -317,16 +374,38 @@ const HomePage = () => {
       </div>
 
       <ScrollAnimation duration="0.9" animateIn="fadeInUp">
-        <a
+        <button
+          onClick={() => toggleEmailContainer(true)}
           id={styles.contact_us_btn}
-          rel="noopener noreferrer"
-          href={websiteBaseURL + "contactus"}
           className={`${"basic-button_one"}`}
         >
-          COntact us
-        </a>
+          Subscribe to Newsletter
+        </button>
       </ScrollAnimation>
-
+      <div ref={emailCtnrREF} className={styles.email_container}>
+        <IoIosArrowDown
+          onClick={() => toggleEmailContainer(false)}
+          className={styles.email_ctnr_close_btn}
+        />
+        <InputLabel
+          isRequired={true}
+          title={"Email"}
+          info={"Please enter your email ID."}
+        />
+        <input
+          className="basic-input"
+          type="email"
+          placeholder="Enter your email..."
+          maxlength="320"
+          ref={emailREF}
+        />
+        <button
+          onClick={handleSubscription}
+          className={`${"basic-button_one"} ${styles.subscribe_btn}`}
+        >
+          Subscribe
+        </button>
+      </div>
       <Footer />
     </div>
   );
