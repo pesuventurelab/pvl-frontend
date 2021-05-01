@@ -1,6 +1,10 @@
 import React, { useState, useRef } from "react";
 import styles from "./ApplyPage.module.css";
 
+import axios from "axios";
+
+import { apiURL } from "../../Config/Config";
+
 import InputLabel from "../../Components/InputComponent/InputLabel/InputLabel";
 import Footer from "../../Components/Footer/Footer";
 
@@ -20,7 +24,7 @@ const ApplyPage = () => {
   const ideaDescriptionREF = useRef(null);
   const teamDescriptionREF = useRef(null);
 
-  let [appplicantType, setApplicantType] = useState("IndustryExpert");
+  let [appplicantType, setApplicantType] = useState("Faculty");
 
   const handleFormSubmit = () => {
     const request_data = {};
@@ -36,7 +40,125 @@ const ApplyPage = () => {
       request_data["name"] = nameREF.current.value;
     }
 
-    request_data["email"] = emailREF.current.value;
+    if (emailREF.current.value === "") {
+      openNotificationWithIcon(
+        "error",
+        "Please enter an email",
+        "Email field cannot be empty. Please enter your email ID."
+      );
+      return;
+    } else {
+      request_data["email"] = emailREF.current.value;
+    }
+
+    if (appplicantType === "Faculty" || appplicantType === "Student") {
+      if (universityREF.current.value === "") {
+        openNotificationWithIcon(
+          "error",
+          "Please enter University Name",
+          "University field cannot be empty. Please enter your University Name."
+        );
+        return;
+      } else {
+        request_data["university"] = universityREF.current.value;
+      }
+
+      if (departmentREF.current.value === "") {
+        openNotificationWithIcon(
+          "error",
+          "Please enter Department Name",
+          "Department field cannot be empty. Please enter your Department Name."
+        );
+        return;
+      } else {
+        request_data["department"] = departmentREF.current.value;
+      }
+    }
+
+    if (appplicantType === "Student") {
+      if (yearOfStudyRef.current.value === "") {
+        openNotificationWithIcon(
+          "error",
+          "Please enter year of study",
+          "Year of Study field cannot be empty. Please enter your Year of Study."
+        );
+        return;
+      } else {
+        request_data["year_of_study"] = yearOfStudyRef.current.value;
+      }
+    }
+
+    if (appplicantType === "IndustryExpert") {
+      if (organizationREF.current.value === "") {
+        openNotificationWithIcon(
+          "error",
+          "Please enter Organization Name",
+          "Organization field cannot be empty. Please enter your Organization Name."
+        );
+        return;
+      } else {
+        request_data["organization"] = organizationREF.current.value;
+      }
+    }
+
+    if (ideaTitleREF.current.value === "") {
+      openNotificationWithIcon(
+        "error",
+        "Please enter an Idea Title",
+        "Idea Title field cannot be empty. Please enter your an Idea Title."
+      );
+      return;
+    } else {
+      request_data["idea_title"] = ideaTitleREF.current.value;
+    }
+
+    if (ideaDescriptionREF.current.value === "") {
+      openNotificationWithIcon(
+        "error",
+        "Please enter an Idea Description",
+        "Idea Description field cannot be empty. Please enter your an Idea Description."
+      );
+      return;
+    } else {
+      request_data["idea_description"] = ideaDescriptionREF.current.value;
+    }
+
+    if (teamDescriptionREF.current.value === "") {
+      openNotificationWithIcon(
+        "error",
+        "Please enter an Team Description",
+        "Team Description field cannot be empty. Please enter your an Team Description."
+      );
+      return;
+    } else {
+      request_data["team_description"] = teamDescriptionREF.current.value;
+    }
+
+    axios.post(`${apiURL}/portfolio/apply`, request_data).then((res) => {
+      if (res.data["status"] === 200) {
+        openNotificationWithIcon(
+          "success",
+          "Application Successful",
+          "Your application has been successfully submitted. Please await our mail."
+        );
+
+        nameREF.current.value = "";
+        universityREF.current.value = "";
+        emailREF.current.value = "";
+        departmentREF.current.value = "";
+        yearOfStudyRef.current.value = "";
+        organizationREF.current.value = "";
+        ideaTitleREF.current.value = "";
+        ideaDescriptionREF.current.value = "";
+        teamDescriptionREF.current.value = "";
+      } else {
+        openNotificationWithIcon(
+          "error",
+          "Internal Server Error",
+          "Sorry for the inconvenience. There seems to be an issue on the server end. Please try again after some time."
+        );
+      }
+    });
   };
 
   return (
