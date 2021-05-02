@@ -2,7 +2,7 @@
   "name": "pvl-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pesuventurelabs.com",
+  "homepage": "http://pesuventurelab.github.io/pvl-frontend",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@testing-library/jest-dom": "^5.11.4",
