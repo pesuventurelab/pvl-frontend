@@ -5,6 +5,8 @@ import axios from "axios";
 import { apiURL } from "../../Config/Config";
 import { openNotificationWithIcon } from "../../Helpers";
 
+import {departmentListData} from "../../Data/Data"
+
 import { Spin } from "antd";
 
 /* IMPORT IMAGES HERE */
@@ -31,21 +33,22 @@ const Dept_id_to_image = {
 };
 
 const MeetTheTeamPage = () => {
-  let [departmentList, setDepartmentList] = useState([]);
+  let [departmentList, setDepartmentList] = useState(departmentListData);
 
-  useEffect(() => {
-    axios.post(`${apiURL}/api/info/departments`).then((res) => {
-      if (res.data["status"] === 200) {
-        setDepartmentList(res.data["data"])
-      } else {
-        openNotificationWithIcon(
-          "error",
-          "Internal Server Error",
-          res.data["msg"]
-        );
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.post(`${apiURL}/api/info/departments`).then((res) => {
+  //     if (res.data["status"] === 200) {
+  //       setDepartmentList(res.data["data"])
+  //       // console.log(res.data["data"])
+  //     } else {
+  //       openNotificationWithIcon(
+  //         "error",
+  //         "Internal Server Error",
+  //         res.data["msg"]
+  //       );
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className={styles.container}>
@@ -61,6 +64,7 @@ const MeetTheTeamPage = () => {
               banner={Dept_id_to_image[item.departmentId]}
               title={item.departmentName}
               para={item.departmentDescription}
+              membersList={item.membersList}
             />
           ))
         )}

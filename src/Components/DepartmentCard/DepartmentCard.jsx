@@ -53,23 +53,25 @@ const DepartmentCard = (props) => {
 
 
   const fetchMemberData = () => {
-    const request_data = {
-      departmentId: props.departmentId,
-    };
 
-    axios
-      .post(`${apiURL}/api/info/department/members`, request_data)
-      .then((res) => {
-        if (res.data["status"] === 200) {
-          setTeamList(res.data["data"]);
-        } else {
-          openNotificationWithIcon(
-            "error",
-            "Internal Server Error",
-            res.data["msg"]
-          );
-        }
-      });
+    setTeamList(props.membersList)
+    // const request_data = {
+    //   departmentId: props.departmentId,
+    // };
+
+  //   axios
+  //     .post(`${apiURL}/api/info/department/members`, request_data)
+  //     .then((res) => {
+  //       if (res.data["status"] === 200) {
+  //         setTeamList(res.data["data"]);
+  //       } else {
+  //         openNotificationWithIcon(
+  //           "error",
+  //           "Internal Server Error",
+  //           res.data["msg"]
+  //         );
+  //       }
+  //     });
   };
 
 

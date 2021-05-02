@@ -14,12 +14,14 @@
   flex-direction: row;
   justify-content: space-between;
   min-height: 90vh;
+  width: 90%;
 }
 
 .section_one_info_ctnr {
   display: flex;
   flex-direction: column;
   margin: auto 0px;
+  margin-right: 20px;
 }
 
 #section_one_header {
@@ -52,7 +54,10 @@
   width: 40%;
   height: auto;
   margin: auto 0px;
-  background-color: var(--primary-bg);
+  /* border-radius: 50%; */
+  /* border: 2px solid var(--primary-dark-green); */
+
+  /* background-color: var(--primary-bg); */
 }
 
 .upper_section_container:nth-child(even) p:nth-child(odd) {
@@ -191,6 +196,7 @@
   }
 
   .section_one_info_ctnr {
+    margin: 0 auto;
     text-align: center;
   }
 

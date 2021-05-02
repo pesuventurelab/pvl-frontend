@@ -29,18 +29,18 @@ const footerLinks = [
     title: "portfolio",
     link: websiteBaseURL + "portfolio",
   },
-  {
-    title: "Opportunities",
-    link: websiteBaseURL + "opportunities",
-  },
+  // {
+  //   title: "Opportunities",
+  //   link: websiteBaseURL + "opportunities",
+  // },
   {
     title: "resources",
     link: websiteBaseURL + "resources",
   },
-  {
-    title: "apply",
-    link: websiteBaseURL + "apply",
-  },
+  // {
+  //   title: "apply",
+  //   link: websiteBaseURL + "apply",
+  // },
 ];
 
 const Footer = () => {

@@ -12,6 +12,8 @@ import { openNotificationWithIcon } from "../../Helpers";
 
 import Footer from "../../Components/Footer/Footer";
 
+import {opportunitiesList} from "../../Data/Data"
+
 /* IMPORT COMPONENT HERE */
 import OpportunitiesCard from "../../Components/OpportunitiesCard/OpportunitiesCard";
 import { websiteBaseURL } from "../../Config/Config";
@@ -19,24 +21,30 @@ import { websiteBaseURL } from "../../Config/Config";
 const { Option } = Select;
 
 const OpportunitiesPage = () => {
+
+  // console.log("santosh is awesome")
+
   let [curPositions, setCurPositions] = useState([]);
   let [curTypes, setCurTypes] = useState([]);
-  let [opportunities, setOpportunities] = useState([]);
+  let [opportunities, setOpportunities] = useState(opportunitiesList);
 
-  useEffect(() => {
-    axios.post(`${apiURL}/api/info/opportunities`).then((res) => {
-      if (res.data["status"] === 200) {
-        setOpportunities(res.data["data"]);
-        console.log(res.data["data"]);
-      } else {
-        openNotificationWithIcon(
-          "error",
-          "Internal Server Error",
-          res.data["msg"]
-        );
-      }
-    });
-  },[]);
+  
+
+  // useEffect(() => {
+  //   // console.log("santosh inside api")
+  //   axios.post(`${apiURL}/api/info/opportunities`).then((res) => {
+  //     if (res.data["status"] === 200) {
+  //       setOpportunities(res.data["data"]);
+  //       console.log(res.data["data"]);
+  //     } else {
+  //       openNotificationWithIcon(
+  //         "error",
+  //         "Internal Server Error",
+  //         res.data["msg"]
+  //       );
+  //     }
+  //   });
+  // },[]);
 
   useEffect(() => {
     console.log(curTypes);

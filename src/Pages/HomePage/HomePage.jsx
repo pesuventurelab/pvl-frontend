@@ -30,7 +30,8 @@ import Footer from "../../Components/Footer/Footer";
 /* IMPORT IMAGES HERE */
 // import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO_S.png";
-import LOGO_ANIMATION from "../../Images/gifs/logo.gif";
+import LOGO_ANIMATION from "../../Images/gifs/3_6.gif";
+
 
 import STEP_1 from "../../Images/Steps/step1.svg";
 import STEP_2 from "../../Images/Steps/step2.svg";
@@ -48,6 +49,7 @@ import BANNER_17 from "../../Images/Banners/banner17.svg";
 import BANNER_20 from "../../Images/Banners/banner20.svg";
 import BANNER_24 from "../../Images/Banners/banner24.svg";
 import BANNER_25 from "../../Images/Banners/banner25.svg";
+
 
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -374,13 +376,13 @@ const HomePage = () => {
       </div>
 
       <ScrollAnimation duration="0.9" animateIn="fadeInUp">
-        <button
+        {/* <button
           onClick={() => toggleEmailContainer(true)}
           id={styles.contact_us_btn}
           className={`${"basic-button_one"}`}
         >
           Subscribe to Newsletter
-        </button>
+        </button> */}
       </ScrollAnimation>
       <div ref={emailCtnrREF} className={styles.email_container}>
         <IoIosArrowDown

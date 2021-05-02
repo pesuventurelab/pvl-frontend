@@ -25,63 +25,58 @@ export const upcomingEvents = [
   // }
 ];
 
-export const opportunities = [
-  {
-    category: "Designer",
-    position: "UI/UX Designer",
-    type: "Intern",
-    summary:
-      "UI/UX Designer responsibilities include gathering user requirements, designing graphic elements, and building interface components.",
-    link: "",
-  },
-  {
-    category: "Developer",
-    position: "React Frontend Developer",
-    type: "Intern",
-    summary:
-      "Working in tandem with the UI/UX team to develop new features using React.js for the web platform.",
-    link: "",
-  },
-  {
-    category: "Developer",
-    position: "Backend Developer",
-    type: "Intern",
-    summary:
-      "Work closely with the product head and UX designers to understand the product vision and design philosophy.",
-    link: "",
-  },
-  {
-    category: "Developer",
-    position: "Fullstack Developer",
-    type: "Intern",
-    summary:
-      "Developing end-to-end web applications, Creating rapid prototypes and upgrading them to full-scale applications by working collaboratively with the design and development team",
-    link: "",
-  },
-  {
-    category: "Developer",
-    position: "Cyber Security and Network Engineers",
-    type: "Intern",
-    summary: "",
-    link: "",
-  },
-  {
-    category: "Content Writer",
-    position: "Content Writer",
-    type: "Intern",
-    summary:
-      "Researching and Writing content related to business, finance and stratups",
-    link: "",
-  },
-  {
-    category: "Marketing",
-    position: "Digital marketing",
-    type: "Intern",
-    summary:
-      "Establishing an end-to-end leads process and guiding the implementation and execution across multiple social media platforms",
-    link: "",
-  },
-];
+export const opportunitiesList = [
+      {
+          "department_id": 4,
+          "opportunityDescription": "UI/UX Designer responsibilities include gathering user requirements, designing graphic elements, and building interface components.",
+          "opportunityId": 1,
+          "opportunityName": "UI/UX Designer",
+          "opportunityRole": "Intern"
+      },
+      {
+          "department_id": 5,
+          "opportunityDescription": "Working in tandem with the UI/UX team to develop new features using React.js for the web platform.",
+          "opportunityId": 2,
+          "opportunityName": "React Frontend Developer",
+          "opportunityRole": "Intern"
+      },
+      {
+          "department_id": 5,
+          "opportunityDescription": "Work closely with the product head and UX designers to understand the product vision and design philosophy.",
+          "opportunityId": 3,
+          "opportunityName": "Backend Developer",
+          "opportunityRole": "Intern"
+      },
+      {
+          "department_id": 5,
+          "opportunityDescription": "Developing end-to-end web applications, Creating rapid prototypes and upgrading them to full-scale applications by working collaboratively with the design and development team",
+          "opportunityId": 4,
+          "opportunityName": "Fullstack Developer",
+          "opportunityRole": "Intern"
+      },
+      {
+          "department_id": 5,
+          "opportunityDescription": "Looking for dedicated interns who can work in various cybersecurity areas and enhance their experience and relevant skills in cybersecurity.",
+          "opportunityId": 5,
+          "opportunityName": "Cyber Security and Network Engineers",
+          "opportunityRole": "Intern"
+      },
+      {
+          "department_id": 6,
+          "opportunityDescription": " If you know and love content creation like we at PVL love innovation, let’s get talking.",
+          "opportunityId": 6,
+          "opportunityName": "Content Writer",
+          "opportunityRole": "Intern"
+      },
+      {
+          "department_id": 6,
+          "opportunityDescription": "Establishing an end-to-end leads process and guiding the implementation and execution across multiple social media platforms.",
+          "opportunityId": 7,
+          "opportunityName": "Digital marketing",
+          "opportunityRole": "Intern"
+      }
+    ]
+
 
 export const portfolioData = [
   {
@@ -167,161 +162,323 @@ export const portfolioData = [
 
 export const designPartners = [
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Sankarshan"
   },
-
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Jacob Eapen"
   },
-
   {
-    name: "Ann Mathew",
-    gender: "Female",
-    age: 22,
-    image: null,
+      "gender": "M",
+      "name": "Arihanth"
   },
-];
+  {
+      "gender": "F",
+      "name": "Samanvitha"
+  },
+  {
+      "gender": "F",
+      "name": "Architha Belvadi"
+  },
+  {
+      "gender": "F",
+      "name": "Deepshika"
+  },
+  {
+      "gender": "M",
+      "name": "Partha Subhash"
+  },
+  {
+      "gender": "M",
+      "name": "Sai Sumanth"
+  }
+]
 
 export const managementPartners = [
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Suresh Narashima"
   },
-
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
-  },
-
-  {
-    name: "Ann Mathew",
-    gender: "Female",
-    age: 22,
-    image: null,
-  },
-];
+      "gender": "M",
+      "name": "Prashanth Kumar"
+  }
+]
 
 export const entrepreneurPartners = [
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Ananth Krishna"
   },
-
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Abhilash"
   },
-
   {
-    name: "Ann Mathew",
-    gender: "Female",
-    age: 22,
-    image: null,
+      "gender": "M",
+      "name": "Rishith Bhowmick"
   },
-];
+  {
+      "gender": "F",
+      "name": "Vanya Arikutharam"
+  },
+  {
+      "gender": "F",
+      "name": "Pallavi"
+  },
+  {
+      "gender": "F",
+      "name": "Vismaya B N"
+  },
+  {
+      "gender": "F",
+      "name": "Prarthana Bhat"
+  },
+  {
+      "gender": "M",
+      "name": "Puneet"
+  },
+  {
+      "gender": "M",
+      "name": "Abhilash"
+  },
+  {
+      "gender": "M",
+      "name": "Prasad"
+  },
+  {
+      "gender": "F",
+      "name": "Reshma"
+  },
+  {
+      "gender": "F",
+      "name": "Lavannya Suressh"
+  },
+  {
+      "gender": "F",
+      "name": "Nidhi Nagabhushan"
+  },
+  {
+      "gender": "M",
+      "name": "Shreyas  Bhaktharam"
+  },
+  {
+      "gender": "F",
+      "name": "Vaishnavi Kruthi"
+  },
+  {
+      "gender": "M",
+      "name": "Shashank Lokesh"
+  },
+  {
+      "gender": "M",
+      "name": "Sarthak Agarwal"
+  },
+  {
+      "gender": "M",
+      "name": "Pranav Kesavarapu"
+  },
+  {
+      "gender": "M",
+      "name": "Vikshit Shetty"
+  }
+]
 
 export const mentorsList = [
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Anish Bailur"
   },
-
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Madhu V"
   },
-
   {
-    name: "Ann Mathew",
-    gender: "Female",
-    age: 22,
-    image: null,
+      "gender": "M",
+      "name": "Vinay"
   },
-];
+  {
+      "gender": "M",
+      "name": "Santosh"
+  },
+  {
+      "gender": "M",
+      "name": "Sharad S"
+  }
+]
 
 export const investmentPartners = [
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Suresh Narashima"
   },
-
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Santosh Bishnoi"
   },
-
   {
-    name: "Ann Mathew",
-    gender: "Female",
-    age: 22,
-    image: null,
+      "gender": "F",
+      "name": "Sanjayitha Raja"
   },
+  {
+      "gender": "M",
+      "name": "Vaishak Krishna A R"
+  },
+  {
+      "gender": "F",
+      "name": "Medha Nag K G"
+  },
+  {
+      "gender": "F",
+      "name": "Shruti Bharadwaj"
+  },
+  {
+      "gender": "M",
+      "name": "Kiriti"
+  },
+  {
+      "gender": "F",
+      "name": "Divya"
+  },
+  {
+      "gender": "F",
+      "name": "Gargi B A"
+  }
 ];
 
 export const technologyPartners = [
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Yash Bharadwaj"
   },
-
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Joy Jefferson"
   },
-
   {
-    name: "Ann Mathew",
-    gender: "Female",
-    age: 22,
-    image: null,
+      "gender": "M",
+      "name": "Tanishq"
   },
-];
+  {
+      "gender": "M",
+      "name": "Suyoga"
+  },
+  {
+      "gender": "M",
+      "name": "Dhruval"
+  },
+  {
+      "gender": "M",
+      "name": "Sai Teja"
+  },
+  {
+      "gender": "M",
+      "name": "Rahul Reddy"
+  },
+  {
+      "gender": "M",
+      "name": "Jayanth"
+  },
+  {
+      "gender": "M",
+      "name": "Mayank Agarwal"
+  },
+  {
+      "gender": "M",
+      "name": "Jayanarayanan"
+  },
+  {
+      "gender": "M",
+      "name": "Gautham"
+  },
+  {
+      "gender": "M",
+      "name": "Om Shreenidhi"
+  },
+  {
+      "gender": "M",
+      "name": "Utkarsh Singh"
+  },
+  {
+      "gender": "M",
+      "name": "Ambu Karthik"
+  },
+  {
+      "gender": "M",
+      "name": "Yash Raj Banka"
+  },
+  {
+      "gender": "M",
+      "name": "Milinda"
+  },
+  {
+      "gender": "F",
+      "name": "Janavi"
+  },
+  {
+      "gender": "M",
+      "name": "Thilak"
+  }
+]
 
 export const growthPartners = [
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "F",
+      "name": "Sahana Ramesh"
   },
-
   {
-    name: "Tanishq Vyas",
-    gender: "Male",
-    age: 21,
-    image: null,
+      "gender": "M",
+      "name": "Dhanush V"
   },
-
   {
-    name: "Ann Mathew",
-    gender: "Female",
-    age: 22,
-    image: null,
+      "gender": "M",
+      "name": "Advait Nawathe"
+  }
+]
+
+
+export const departmentListData = [
+  {
+      "departmentDescription": "With their critical thinking and  high attention to detail , these individuals are helping startups under PVL evolve into their better versions by the day.",
+      "departmentId": 1,
+      "departmentName": "Invesment Partners",
+      "membersList":investmentPartners
   },
-];
+  {
+      "departmentDescription": "These passionate and balanced individuals  are determined to build better teams and products. Their synergy with PVL has been the driving force in making PVL what it is today.",
+      "departmentId": 2,
+      "departmentName": "Entreprenuer Partners",
+      "membersList":entrepreneurPartners
+  },
+  {
+      "departmentDescription": "Strategic planning, employee and office  management  are few of the many ways how our  experienced management partners  contribute and enable PVL to reach new milestones everyday.",
+      "departmentId": 3,
+      "departmentName": "Management Partners",
+      "membersList":managementPartners
+  },
+  {
+      "departmentDescription": "Our in-house creative talents bring your Opportunities product ideas to life and design incredible user experiences. ",
+      "departmentId": 4,
+      "departmentName": "Design Partners",
+      "membersList":designPartners
+  },
+  {
+      "departmentDescription": "A skilled team converting designs into wondrous products, our tech team is adept and passionate in all aspects of development.",
+      "departmentId": 5,
+      "departmentName": "Technology Partners",
+      "membersList":technologyPartners
+  },
+  {
+      "departmentDescription": "Making products reach bigger audiences through their impressive content and the right strategies for marketing.",
+      "departmentId": 6,
+      "departmentName": "Growth Partners",
+      "membersList":growthPartners
+  },
+  {
+      "departmentDescription": "These domain experts guide startups working with PVL onto the right track by not only giving them critical feedback but also words of encouragement.",
+      "departmentId": 7,
+      "departmentName": "Mentors",
+      "membersList":mentorsList
+  }
+]
