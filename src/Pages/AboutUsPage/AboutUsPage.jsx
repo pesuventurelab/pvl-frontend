@@ -10,6 +10,9 @@ import { aboutUsPageVideoURL } from "../../Data/Links";
 
 /* IMPORT IMAGES */
 import BANNER from "../../Images/Banners/banner1.svg";
+import BANNER2 from "../../Images/Banners/banner2.svg";
+import BANNER3 from "../../Images/Banners/banner3.svg";
+import BANNER4 from "../../Images/Banners/banner4.svg";
 
 const AboutUsPage = () => {
   return (
@@ -23,22 +26,22 @@ const AboutUsPage = () => {
           How we help you ?
         </div>
         <p id={styles.section_one_ans}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices enim
-          aenean tincidunt lectus parturient mauris, a. Phasellus fermare
-          pretium sit aliquet adipiscing. Adipiscing tellus, dignissim luctus
-          nisi. Adipiscing mauris euismod habitant vitae orci purus odio. Auctor
-          enim eu facilisi ac vitae praesent. Consequat eu pretium vivamus velit
-          massa. luctus nisi. Adipiscing mauris euismod habitant vitae orci
-          purus odio. Auctor enim eu facilisi ac vitae praesent. Consequat eu
-          pretium vivamus velit massa.{" "}
+          PVL is a venture studio launched under the partnership of PESU and
+          COCreate Ventures. We are a fund equipped with execution and
+          acceleration capabilities. Our main objective is to enable the finest
+          and the most dedicated students become entrepreneurs. We also want to
+          find solutions to these questions - ‘Can entrepreneurship fund
+          research & scholarships?’ and ‘Can we create a funnel of fundable
+          deeptech companies that are category creators for the existing VC
+          ecosystem?’
         </p>
       </div>
 
-      <img id={styles.section_two} src={BANNER} alt="Image" />
+      {/* <img id={styles.section_two} src={BANNER} alt="Image" /> */}
 
       <div id={styles.section_three} className={`${styles.section}`}>
         <img className={styles.section_banner} src={BANNER} alt="Image" />
-        <p>
+        <p className={styles.quote_para}>
           <span className={styles.quotes}>"</span> {quotesList[3]}{" "}
           <span className={styles.quotes}>"</span>
         </p>
@@ -51,11 +54,11 @@ const AboutUsPage = () => {
           focus on developing entrepreneurship through Centre for Inovation and
           Entrepreneurship (CIE).
         </p>
-        <img className={styles.section_banner} src={BANNER} alt="Image" />
+        <img className={styles.section_banner} src={BANNER2} alt="Image" />
       </div>
 
       <div id={styles.section_five} className={`${styles.section}`}>
-        <img className={styles.section_banner} src={BANNER} alt="Image" />
+        <img className={styles.section_banner} src={BANNER3} alt="Image" />
         <p>
           CoCreate is focused around strengthening the startup ecosystem by
           Operating microfunds to help build amazing deep tech startups.
@@ -74,7 +77,7 @@ const AboutUsPage = () => {
           organizations to setup microfunds to provide quality dealflow for VC
           echo systems.
         </p>
-        <img className={styles.section_banner} src={BANNER} alt="Image" />
+        <img className={styles.section_banner} src={BANNER4} alt="Image" />
       </div>
 
       <Footer />
