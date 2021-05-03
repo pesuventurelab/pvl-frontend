@@ -102,7 +102,7 @@ const HomePage = () => {
     axios
       .post(`${apiURL}/api/subscribe`, final_request_data)
       .then((res) => {
-        if (res.data["status"] === 200) {
+        if (res.data["statusCode"] === 200) {
           openNotificationWithIcon(
             "success",
             "Succesfully subscribed",
@@ -396,15 +396,15 @@ const HomePage = () => {
         />
       </div>
 
-      <ScrollAnimation duration="0.9" animateIn="fadeInUp">
+      {/* <ScrollAnimation duration="0.9" animateIn="fadeInUp">
         <button
           onClick={() => toggleEmailContainer(true)}
           id={styles.contact_us_btn}
           className={`${"basic-button_one"}`}
         >
-          Subscribe to Newsletters-san
+          Subscribe to Newsletter
         </button>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
       <div ref={emailCtnrREF} className={styles.email_container}>
         <IoIosArrowDown
           onClick={() => toggleEmailContainer(false)}
