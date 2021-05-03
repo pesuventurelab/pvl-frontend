@@ -4,3 +4,4 @@ Serial Number, Topic, Link to Resource
 3, Animate on Scroll, https://www.npmjs.com/package/react-animate-on-scroll
 4, Animate on Scroll types, https://animate.style/ 
 5, Custom Domain gh pages, https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+6, AWS apigateway CORS, https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-cors-errors/#:~:text=Note%3A%20The%20No%20'Access%2D,return%20the%20required%20CORS%20headers.
