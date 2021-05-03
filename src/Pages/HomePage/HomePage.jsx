@@ -153,18 +153,18 @@ const HomePage = () => {
           id={styles.upper_section_one}
           className={`${styles.upper_section} ${styles.section}`}
         >
-          <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+          {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
             <img
               loading="lazy"
               className={styles.section_banner}
               src={BANNER_6}
               alt="Images"
             />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
           <p className={styles.upper_section_info_ctnr}>
-            <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+            {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
               Funding of <br /> <b>$150K+</b>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </p>
         </div>
 
@@ -173,36 +173,36 @@ const HomePage = () => {
           className={`${styles.upper_section} ${styles.section}`}
         >
           <p className={styles.upper_section_info_ctnr}>
-            <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+            {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
               Research and Market insights in focused areas
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </p>
-          <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+          {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
             <img
               loading="lazy"
               className={styles.section_banner}
               src={BANNER_7}
               alt="Images"
             />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
 
         <div
           id={styles.upper_section_three}
           className={`${styles.upper_section} ${styles.section}`}
         >
-          <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+          {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
             <img
               loading="lazy"
               className={styles.section_banner}
               src={BANNER_16}
               alt="Images"
             />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
           <p className={styles.upper_section_info_ctnr}>
-            <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+            {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
               Mentoring, connect to investors and customers
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </p>
         </div>
 
@@ -211,18 +211,18 @@ const HomePage = () => {
           className={`${styles.upper_section} ${styles.section}`}
         >
           <p className={styles.upper_section_info_ctnr}>
-            <ScrollAnimation duration="1.3" animateIn="fadeInUp">
+            {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
               Resources to get started with your plan quickly
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </p>
-          <ScrollAnimation duration="1.3" animateIn="fadeInDown">
+          {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
             <img
               loading="lazy"
               className={styles.section_banner}
               src={BANNER_4}
               alt="Images"
             />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
       </div>
 
