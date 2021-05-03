@@ -255,7 +255,7 @@ const NavbarComponent = () => {
               </div>
             </div>
 
-            {/* <div className={styles.menu_ele_ctnr}>
+            <div className={styles.menu_ele_ctnr}>
               <div
                 // href={`${websiteBaseURL}opportunities`}
                 // rel="noopener noreferrer"
@@ -268,9 +268,9 @@ const NavbarComponent = () => {
               >
                 Opportunities
               </div>
-            </div> */}
+            </div>
 
-            {/* <div className={styles.menu_ele_ctnr}>
+            <div className={styles.menu_ele_ctnr}>
               <div
                 // href={`${websiteBaseURL}apply`}
                 // rel="noopener noreferrer"
@@ -283,7 +283,7 @@ const NavbarComponent = () => {
               >
                 Apply
               </div>
-            </div> */}
+            </div>
             <div className={styles.menu_ele_ctnr}>
               <div
                 // href={`${websiteBaseURL}contactus`}

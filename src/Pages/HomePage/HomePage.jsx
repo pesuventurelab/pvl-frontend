@@ -376,13 +376,13 @@ const HomePage = () => {
       </div>
 
       <ScrollAnimation duration="0.9" animateIn="fadeInUp">
-        {/* <button
+        <button
           onClick={() => toggleEmailContainer(true)}
           id={styles.contact_us_btn}
           className={`${"basic-button_one"}`}
         >
           Subscribe to Newsletter
-        </button> */}
+        </button>
       </ScrollAnimation>
       <div ref={emailCtnrREF} className={styles.email_container}>
         <IoIosArrowDown

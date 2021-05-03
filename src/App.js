@@ -39,10 +39,10 @@ function App() {
           <Route exact path="/portfolio" component={PortfolioPage} />
           <Route exact path="/aboutus" component={AboutUsPage} />
           <Route exact path="/team" component={MeetTheTeamPage} />
-          {/* <Route exact path="/opportunities" component={OpportunitiesPage} /> */}
+          <Route exact path="/opportunities" component={OpportunitiesPage} />
           <Route exact path="/resources" component={ResourcesPage} />
           <Route exact path="/contactus" component={ContactUsPage} />
-          {/* <Route exact path="/apply" component={ApplyPage} /> */}
+          <Route exact path="/apply" component={ApplyPage} />
           {/* <Route exact path="/testpage" component={TestPage} /> */}
           <Route exact path="/*" component={NotFoundPage} status={404} />
         </Switch>
