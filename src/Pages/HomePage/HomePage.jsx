@@ -396,7 +396,7 @@ const HomePage = () => {
         />
       </div>
 
-      {/* <ScrollAnimation duration="0.9" animateIn="fadeInUp">
+      <ScrollAnimation duration="0.9" animateIn="fadeInUp">
         <button
           onClick={() => toggleEmailContainer(true)}
           id={styles.contact_us_btn}
@@ -404,7 +404,7 @@ const HomePage = () => {
         >
           Subscribe to Newsletter
         </button>
-      </ScrollAnimation> */}
+      </ScrollAnimation>
       <div ref={emailCtnrREF} className={styles.email_container}>
         <IoIosArrowDown
           onClick={() => toggleEmailContainer(false)}
