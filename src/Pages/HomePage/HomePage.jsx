@@ -102,17 +102,18 @@ const HomePage = () => {
     axios
       .post(`${apiURL}/api/subscribe`, final_request_data)
       .then((res) => {
+        console.log(res)
         if (res.data["statusCode"] === 200) {
           openNotificationWithIcon(
             "success",
             "Succesfully subscribed",
-            res.data["msg"]
+            res["msg"]
           );
         } else {
           openNotificationWithIcon(
             "error",
             "Internal Server Error",
-            res.data["msg"]
+            res["msg"]
           );
         }
       })
