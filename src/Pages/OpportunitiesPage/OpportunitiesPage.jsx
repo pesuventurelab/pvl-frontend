@@ -46,10 +46,6 @@ const OpportunitiesPage = () => {
   //   });
   // },[]);
 
-  useEffect(() => {
-    console.log(curTypes);
-    console.log(curPositions);
-  }, [curPositions, curTypes]);
 
   return (
     <div className={styles.container}>

@@ -448,7 +448,7 @@ export const departmentListData = [
   {
       "departmentDescription": "These passionate and balanced individuals  are determined to build better teams and products. Their synergy with PVL has been the driving force in making PVL what it is today.",
       "departmentId": 2,
-      "departmentName": "Entreprenuer Partners",
+      "departmentName": "Entrepreneur Partners",
       "membersList":entrepreneurPartners
   },
   {

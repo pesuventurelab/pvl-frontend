@@ -324,7 +324,7 @@ const NavbarComponent = () => {
                     className={styles.menu_ele}
                     onClick={() => {
                       setTheme("light");
-                      console.log("light theme here");
+                      // console.log("light theme here");
                     }}
                   >
                     Light Theme
@@ -335,7 +335,7 @@ const NavbarComponent = () => {
                     className={styles.menu_ele}
                     onClick={() => {
                       setTheme("dark");
-                      console.log("dark theme here");
+                      // console.log("dark theme here");
                     }}
                   >
                     Dark Theme

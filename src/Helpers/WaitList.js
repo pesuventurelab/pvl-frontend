@@ -18,6 +18,7 @@ export const appendSpreadsheet = async (row) => {
       const sheet = doc.sheetsById[SHEET_ID];
       const result = await sheet.addRow(row);
     } catch (e) {
-      console.log("Error: ", e);
+      
+      // console.log("Error: ", e);
     }
   };

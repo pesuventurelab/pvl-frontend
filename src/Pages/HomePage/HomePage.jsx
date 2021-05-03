@@ -32,7 +32,6 @@ import Footer from "../../Components/Footer/Footer";
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO_S.png";
 import LOGO_ANIMATION from "../../Images/gifs/3_6.gif";
 
-
 import STEP_1 from "../../Images/Steps/step1.svg";
 import STEP_2 from "../../Images/Steps/step2.svg";
 import STEP_3 from "../../Images/Steps/step3.svg";
@@ -50,7 +49,6 @@ import BANNER_20 from "../../Images/Banners/banner20.svg";
 import BANNER_24 from "../../Images/Banners/banner24.svg";
 import BANNER_25 from "../../Images/Banners/banner25.svg";
 
-
 import ScrollAnimation from "react-animate-on-scroll";
 
 const HomePage = () => {
@@ -65,7 +63,12 @@ const HomePage = () => {
   };
 
   const handleSubscription = () => {
-    const request_data = {};
+    
+
+
+    const request_data={}
+
+
     if (emailREF.current.value === "") {
       openNotificationWithIcon(
         "Error",
@@ -83,22 +86,40 @@ const HomePage = () => {
       request_data["date"] = [year, month, day].join("-");
     }
     toggleEmailContainer(false);
-    emailCtnrREF.current.style.bottom="-200vh";
-    axios.post(`${apiURL}/api/subscribe`, request_data).then((res) => {
-      if (res.data["status"] === 200) {
-        openNotificationWithIcon(
-          "success",
-          "Succesfully subscribed",
-          res.data["msg"]
-        );
-      } else {
-        openNotificationWithIcon(
-          "error",
-          "Internal Server Error",
-          res.data["msg"]
-        );
-      }
-    });
+    emailCtnrREF.current.style.bottom = "-200vh";
+
+
+    const final_request_data = {
+      statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+        "Access-Control-Allow-Credentials": true, // Required for cookies, authorization headers with HTTPS
+      },
+      body: JSON.stringify(request_data)
+    };
+
+
+    axios
+      .post(`${apiURL}/api/subscribe`, final_request_data)
+      .then((res) => {
+        if (res.data["status"] === 200) {
+          openNotificationWithIcon(
+            "success",
+            "Succesfully subscribed",
+            res.data["msg"]
+          );
+        } else {
+          openNotificationWithIcon(
+            "error",
+            "Internal Server Error",
+            res.data["msg"]
+          );
+        }
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
   };
 
   return (
@@ -381,7 +402,7 @@ const HomePage = () => {
           id={styles.contact_us_btn}
           className={`${"basic-button_one"}`}
         >
-          Subscribe to Newsletter
+          Subscribe to Newsletters-san
         </button>
       </ScrollAnimation>
       <div ref={emailCtnrREF} className={styles.email_container}>
