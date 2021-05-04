@@ -89,18 +89,10 @@ const HomePage = () => {
     emailCtnrREF.current.style.bottom = "-200vh";
 
 
-    const final_request_data = {
-      statusCode: 200,
-      headers: {
-        "Access-Control-Allow-Origin": "*", // Required for CORS support to work
-        "Access-Control-Allow-Credentials": true, // Required for cookies, authorization headers with HTTPS
-      },
-      body: JSON.stringify(request_data)
-    };
 
 
     axios
-      .post(`${apiURL}/api/subscribe`, final_request_data)
+      .post(`${apiURL}/api/subscribe`, request_data)
       .then((res) => {
         console.log(res)
         if (res["status"] === 200) {
