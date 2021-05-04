@@ -85,7 +85,7 @@ const OpportunitiesPage = () => {
       <a
         rel="noopener noreferrer"
         id={styles.mail_us_btn}
-        className={`${"basic-button_one"}`}
+        className={`${"basic-button_one"} ${styles.mail_us_btn}`}
         href={`${websiteBaseURL}contactus`}
       >
         MAIL us

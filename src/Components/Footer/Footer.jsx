@@ -29,14 +29,14 @@ const footerLinks = [
     title: "portfolio",
     link: websiteBaseURL + "portfolio",
   },
-  // {
-  //   title: "Opportunities",
-  //   link: websiteBaseURL + "opportunities",
-  // },
   {
-    title: "resources",
-    link: websiteBaseURL + "resources",
+    title: "Opportunities",
+    link: websiteBaseURL + "opportunities",
   },
+  // {
+  //   title: "resources",
+  //   link: websiteBaseURL + "resources",
+  // },
   // {
   //   title: "apply",
   //   link: websiteBaseURL + "apply",
