@@ -76,23 +76,22 @@ const HomePage = () => {
         "Email field cannot be empty please enter email"
       );
       return;
-    } else {
-      request_data["email"] = emailREF.current.value;
-      var d = new Date();
-      let month = "" + (d.getMonth() + 1);
-      let day = "" + d.getDate();
-      let year = d.getFullYear();
-
-      request_data["date"] = [year, month, day].join("-");
-    }
+    } 
     toggleEmailContainer(false);
     emailCtnrREF.current.style.bottom = "-200vh";
 
 
-
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, "0");
+    let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+    let yyyy = today.getFullYear();
+    today = dd + "/" + mm + "/" + yyyy;
 
     axios
-      .post(`${apiURL}/api/subscribe`, request_data)
+      .post(`${apiURL}/api/subscribe`, {
+        email:emailREF.current.value,
+        date:today
+      })
       .then((res) => {
         console.log(res)
         if (res["status"] === 200) {
