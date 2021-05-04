@@ -63,11 +63,7 @@ const HomePage = () => {
   };
 
   const handleSubscription = () => {
-    
-
-
-    const request_data={}
-
+    const request_data = {};
 
     if (emailREF.current.value === "") {
       openNotificationWithIcon(
@@ -76,10 +72,9 @@ const HomePage = () => {
         "Email field cannot be empty please enter email"
       );
       return;
-    } 
+    }
     toggleEmailContainer(false);
     emailCtnrREF.current.style.bottom = "-200vh";
-
 
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, "0");
@@ -89,23 +84,25 @@ const HomePage = () => {
 
     axios
       .post(`${apiURL}/api/subscribe`, {
-        email:emailREF.current.value,
-        date:today
+        email: emailREF.current.value,
+        date: today,
       })
       .then((res) => {
-        console.log(res)
+        console.log(res);
         if (res["status"] === 200) {
           openNotificationWithIcon(
             "success",
             "Succesfully subscribed",
             res.data["msg"]
           );
+          emailREF.current.value = "";
         } else {
           openNotificationWithIcon(
             "error",
             "Internal Server Error",
             res.data["msg"]
           );
+          emailREF.current.value = "";
         }
       })
       .catch(function (error) {
@@ -129,9 +126,10 @@ const HomePage = () => {
 
           <ScrollAnimation duration="1.4" animateIn="fadeInUp">
             <p className={styles.section_one_para}>
-              A unique fund that operates in the pre-prototype or pre-ideation
-              phase. Founder-friendly terms (no special rights to PVL) and
-              flexibility in terms of equity spent{" "}
+              A concept stage fund that empowers passionate Entrepreneurs with
+              Funding Better Execution Important connects Right direction &amp; best
+              financial terms.
+              We fund students, researchers &amp; entrepreneurs working on category creators with large global market opportunties.
             </p>
           </ScrollAnimation>
         </div>
@@ -145,16 +143,16 @@ const HomePage = () => {
           className={`${styles.upper_section} ${styles.section}`}
         >
           {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
-            <img
-              loading="lazy"
-              className={styles.section_banner}
-              src={BANNER_6}
-              alt="Images"
-            />
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_6}
+            alt="Images"
+          />
           {/* </ScrollAnimation> */}
           <p className={styles.upper_section_info_ctnr}>
             {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
-              Funding of <br /> <b>$150K+</b>
+            Funding of <br /> <b>$150K+</b>
             {/* </ScrollAnimation> */}
           </p>
         </div>
@@ -165,16 +163,16 @@ const HomePage = () => {
         >
           <p className={styles.upper_section_info_ctnr}>
             {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
-              Research and Market insights in focused areas
+            Research and Market insights in focused areas
             {/* </ScrollAnimation> */}
           </p>
           {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
-            <img
-              loading="lazy"
-              className={styles.section_banner}
-              src={BANNER_7}
-              alt="Images"
-            />
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_7}
+            alt="Images"
+          />
           {/* </ScrollAnimation> */}
         </div>
 
@@ -183,16 +181,16 @@ const HomePage = () => {
           className={`${styles.upper_section} ${styles.section}`}
         >
           {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
-            <img
-              loading="lazy"
-              className={styles.section_banner}
-              src={BANNER_16}
-              alt="Images"
-            />
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_16}
+            alt="Images"
+          />
           {/* </ScrollAnimation> */}
           <p className={styles.upper_section_info_ctnr}>
             {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
-              Mentoring, connect to investors and customers
+            Mentoring, connect to investors and customers
             {/* </ScrollAnimation> */}
           </p>
         </div>
@@ -203,16 +201,16 @@ const HomePage = () => {
         >
           <p className={styles.upper_section_info_ctnr}>
             {/* <ScrollAnimation duration="1.3" animateIn="fadeInUp"> */}
-              Resources to get started with your plan quickly
+            Resources to get started with your plan quickly
             {/* </ScrollAnimation> */}
           </p>
           {/* <ScrollAnimation duration="1.3" animateIn="fadeInDown"> */}
-            <img
-              loading="lazy"
-              className={styles.section_banner}
-              src={BANNER_4}
-              alt="Images"
-            />
+          <img
+            loading="lazy"
+            className={styles.section_banner}
+            src={BANNER_4}
+            alt="Images"
+          />
           {/* </ScrollAnimation> */}
         </div>
       </div>
@@ -321,7 +319,7 @@ const HomePage = () => {
         <div className={styles.what_we_looking_for_card_section}>
           {/* <ScrollAnimation duration="0.7" animateIn="fadeInLeft"> */}
           <WhatWeLookingForCard
-            title={"deep tech ideas"}
+            title={"Deeptech & Innovation"}
             para={
               "Ideas around IoT, Automation, Extended Reality (AR,ER,VR), quantum computing, AI/ML, personalized and predictive medicine"
             }
@@ -330,7 +328,7 @@ const HomePage = () => {
 
           {/* <ScrollAnimation duration="0.7" animateIn="fadeInRight"> */}
           <WhatWeLookingForCard
-            title={"Campus Tech Ideas"}
+            title={"Category creators"}
             para={
               "Ideas that can transform the way academic programs are created and delivered"
             }
@@ -343,17 +341,17 @@ const HomePage = () => {
         >
           {/* <ScrollAnimation duration="0.9" animateIn="fadeInLeft"> */}
           <WhatWeLookingForCard
-            title={"Social Tech Ideas"}
+            title={"Large global markets"}
             para={
-              "Ideas that use  human, intellectual and digital resources in order to influence social processes."
+              "Problems whose solutions can tap into a market at global scale"
             }
           />
           {/* </ScrollAnimation> */}
           {/* <ScrollAnimation duration="0.9" animateIn="fadeInRight"> */}
           <WhatWeLookingForCard
-            title={"Multi Disciplinary Innovation​"}
+            title={"Committed Team​"}
             para={
-              "Ideas that demand multidisciplinary innovations involving disciplines like design, computing, biotech, engineering, devices, food tech and others"
+              "A team of enthusiastic members who are passionate about solving critical problems in the market"
             }
           />
           {/* </ScrollAnimation> */}

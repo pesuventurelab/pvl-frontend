@@ -203,6 +203,10 @@ export const managementPartners = [
   {
       "gender": "M",
       "name": "Prashanth Kumar"
+  },
+  {
+      "gender":"M",
+      "name":"Anish"
   }
 ]
 
@@ -302,10 +306,10 @@ export const mentorsList = [
       "gender": "M",
       "name": "Santosh"
   },
-  {
-      "gender": "M",
-      "name": "Sharad S"
-  }
+//   {
+//       "gender": "M",
+//       "name": "Sharad S"
+//   }
 ]
 
 export const investmentPartners = [
@@ -442,37 +446,37 @@ export const departmentListData = [
   {
       "departmentDescription": "With their critical thinking and  high attention to detail , these individuals are helping startups under PVL evolve into their better versions by the day.",
       "departmentId": 1,
-      "departmentName": "Invesment Partners",
+      "departmentName": "Invesment Team",
       "membersList":investmentPartners
   },
   {
       "departmentDescription": "These passionate and balanced individuals  are determined to build better teams and products. Their synergy with PVL has been the driving force in making PVL what it is today.",
       "departmentId": 2,
-      "departmentName": "Entrepreneur Partners",
+      "departmentName": "Entrepreneur Team",
       "membersList":entrepreneurPartners
   },
   {
       "departmentDescription": "Strategic planning, employee and office  management  are few of the many ways how our  experienced management partners  contribute and enable PVL to reach new milestones everyday.",
       "departmentId": 3,
-      "departmentName": "Management Partners",
+      "departmentName": "Management Team",
       "membersList":managementPartners
   },
   {
       "departmentDescription": "Our in-house creative talents bring your Opportunities product ideas to life and design incredible user experiences. ",
       "departmentId": 4,
-      "departmentName": "Design Partners",
+      "departmentName": "Design Team",
       "membersList":designPartners
   },
   {
       "departmentDescription": "A skilled team converting designs into wondrous products, our tech team is adept and passionate in all aspects of development.",
       "departmentId": 5,
-      "departmentName": "Technology Partners",
+      "departmentName": "Technology Team",
       "membersList":technologyPartners
   },
   {
       "departmentDescription": "Making products reach bigger audiences through their impressive content and the right strategies for marketing.",
       "departmentId": 6,
-      "departmentName": "Growth Partners",
+      "departmentName": "Growth Team",
       "membersList":growthPartners
   },
   {

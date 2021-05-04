@@ -69,7 +69,7 @@ const AboutUsPage = () => {
         </p>
       </div>
 
-      <div id={styles.section_five} className={`${styles.section}`}>
+      {/* <div id={styles.section_five} className={`${styles.section}`}>
         <p>
           Our first fund was to transform businesses that are already funded &
           worth surviving. We invested in JustBOoks & Bonhomia ensured they are
@@ -78,7 +78,7 @@ const AboutUsPage = () => {
           echo systems.
         </p>
         <img className={styles.section_banner} src={BANNER4} alt="Image" />
-      </div>
+      </div> */}
 
       <Footer />
     </div>

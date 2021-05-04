@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
 import styles from "./ApplyPage.module.css";
 
+import { v4 as uuidv4 } from 'uuid';
+
 import axios from "axios";
 
 import { apiURL } from "../../Config/Config";
@@ -13,6 +15,8 @@ import { openNotificationWithIcon } from "../../Helpers";
 import STUDENT_BANNER from "../../Images/Banners/banner25.svg";
 import FACULTY_BANNER from "../../Images/Banners/banner24.svg";
 import INDUSTRY_BANNER from "../../Images/Banners/banner6.svg";
+
+
 
 
 const ApplyPage = () => {
@@ -140,11 +144,21 @@ const ApplyPage = () => {
     }
 
 
+
     /*passing applicant type to request json */
     request_data["appplicantType"]=appplicantType
 
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, "0");
+    let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+    let yyyy = today.getFullYear();
+    request_data["date"]= dd + "/" + mm + "/" + yyyy;
+
+    request_data["applicationId"]=uuidv4();
+
+
     axios.post(`${apiURL}/api/portfolio/apply`, request_data).then((res) => {
-      if (res.data["status"] === 200) {
+      if (res["status"] === 200) {
         openNotificationWithIcon(
           "success",
           "Application Successful",
@@ -267,7 +281,7 @@ const ApplyPage = () => {
             type="text"
             placeholder="Enter your name..."
             required
-            maxlength="255"
+            maxLength="255"
             ref={nameREF}
           />
           <InputLabel
@@ -279,7 +293,7 @@ const ApplyPage = () => {
             className="basic-input"
             type="email"
             placeholder="Enter your email..."
-            maxlength="320"
+            maxLength="320"
             ref={emailREF}
           />
 
@@ -295,7 +309,7 @@ const ApplyPage = () => {
                 type="text"
                 placeholder="Enter name here..."
                 required
-                maxlength="255"
+                maxLength="255"
                 ref={universityREF}
               />
             </div>
@@ -315,7 +329,7 @@ const ApplyPage = () => {
                 type="text"
                 placeholder="Enter name here..."
                 required
-                maxlength="255"
+                maxLength="255"
                 ref={organizationREF}
               />
             </div>
@@ -335,7 +349,7 @@ const ApplyPage = () => {
                 type="text"
                 placeholder="Enter department here..."
                 required
-                maxlength="255"
+                maxLength="255"
                 ref={departmentREF}
               />
             </div>
@@ -374,7 +388,7 @@ const ApplyPage = () => {
             type="text"
             placeholder="Enter your idea title..."
             required
-            maxlength="255"
+            maxLength="255"
             ref={ideaTitleREF}
           />
 
@@ -390,7 +404,7 @@ const ApplyPage = () => {
             type="text"
             placeholder="Enter your idea..."
             required
-            maxlength="1024"
+            maxLength="1024"
             ref={ideaDescriptionREF}
           ></textarea>
 
@@ -406,7 +420,7 @@ const ApplyPage = () => {
             type="text"
             placeholder="Enter description..."
             required
-            maxlength="1024"
+            maxLength="1024"
             ref={teamDescriptionREF}
           ></textarea>
           <button

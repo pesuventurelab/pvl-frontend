@@ -52,9 +52,7 @@ const OpportunitiesCard = (props) => {
         "Name field cannot be empty. Please enter your name."
       );
       return;
-    } else {
-      request_data["name"] = nameREF.current.value;
-    }
+    } 
 
     if (emailREF.current.value === "") {
       openNotificationWithIcon(
@@ -63,9 +61,7 @@ const OpportunitiesCard = (props) => {
         "Email field cannot be empty. Please enter your email ID."
       );
       return;
-    } else {
-      request_data["email"] = emailREF.current.value;
-    }
+    } 
 
     if (contactREF.current.value === "") {
       openNotificationWithIcon(
@@ -74,9 +70,7 @@ const OpportunitiesCard = (props) => {
         "Contact field cannot be empty. Please enter your contact number."
       );
       return;
-    } else {
-      request_data["contact"] = contactREF.current.value;
-    }
+    } 
 
     if (resumeREF.current.value === "") {
       openNotificationWithIcon(
@@ -85,15 +79,25 @@ const OpportunitiesCard = (props) => {
         "Resume field cannot be empty. Please upload your Resume link."
       );
       return;
-    } else {
-      request_data["resume"] = resumeREF.current.value;
     }
 
-    request_data["opportunityId"]=props.opportunityId;
 
 
-    axios.post(`${apiURL}/api/opportunity/apply`, request_data).then((res) => {
-      if (res.data["status"] === 200) {
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, "0");
+    let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+    let yyyy = today.getFullYear();
+    today = dd + "/" + mm + "/" + yyyy;
+
+
+    axios.post(`${apiURL}/api/opportunity/apply`, {
+      email:emailREF.current.value,
+      opportunityId:props.opportunityId,
+      resume:resumeREF.current.value,
+      date:today,
+      contact:contactREF.current.value
+    }).then((res) => {
+      if (res["status"] === 200) {
         openNotificationWithIcon(
           "success",
           "Application Successful",
