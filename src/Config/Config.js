@@ -4,5 +4,5 @@
 
 /* PRODUCTION  CONFIGURATION*/
 export const websiteBaseURL = "https://pesuventurelabs.com/#/";
-export const apiURL = "https://afplsonnn0.execute-api.us-west-2.amazonaws.com/beta"
+export const apiURL = "https://e8zb4eg3wg.execute-api.us-west-2.amazonaws.com/test"
 
