@@ -103,7 +103,7 @@ const HomePage = () => {
       .post(`${apiURL}/api/subscribe`, final_request_data)
       .then((res) => {
         console.log(res)
-        if (res.data["status"] === 200) {
+        if (res["status"] === 200) {
           openNotificationWithIcon(
             "success",
             "Succesfully subscribed",
