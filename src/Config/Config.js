@@ -3,6 +3,6 @@
 // export const apiURL = "http://localhost:5000"
 
 /* PRODUCTION  CONFIGURATION*/
-export const websiteBaseURL = "https://pesuventurelabs.com/";
+export const websiteBaseURL = "https://pesuventurelab.github.io/pvl-frontend/";
 export const apiURL = "https://e8zb4eg3wg.execute-api.us-west-2.amazonaws.com/test"
 
