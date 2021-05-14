@@ -1,8 +1,7 @@
 import "antd/dist/antd.css";
 
 import { Route, Switch } from "react-router-dom";
-// import { BrowserRouter as Router} from "react-router-dom";
-import { HashRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router} from "react-router-dom";
 
 // IMPORT PAGES HERE
 import HomePage from "./Pages/HomePage/HomePage";
@@ -31,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <Router >
+      <Router basename={process.env.PUBLIC_URL} >
         <NavbarComponent />
         <Switch>
           <Route exact path="/" component={HomePage} />
