@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://pesuventurelabs.com/#/</loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://pesuventurelabs.com/#/aboutus</loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://pesuventurelabs.com/#/team</loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://pesuventurelabs.com/#/resources</loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>0.40</priority>
+</url>
+<url>
+  <loc>https://pesuventurelabs.com/#/opportunities</loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pesuventurelabs.com/#/apply</loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://pesuventurelabs.com/#/contactus</loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://pesuventurelabs.com/#/portfolio></loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://pesuventurelabs.com/#/home></loc>
+  <lastmod>2021-09-04T05:27:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+
+</urlset>
