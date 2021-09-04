@@ -29,10 +29,10 @@ const AboutUsPage = () => {
           PVL is a venture studio launched under the partnership of PESU and
           COCreate Ventures. We are a fund equipped with execution and
           acceleration capabilities. Our main objective is to enable the finest
-          and the most dedicated students become entrepreneurs. We also want to
-          find solutions to these questions - ‘Can entrepreneurship fund
-          research & scholarships?’ and ‘Can we create a funnel of fundable
-          deeptech companies that are category creators for the existing VC
+          and the most dedicated students to become entrepreneurs. We also want
+          to find solutions to these questions - ‘Can entrepreneurship fund
+          research & scholarships?’ and ‘Can we create a funnel of fundable deep
+          tech companies that are category creators for the existing VC
           ecosystem?’
         </p>
       </div>
@@ -50,7 +50,7 @@ const AboutUsPage = () => {
       <div id={styles.section_four} className={`${styles.section}`}>
         <p>
           PESU is one of the top 10 universities in India attracting some of the
-          best brains in the country for research & studies. PES has special
+          best brains in the country for research & studies. PESU has special
           focus on developing entrepreneurship through Centre for Inovation and
           Entrepreneurship (CIE).
         </p>
@@ -60,12 +60,14 @@ const AboutUsPage = () => {
       <div id={styles.section_five} className={`${styles.section}`}>
         <img className={styles.section_banner} src={BANNER3} alt="Image" />
         <p>
-          CoCreate is focused around strengthening the startup ecosystem by
-          Operating microfunds to help build amazing deep tech startups.
-          CoCreate also focuses on transforming great consumer focused
-          businesses & has transformed companies like JustBooks.in, Bonhomia
-          amongst others. Through its concern Upaghna, we are helping many
-          amazing consumer product companies.
+          CoCreate is focused on strengthening the startup ecosystem by
+          operating micro funds to help build marvellous deep tech startups.
+          CoCreate also concentrates on transforming great consumer-focused
+          businesses, having transformed companies like{" "}
+          <a href="https://justbooks.in/">JustBooks.in</a>,{" "}
+          <a href="https://bonhomiaworld.com/">Bonhomia</a> amongst others.
+          Through its concern Upaghna, we are helping many exceptional consumer
+          product companies.
         </p>
       </div>
 

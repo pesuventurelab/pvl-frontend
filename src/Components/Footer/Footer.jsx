@@ -7,10 +7,11 @@ import { linkedinURL, instagramURL } from "../../Data/Links";
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-import { handleRoute } from "../Helpers";
 
 /* IMPORT IMAGES HERE */
 import LOGO from "../../Images/Logos/PVL_LOGO_WHITE.png";
+
+// Vercel (better for paid), netlify (free)
 
 const footerLinks = [
   {
@@ -68,14 +69,13 @@ const Footer = () => {
         </div>
         <div className={styles.nav_container}>
           {footerLinks.map((item, index) => (
-            <div
-              // href={item.link}
-              // rel="noopener noreferrer"
+            <a
+              href={item.link}
+              rel="noopener noreferrer"
               className={styles.nav_ele}
-              onClick={() => handleRoute(item.link)}
             >
               {item.title}
-            </div>
+            </a>
           ))}
         </div>
         <div ref={storyCardREF} id={styles.logo_story_ctnr}>

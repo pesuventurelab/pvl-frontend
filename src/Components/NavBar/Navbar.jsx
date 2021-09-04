@@ -299,7 +299,7 @@ const NavbarComponent = () => {
               </div>
             </div>
 
-            <div className={styles.menu_droppable_container}>
+            {/* <div className={styles.menu_droppable_container}>
               <div className={styles.menu_droppable_btn_ctnr}>
                 <div
                   onClick={() => {
@@ -342,7 +342,7 @@ const NavbarComponent = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

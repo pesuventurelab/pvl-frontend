@@ -30,7 +30,7 @@ import Footer from "../../Components/Footer/Footer";
 /* IMPORT IMAGES HERE */
 // import PVL_LOGO from "../../Images/Logos/PVL_LOGO.svg";
 import PVL_LOGO from "../../Images/Logos/PVL_LOGO_S.png";
-import LOGO_ANIMATION from "../../Images/gifs/3_6.gif";
+import LOGO_ANIMATION from "../../Images/gifs/logoanim.gif";
 
 import STEP_1 from "../../Images/Steps/step1.svg";
 import STEP_2 from "../../Images/Steps/step2.svg";
@@ -126,15 +126,20 @@ const HomePage = () => {
 
           <ScrollAnimation duration="1.4" animateIn="fadeInUp">
             <p className={styles.section_one_para}>
-              A concept stage fund that empowers passionate Entrepreneurs with
-              Funding Better Execution Important connects Right direction &amp; best
-              financial terms.
+              <h3 className={styles.section_one_start_line}>A concept stage fund that empowers passionate Entrepreneurs with</h3>
+              <ul className={styles.benefits_list}>
+                <li>Funding </li>
+                <li>Better Execution</li>
+                <li>Important connects in the Right Direction</li>
+                <li>Best Financial Terms</li>
+              </ul>
+            
               We fund students, researchers &amp; entrepreneurs working on category creators with large global market opportunties.
             </p>
           </ScrollAnimation>
         </div>
-        <img id={styles.PVL_LOGO} src={PVL_LOGO} alt="Image" />
-        {/* <img id={styles.PVL_LOGO} src={LOGO_ANIMATION} alt="Image" /> */}
+        {/* <img id={styles.PVL_LOGO} src={PVL_LOGO} alt="Image" /> */}
+        <img id={styles.PVL_LOGO} src={LOGO_ANIMATION} alt="Image" />
       </div>
 
       <div className={styles.upper_section_container}>

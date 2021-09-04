@@ -30,7 +30,7 @@
   font-family: var(--fonts-heading);
   font-size: 54px;
   text-transform: uppercase;
-  margin-bottom: 2vh;
+  margin: 0;
 }
 
 #section_one_secondary_header {
@@ -39,6 +39,12 @@
   font-family: var(--fonts-heading);
   font-size: 42px;
   text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.section_one_start_line {
+  color: var(--primary-yellow);
+  font-weight: 900;
 }
 
 .section_one_para {
@@ -50,8 +56,11 @@
   text-justify: inter-word;
 }
 
+
+
+
 #PVL_LOGO {
-  width: 40%;
+  width: 32%;
   height: auto;
   margin: auto 0px;
   /* border-radius: 50%; */
@@ -206,12 +215,21 @@
 
   #section_one_secondary_header {
     font-size: 28px;
-    margin-bottom: 2vh;
+    margin-bottom: 42px;
   }
 
   .section_one_para {
     text-align: center;
     font-size: 22px;
+  }
+
+  .section_one_start_line {
+    font-size: 24px;
+  }
+
+  .benefits_list {
+    text-align: left;
+    font-size: 20px;
   }
 
   /*SECTIONS */

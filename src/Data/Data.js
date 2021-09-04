@@ -446,7 +446,7 @@ export const departmentListData = [
   {
       "departmentDescription": "With their critical thinking and  high attention to detail , these individuals are helping startups under PVL evolve into their better versions by the day.",
       "departmentId": 1,
-      "departmentName": "Invesment Team",
+      "departmentName": "Investment Team",
       "membersList":investmentPartners
   },
   {
