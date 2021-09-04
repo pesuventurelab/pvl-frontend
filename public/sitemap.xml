@@ -16,8 +16,6 @@
   <loc>https://pesuventurelabs.com/#/aboutus</loc>
   <lastmod>2021-09-04T05:27:34+00:00</lastmod>
   <priority>1.00</priority>
-
-
 </url>
 
 <url>
@@ -25,6 +23,7 @@
   <lastmod>2021-09-04T05:27:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://pesuventurelabs.com/#/resources</loc>
   <lastmod>2021-09-04T05:27:34+00:00</lastmod>
@@ -41,25 +40,21 @@
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://pesuventurelabs.com/#/contactus/loc>
+  <loc>https://pesuventurelabs.com/#/contactus</loc>
   <lastmod>2021-09-04T05:27:34+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://pesuventurelabs.com/#/portfolio>
+  <loc>https://pesuventurelabs.com/#/portfolio></loc>
   <lastmod>2021-09-04T05:27:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
-  <loc>https://pesuventurelabs.com/#/home>
+  <loc>https://pesuventurelabs.com/#/home></loc>
   <lastmod>2021-09-04T05:27:34+00:00</lastmod>
   <priority>1.00</priority>
 </url>
-
-
-
-
 
 
 </urlset>
